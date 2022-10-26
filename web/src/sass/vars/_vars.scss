@@ -1,0 +1,58 @@
+// Include color vars, only leave the color you want to use uncommented
+@import './color-blue.scss';
+// @import './color-green.scss';
+// @import './color-red.scss';
+// @import './color-purple.scss';
+// @import './color-indigo.scss';
+
+// Grey scale
+$black: #1B2124;
+$grey-01: #656D72;
+$grey-02: #B1B4B6;
+$grey-03: #E5E6E8;
+$grey-04: #F5F5F6;
+$white: #FFFFFF;
+
+// Support colors
+$visited-links: #7048E8;
+$error: #DA0250;
+$warning: #FFD06A;
+$success: #14857A;
+$info: #005CD1;
+
+// Backgrounds
+$bg-lightgray: $grey-04; 
+$bg-dark: $black;
+
+// Fonts
+$font-dark: $black;
+$font-light: $grey-01;
+$font-white: $white;
+$font-main-color: $primary-color-main;
+
+$font-base-size: 18px;
+
+// Buttons
+$btn-main-color: $primary-color-main;
+$btn-white: $white;
+
+// Primary button states
+$btn-blue-hover: #2574D8;
+$btn-blue-pressed: #0050B4;
+$btn-disabled-gray: #E5E6E8;
+$btn-disabled-gray-font: #B1B4B6;
+
+
+$border-radius: 12px;
+
+
+// Breakpoints
+
+$screen-sm:               576px !default;
+$screen-md:               768px !default;
+$screen-lg:               992px !default;
+$screen-xl:               1200px !default;
+$screen-xxl:              1400px !default;
+$screen-3xl:              1600px !default;
+$screen-4xl:              1800px !default;
+$screen-5xl:              2000px !default;

@@ -1,0 +1,11 @@
+@import './vars/vars.scss';
+@import './mixins/fonts.scss';
+@import './mixins/buttons.scss';
+
+html {
+    font-size: $font-base-size;
+}
+
+button {
+    @include btn('primary', 'active', 'small');
+}

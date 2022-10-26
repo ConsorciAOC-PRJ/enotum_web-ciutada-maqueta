@@ -1,0 +1,7 @@
+# Ignore SASS  cache related files
+.sass-cache
+
+# OSX template
+*.DS_Store
+.AppleDouble
+.LSOverride

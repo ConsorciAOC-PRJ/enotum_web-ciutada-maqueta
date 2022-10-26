@@ -1,0 +1,34 @@
+@mixin btn($type, $state: active, $btn-size: small) {
+    $btn-font-size: 0px;
+
+    @if $btn-size == 'small' {
+        $btn-font-size: 16px;
+    } 
+    @else if $btn-size == 'normal' {
+        $btn-font-size: $font-base-size;
+    }
+    
+    border-radius: $border-radius;
+    @include font($btn-font-size);
+
+    @if $type == 'primary' {
+
+        @if $state == 'active' {
+            background-color: $btn-main-color;
+            color: $font-white;
+        } 
+        @else if  $state == 'hover' {
+            background-color: $btn-blue-hover;
+            color: $font-white;
+        }
+        @else if  $state == 'pressed' {
+            background-color: $btn-blue-pressed;
+            color: $font-white;
+        }
+        @else if  $state == 'disabled' {
+            background-color: $btn-disabled-gray;
+            color: $btn-disabled-gray-font;
+        }
+    }
+
+}
