@@ -10,5 +10,7 @@ button {
   line-height: 1.5;
   background-color: #005CD1;
   color: #FFFFFF; }
+  button:hover {
+    background-color: #106ce1; }
 
 /*# sourceMappingURL=style.css.map */

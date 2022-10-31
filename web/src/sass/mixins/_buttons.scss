@@ -20,6 +20,7 @@
         @else if  $state == 'hover' {
             background-color: $btn-blue-hover;
             color: $font-white;
+            filter: brightness(50%);
         }
         @else if  $state == 'pressed' {
             background-color: $btn-blue-pressed;
@@ -29,6 +30,10 @@
             background-color: $btn-disabled-gray;
             color: $btn-disabled-gray-font;
         }
+    }
+
+    &:hover {
+        background-color: adjust-color($btn-main-color, $red: 16, $green: 16, $blue: 16);
     }
 
 }
