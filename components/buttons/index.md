@@ -27,7 +27,7 @@ A més, hem de tenir en compte, independentment de l'opció que hàgim de fer se
 
 * Si el comportament del botó és **obrir o tancar algun element desplegable**, hem d'afegir l'atribut `aria-expanded` que haurà de tenir un valor `false` per defecte i canviar a `true` quan l'element desplegable s'obri. 
 * Si el comportament del botó és del tipus **interruptor** (toggle), aquest haurà de tenir un valor d'`aria-pressed` amb valor `false` per defecte que haurà de canviar a `true`  quan s'activi el botó.
-* Respecte a les **icones** dels botons definits al design system d'AOC, aquestes icones només aporten informació precisament sobre aquests estats que ja estem comunicant amb els atributs d'ARIA o sigui que s'han d'amagar per lector de pantalla. Per fer-ho, s'hauran d'implementar amb CSS o fer servir `aria-hidden="true"` en el cas que estiguin implementats amb HTML.
+* Respecte a les **icones** dels botons definits al design system d'AOC, aquestes icones només aporten informació precisament sobre aquests estats que ja estem comunicant amb els atributs d'ARIA o sigui que s'han d'amagar per lector de pantalla. Per fer-ho, s'hauran d'implementar amb CSS o fer servir `aria-hidden="true"` en el cas que estiguin implementats amb HTML. En el cas d'AOC, com fem servir els Material Icons de Google hauríem de fer servir `aria-hidden="true"` al `<span>` amb la icona que anirà a dintre del botó. Hi ha un mixin (center-btn-icon a _buttons.scss) preparat per centrar la icona amb el text.
 
 ### Botó disabled d'AOC
 

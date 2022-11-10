@@ -6,8 +6,15 @@ html {
     font-size: $font-base-size;
 }
 
+.material-icons {
+    font-size: 0.78rem;
+}
+
+// Just for trying components, will be erased
+
 button.primary {
     @include btn('primary', 'active', 'normal');
+    @include btn-center-icon();
 }
 
 button.secondary {
