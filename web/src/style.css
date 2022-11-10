@@ -1,16 +1,138 @@
 html {
   font-size: 18px; }
 
-button {
+button.primary {
+  padding: 0.5rem 0.8rem;
+  border: none;
   border-radius: 12px;
-  font-size: calc(16px / 18px * 1rem);
+  font-size: calc(18px / 18px * 1rem);
   font-weight: normal;
   font-family: Montserrat;
   letter-spacing: 0px;
   line-height: 1.5;
   background-color: #005CD1;
   color: #FFFFFF; }
-  button:hover {
-    background-color: #106ce1; }
+  button.primary:hover {
+    background-color: rgba(0, 92, 209, 0.85); }
+  button.primary:active {
+    background-color: #0051b8; }
+
+button.secondary {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 12px;
+  font-size: calc(18px / 18px * 1rem);
+  font-weight: normal;
+  font-family: Montserrat;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  background-color: #FFFFFF;
+  color: #1B2124;
+  border: 1px solid #1B2124; }
+  button.secondary:hover {
+    color: #005CD1;
+    border: 1px solid #005CD1; }
+  button.secondary:active {
+    color: #005CD1;
+    border: 1px solid #005CD1;
+    background-color: rgba(0, 92, 209, 0.16); }
+
+button.terciary {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 12px;
+  font-size: calc(18px / 18px * 1rem);
+  font-weight: normal;
+  font-family: Montserrat;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  background-color: #FFFFFF;
+  color: #005CD1; }
+  button.terciary:hover {
+    color: #005CD1;
+    background-color: rgba(0, 92, 209, 0.08); }
+  button.terciary:active {
+    color: #005CD1;
+    border: 1px solid #005CD1;
+    background-color: rgba(0, 92, 209, 0.16); }
+
+button.warning {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 12px;
+  font-size: calc(18px / 18px * 1rem);
+  font-weight: normal;
+  font-family: Montserrat;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  background-color: #DA0250;
+  color: #FFFFFF; }
+  button.warning:hover {
+    color: #FFFFFF;
+    background-color: rgba(218, 2, 80, 0.85); }
+  button.warning:active {
+    color: #FFFFFF;
+    background-color: #c10247; }
+
+button.dark {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 12px;
+  font-size: calc(18px / 18px * 1rem);
+  font-weight: normal;
+  font-family: Montserrat;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  background-color: #FFFFFF;
+  color: #1B2124; }
+  button.dark:hover {
+    background-color: whitesmoke; }
+  button.dark:active {
+    background-color: whitesmoke; }
+
+button.disabled-dark {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 12px;
+  font-size: calc(18px / 18px * 1rem);
+  font-weight: normal;
+  font-family: Montserrat;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  background-color: #E5E6E8;
+  color: #B1B4B6; }
+
+button.disabled {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 12px;
+  font-size: calc(18px / 18px * 1rem);
+  font-weight: normal;
+  font-family: Montserrat;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  background-color: #E5E6E8;
+  color: #B1B4B6; }
+
+button.secondary-dark {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 12px;
+  font-size: calc(18px / 18px * 1rem);
+  font-weight: normal;
+  font-family: Montserrat;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF; }
+  button.secondary-dark:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF; }
+  button.secondary-dark:active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF; }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,34 @@ html {
     font-size: $font-base-size;
 }
 
-button {
-    @include btn('primary', 'active', 'small');
+button.primary {
+    @include btn('primary', 'active', 'normal');
+}
+
+button.secondary {
+    @include btn('secondary', 'active', 'normal');
+}
+
+button.terciary {
+    @include btn('terciary', 'active', 'normal');
+}
+
+button.warning {
+    @include btn('warning', 'active', 'normal');
+}
+
+button.dark {
+    @include btn('primary', 'active', 'normal', 'dark');
+}
+
+button.disabled-dark {
+    @include btn('primary', 'disabled', 'normal', 'dark');
+}
+
+button.disabled {
+    @include btn('primary', 'disabled', 'normal', 'light');
+}
+
+button.secondary-dark {
+    @include btn('secondary', 'active', 'normal', 'dark');
 }
