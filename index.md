@@ -3,7 +3,7 @@
 ## Llistat de components
 
 * [Encapçalaments](./components/headings/)
-* [Botons](./components/headings/)
+* [Botons](./components/buttons/)
 
 ## Exemples dels components amb estils
 
