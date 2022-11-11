@@ -31,7 +31,8 @@ En aquest exemple l'estructura d'encapçalaments seria la següent:
     <img src="logo.png" alt="">
 </a>
 ```
-- Els encapçalaments:
+- Els encapçalaments:  
+
 ```html
 <h1>Notificacions electròniques</h1>
 <h2>Notificacions i altres comunicacions amb les Administracions Públiques Catalanes</h2>
