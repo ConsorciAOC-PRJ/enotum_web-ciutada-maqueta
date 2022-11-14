@@ -1,5 +1,14 @@
-@mixin font($size, $weight: normal, $font-family: Montserrat) {
-    font-size: calc(#{$size} / #{$font-base-size} * 1rem);
+// Really useful functions to convert from pixels to rems from https://medium.com/@bhargav3shah/scss-convert-pixel-values-to-rem-using-functions-f1cef575edfd
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function rem($pxValue) {
+  @return #{stripUnit($pxValue) / stripUnit($font-base-size)}rem;
+}
+
+@mixin font($size, $weight: normal) {
+    font-size: rem($size);
     font-weight: $weight;
     font-family: $font-family;
     letter-spacing: 0px;
