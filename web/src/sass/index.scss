@@ -1,9 +1,13 @@
 @import './vars/vars.scss';
+
 @import './mixins/fonts.scss';
 @import './mixins/buttons.scss';
 
+@import './components/dropdowns.scss';
+
 html {
     font-size: $font-base-size;
+    font-family: $font-family;
 }
 
 .material-icons {

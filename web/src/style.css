@@ -1,5 +1,57 @@
+.dropdown {
+  position: relative;
+  display: inline-block; }
+  .dropdown .dropdown-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    gap: 0;
+    padding-left: 15px;
+    border-left: 1px solid #E5E6E8; }
+    .dropdown .dropdown-button button {
+      font-size: 0.88889rem;
+      font-weight: normal;
+      font-family: "Inter", sans-serif;
+      letter-spacing: 0px;
+      line-height: 1.5;
+      border: none;
+      background-color: transparent; }
+      .dropdown .dropdown-button button:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  border: 2px solid #1B2124;
+  z-index: 1; }
+  .dropdown-content ul {
+    list-style-type: none;
+    padding: 0; }
+  .dropdown-content a {
+    font-size: 0.88889rem;
+    font-weight: normal;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0px;
+    line-height: 1.5;
+    color: #1B2124;
+    text-decoration: none;
+    padding: 0.2rem 2rem 0.2rem 0.8rem;
+    display: block;
+    text-align: left; }
+    .dropdown-content a.active {
+      color: #005CD1;
+      text-decoration: underline; }
+
+.show {
+  display: block; }
+
 html {
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: "Inter", sans-serif; }
 
 .material-icons {
   font-size: 0.78rem; }
@@ -8,9 +60,9 @@ button.primary {
   padding: 0.5rem 0.8rem;
   border: none;
   border-radius: 12px;
-  font-size: calc(18px / 18px * 1rem);
+  font-size: 1rem;
   font-weight: normal;
-  font-family: Montserrat;
+  font-family: "Inter", sans-serif;
   letter-spacing: 0px;
   line-height: 1.5;
   background-color: #005CD1;
@@ -29,9 +81,9 @@ button.secondary {
   padding: 0.5rem 0.8rem;
   border: none;
   border-radius: 12px;
-  font-size: calc(18px / 18px * 1rem);
+  font-size: 1rem;
   font-weight: normal;
-  font-family: Montserrat;
+  font-family: "Inter", sans-serif;
   letter-spacing: 0px;
   line-height: 1.5;
   background-color: #FFFFFF;
@@ -49,9 +101,9 @@ button.terciary {
   padding: 0.5rem 0.8rem;
   border: none;
   border-radius: 12px;
-  font-size: calc(18px / 18px * 1rem);
+  font-size: 1rem;
   font-weight: normal;
-  font-family: Montserrat;
+  font-family: "Inter", sans-serif;
   letter-spacing: 0px;
   line-height: 1.5;
   background-color: #FFFFFF;
@@ -68,9 +120,9 @@ button.warning {
   padding: 0.5rem 0.8rem;
   border: none;
   border-radius: 12px;
-  font-size: calc(18px / 18px * 1rem);
+  font-size: 1rem;
   font-weight: normal;
-  font-family: Montserrat;
+  font-family: "Inter", sans-serif;
   letter-spacing: 0px;
   line-height: 1.5;
   background-color: #DA0250;
@@ -86,9 +138,9 @@ button.dark {
   padding: 0.5rem 0.8rem;
   border: none;
   border-radius: 12px;
-  font-size: calc(18px / 18px * 1rem);
+  font-size: 1rem;
   font-weight: normal;
-  font-family: Montserrat;
+  font-family: "Inter", sans-serif;
   letter-spacing: 0px;
   line-height: 1.5;
   background-color: #FFFFFF;
@@ -102,9 +154,9 @@ button.disabled-dark {
   padding: 0.5rem 0.8rem;
   border: none;
   border-radius: 12px;
-  font-size: calc(18px / 18px * 1rem);
+  font-size: 1rem;
   font-weight: normal;
-  font-family: Montserrat;
+  font-family: "Inter", sans-serif;
   letter-spacing: 0px;
   line-height: 1.5;
   background-color: #E5E6E8;
@@ -114,9 +166,9 @@ button.disabled {
   padding: 0.5rem 0.8rem;
   border: none;
   border-radius: 12px;
-  font-size: calc(18px / 18px * 1rem);
+  font-size: 1rem;
   font-weight: normal;
-  font-family: Montserrat;
+  font-family: "Inter", sans-serif;
   letter-spacing: 0px;
   line-height: 1.5;
   background-color: #E5E6E8;
@@ -126,9 +178,9 @@ button.secondary-dark {
   padding: 0.5rem 0.8rem;
   border: none;
   border-radius: 12px;
-  font-size: calc(18px / 18px * 1rem);
+  font-size: 1rem;
   font-weight: normal;
-  font-family: Montserrat;
+  font-family: "Inter", sans-serif;
   letter-spacing: 0px;
   line-height: 1.5;
   background-color: transparent;
