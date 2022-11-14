@@ -6,9 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-    <h1>Maqueta del web</h1>
+    <header>
+        <button aria-label="Obrir menú" aria-expanded="false">
+            <span class="material-icons" aria-hidden="true">menu</span>
+        </button>
+        <!-- <img>Logo -->
+        <p>Seu electrónica</p>
+        <button>
+            <span class="material-icons" aria-hidden="true">account_circle</span>
+            <span>El meu espai</span>
+        </button>
+        <!-- Selector d'idioma -->
+        <div class="dropdown">
+            <div class="dropdown-button">
+                <span class="material-icons" aria-hidden="true">language</span>
+                <button class="dropbtn" aria-expanded="false" aria-label="Català (Selecció d'idioma)">Català</button>
+                <span class="material-icons" aria-hidden="true">arrow_drop_down</span>
+            </div>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="?/ca" class="active" aria-current="true">Català</a></li>
+                    <li><a href="?/es" lang="es" class="" aria-current="false">Castellà</a></li>
+                </ul>
+            </div>
+          </div>
+    </header>
+    <script src="src/js/dropdowns.js"></script>
 </body>
 </html>
