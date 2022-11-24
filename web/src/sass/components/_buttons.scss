@@ -1,0 +1,32 @@
+button.primary {
+    @include btn('primary', 'active', 'normal');
+    @include btn-center-icon();
+}
+
+button.secondary {
+    @include btn('secondary', 'active', 'normal');
+}
+
+button.terciary {
+    @include btn('terciary', 'active', 'normal');
+}
+
+button.warning {
+    @include btn('warning', 'active', 'normal');
+}
+
+button.dark {
+    @include btn('primary', 'active', 'normal', 'dark');
+}
+
+button.disabled-dark {
+    @include btn('primary', 'disabled', 'normal', 'dark');
+}
+
+button.disabled {
+    @include btn('primary', 'disabled', 'normal', 'light');
+}
+
+button.secondary-dark {
+    @include btn('secondary', 'active', 'normal', 'dark');
+}

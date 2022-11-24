@@ -9,34 +9,109 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
     <header>
-        <button aria-label="Obrir menú" aria-expanded="false">
-            <span class="material-icons" aria-hidden="true">menu</span>
-        </button>
-        <!-- <img>Logo -->
-        <p>Seu electrónica</p>
-        <button>
-            <span class="material-icons" aria-hidden="true">account_circle</span>
-            <span>El meu espai</span>
-        </button>
-        <!-- Selector d'idioma -->
-        <div class="dropdown">
-            <div class="dropdown-button">
-                <span class="material-icons" aria-hidden="true">language</span>
-                <button class="dropbtn" aria-expanded="false" aria-label="Català (Selecció d'idioma)">Català</button>
-                <span class="material-icons" aria-hidden="true">arrow_drop_down</span>
+        <div class="container-fluid">
+            <div class="row justify-content-between g-0">
+                <div class="col-12 col-sm-3" style="display:flex">
+                    <a href="#" aria-label="Ajuntament de Badalona, ves a l'inici">
+                        <img src="assets/logo.png" alt="">
+                    </a>
+                    <p>Seu electrónica</p>
+                </div>
+                <div class="col-12 col-sm-2">
+                    <div class="dropdown">
+                        <div class="dropdown-button">
+                            <span class="material-icons" aria-hidden="true">language</span>
+                            <button class="dropbtn" aria-expanded="false" aria-label="Català (Selecció d'idioma)">Català</button>
+                            <span class="material-icons" aria-hidden="true">arrow_drop_down</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="?/ca" class="active" aria-current="true">Català</a></li>
+                                <li><a href="?/es" class="" aria-current="false">Castellà</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <div>
             </div>
-            <div class="dropdown-content">
-                <ul>
-                    <li><a href="?/ca" class="active" aria-current="true">Català</a></li>
-                    <li><a href="?/es" class="" aria-current="false">Castellà</a></li>
-                </ul>
-            </div>
-          </div>
+        </div>
     </header>
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md">
+                <h1>Notificacions electròniques</h1>
+                <p>Notificacions i altres comunicacions amb les Administracions Públiques Catalanes</p>
+                <p>El servei de notificacions electròniques facilita als ciutadans i empreses l'accés a les seves notificacions i comunicacions emeses pels diferents organismes públics adherits.</p>
+            </div>
+            <div class="col-md">
+                <h2>Identifica't per veure les notificacions</h2>
+                <p>Accedeix amb una identitat digital reconeguda si en disposes d'una, o accedeix sense identitat digital per a un accés temporal.</p>
+                <button class="primary">Accedir amb identitat digital</button>
+            </div>
+        </div>
+        <div class="row g-0 align-items-center">
+            <div class="col-md">
+                <img class="img-fluid" src="assets/notificacio-segura.png" alt="">
+            </div>
+            <div class="col-md">
+                <h2>Notificació electrònica segura i amb garantia legal</h2>
+                <p>La notificació electrònica és una comunicació de l'administració amb totes les garanties legals. Estan disponibles a través d'una plataforma digital i substitueix les notificacions en paper que fins ara s'enviaven per correu postal.</p>
+            </div>
+        </div>
+        <div class="row g-0 align-items-center">
+            <div class="col-md">
+                <h2>Accés àgil des de correu electrònic o SMS</h2>
+                <p>Cada vegada que tinguis una notificació nova, rebràs un avís per correu electrònic o SMS al teu telèfon mòbil. Podràs accedir-hi a través de l'enllàç que se't proporcionarà o a través del teu espai personal de la seu electrònica corresponent.</p>
+            </div>
+            <div class="col-md">
+                <img class="img-fluid" src="assets/acces-agil.png" alt="">
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-12">
+                <h2>Com identificar-te per obrir una notificació</h2>
+            </div>
+            <div class="col-sm">
+                <img src="assets/icon-idcat-mobil.png" alt="">
+                <h3>IdCAT Mòbil</h3>
+                <p>La forma segura, fàcil i àgil d'identificar-vos per Internet, que es basa en el lliurament d'un codi d'un sol ús al telèfon mòbil.</p>
+            </div>
+            <div class="col-sm">
+                <img src="assets/icon-certificat-digital.png" alt="">
+                <h3>Certificat digital</h3>
+                <p>Document electrònic d'identificació que pot estar instal·lat en l'ordinador (Ex: iDCAT Certificat) o en una targeta física (Ex: DNIe).</p>
+            </div>
+            <div class="col-sm">
+                <img src="assets/icon-codi.png" alt="">
+                <h3>Codi d'un sòl ús</h3>
+                <p>Només has de disposar d'una adreça de correu electrònic o telèfon mòbil on rebre aquest codi. Es pot fer servir des de qualsevol navegador.</p>
+            </div>
+            <div class="col-12">
+                <p>També pots utilitzar altres certificats de prestadors qualificats a l'estat espanyol, així com certificats estrangers validats.</p>
+            </div>
+        </div>
+        <div class="row g-0 align-items-center">
+            <div class="col-md">
+                <img class="img-fluid" src="assets/acces-notificacio.png" alt="">
+            </div>
+            <div class="col-md">
+                <h2>Com funciona l'accés a la notificació</h2>
+                <p>La notificació s'entendrà com llegida, i per tant oberta, si s'hi accedeix abans de 10 dies naturals des de que va ser entregada a la persona interessada o al seu representant. En aquest cas es tindrà dret a interposar un recurs o al·legació si no s'está conforme.</p>
+                <p>Si no s'hi accedeix dins aquest termini la notificació s'entendrà com a vençuda i l'administració continuarà amb el procediment corresponent.</p>
+            </div>
+        </div>
+        <div class="row g-0 justify-content-center">
+            <div class="col-12">
+                <h2>Les teves notificacions en un mateix lloc</h2>
+                <p>Ara pots veure les notificacions electròniques de totes les administracions públiques catalanes, així com també  de la Generalitat de Catalunya en un mateix lloc</p>
+                <button class="secondary">Veure administracions adherides</button>
+            </div>
+        </div>
+    </div>
     <script src="src/js/dropdowns.js"></script>
 </body>
 </html>
