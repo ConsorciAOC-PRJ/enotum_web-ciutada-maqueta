@@ -1,0 +1,22 @@
+header {
+
+    .logo-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        p {
+            border-left: 1px solid $grey-03;
+            padding-left: 0.5rem;
+        }
+
+        a {
+            padding-right: 0.5rem;
+        }
+    }
+
+    .dropdown-column {
+        display: flex;
+        justify-content: right;
+    }
+}

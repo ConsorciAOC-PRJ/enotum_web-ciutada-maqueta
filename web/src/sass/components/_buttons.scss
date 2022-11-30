@@ -1,10 +1,24 @@
 button.primary {
     @include btn('primary', 'active', 'normal');
+    @include font(16px);
+    width: 100%;
     @include btn-center-icon();
+
+    @media(min-width: $screen-md) {
+        @include btn('primary', 'active', 'normal');
+        width: initial;
+    }
 }
 
 button.secondary {
     @include btn('secondary', 'active', 'normal');
+    @include font(16px);
+    width: 100%;
+
+    @media(min-width: $screen-md) {
+        @include btn('secondary', 'active', 'normal');
+        width: initial;
+    }
 }
 
 button.terciary {

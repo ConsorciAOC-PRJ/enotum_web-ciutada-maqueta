@@ -1,0 +1,109 @@
+footer {
+    background-color: $grey-04;
+    padding: rem(60px) 0rem;
+
+    .features-row {
+        border-bottom: 4px solid $black;
+        padding-bottom: 2rem;
+
+        .feature-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: rem(25px);
+            padding: 0rem 1.5rem;
+            
+            @media (min-width: $screen-md) {
+                border-right: 1px solid $grey-03;
+            }
+
+            // h2 {
+            //     @include font(18px, bold);
+
+            //     @media (min-width: $screen-md) {
+            //         @include font(20px, bold);
+            //     }
+            // }
+
+            // p {
+            //     @include font(16px);
+            //     color: $grey-01;
+            // }
+
+            .material-icons-outlined {
+                font-size: rem(40px);
+                margin-top: rem(22px);
+            }
+        }
+
+       .col-md:last-child .feature-container {
+            border: none;
+       }
+    }
+
+    .links-row {
+        margin-top: 2rem;
+        padding: 0rem 2rem;
+
+        @media (min-width: $screen-md) {
+            padding: 0;
+        }
+
+        .links-heading {
+            @include font(16px, bold); 
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            a {
+                @include font(14px);
+                color: $grey-01;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .time-row {
+        margin-top: 2rem;
+        border-bottom: 1px solid $grey-02;
+
+        // p {
+        //     @include font(14px);
+        //     color: $grey-01;
+        // }
+    }
+
+    .logos-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        @media (min-width: $screen-md) {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .credits-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+
+            @media (min-width: $screen-md) {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            // p, a {
+            //     @include font(14px);
+            //     color: $grey-01;
+            // }
+        }
+    }
+}
