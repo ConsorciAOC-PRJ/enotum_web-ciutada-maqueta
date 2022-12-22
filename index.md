@@ -18,5 +18,5 @@
 * [Filters](./web/components-sample/filters.html)
 
 ## Maqueta del web
-[Accés a la maqueta del web (Pàgina d'inici)](./web/index.html)
-[Accés a la maqueta del web (Bùstia de notificacions)](./web/pages/postbox.html)
+* [Accés a la maqueta del web (Pàgina d'inici)](./web/index.html)
+* [Accés a la maqueta del web (Bùstia de notificacions)](./web/pages/postbox.html)
