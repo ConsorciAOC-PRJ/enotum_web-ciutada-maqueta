@@ -6775,6 +6775,9 @@ input[type=radio]:focus-visible + label {
   font-size: 1.2rem;
 }
 
+header {
+  border-bottom: 4px solid #1B2124;
+}
 header .logo-container {
   display: flex;
   justify-content: flex-start;
