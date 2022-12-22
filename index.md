@@ -14,7 +14,6 @@
 * [Botons](./web/components-sample/buttons.html)
 * [Dropdowns](./web/components-sample/dropdowns.html)
 * [Accordion](./web/components-sample/accordions.html)
-
 * [Filters](./web/components-sample/filters.html)
 
 ## Maqueta del web
