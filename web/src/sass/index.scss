@@ -2,6 +2,7 @@
 
 @import './mixins/fonts.scss';
 @import './mixins/buttons.scss';
+@import './mixins/filters.scss';
 
 // Custom.scss
 // Option B: Include parts of Bootstrap
@@ -36,10 +37,15 @@
 // 8. Add additional custom code here
 @import './base.scss';
 
+@import './components/fonts.scss';
 @import './components/dropdowns.scss';
 @import './components/buttons.scss';
+@import './components/filters.scss';
+@import './components/radio_buttons.scss';
 @import './components/accordions.scss';
+@import './components/search_bar.scss';
 @import './components/header';
 @import './components/footer';
 
 @import './pages/home';
+@import './pages/postbox';

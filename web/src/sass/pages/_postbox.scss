@@ -1,0 +1,41 @@
+.postbox {
+    .intro-col {
+        padding-bottom: 2rem;
+    }
+
+    .filters-col {
+        padding-top: 2rem;
+    }
+
+    .results-container {
+        border-top: 1px solid $grey-03;
+        border-bottom: 1px solid $grey-03;
+        margin: 1rem 0rem;
+    }
+
+    .logo-icon {
+        display: flex;
+        justify-content: center;
+        
+        img {
+            max-width: 40%;
+        }
+    }
+
+    .post-container {
+        margin-bottom: 1rem;
+    }
+
+    .post {
+        border-bottom: 1px solid $grey-03;
+
+        h2 {
+            margin: 0;
+        }
+        .post-row-1, .post-row-2 {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+}

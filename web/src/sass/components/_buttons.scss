@@ -1,8 +1,13 @@
-button.primary {
+// #region Primary button
+
+// Normal size
+button.primary, a.primary {
     @include btn('primary', 'active', 'normal');
     @include font(16px);
     width: 100%;
-    @include btn-center-icon();
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
 
     @media(min-width: $screen-md) {
         @include btn('primary', 'active', 'normal');
@@ -10,10 +15,92 @@ button.primary {
     }
 }
 
-button.secondary {
+// Radius variations
+button.primary-rm, a.primary-rm {
+    @include btn('primary', 'active', 'normal', 'light', 'medium');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    @media(min-width: $screen-md) {
+        @include btn('primary', 'active', 'normal', 'light', 'medium');
+        width: initial;
+    }
+}
+
+button.primary-rs, a.primary-rs {
+    @include btn('primary', 'active', 'normal', 'light', 'small');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    @media(min-width: $screen-md) {
+        @include btn('primary', 'active', 'normal', 'light', 'small');
+        width: initial;
+    }
+}
+
+// Small size
+button.primary-s, a.primary-s {
+    @include btn('primary', 'active', 'small');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    @media(min-width: $screen-md) {
+        @include btn('primary', 'active', 'small');
+        width: initial;
+    }
+}
+
+// Radius variations
+
+button.primary-s-rm, a.primary-s-rm {
+    @include btn('primary', 'active', 'small', 'light', 'medium');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    @media(min-width: $screen-md) {
+        @include btn('primary', 'active', 'small', 'light', 'medium');
+        width: initial;
+    }
+}
+
+button.primary-s-rs, a.primary-s-rs {
+    @include btn('primary', 'active', 'small', 'light', 'small');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    @media(min-width: $screen-md) {
+        @include btn('primary', 'active', 'small', 'light', 'small');
+        width: initial;
+    }
+}
+
+// #endregion
+
+// #region Secondary button
+
+// Normal size
+button.secondary, a.secondary {
     @include btn('secondary', 'active', 'normal');
     @include font(16px);
     width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
 
     @media(min-width: $screen-md) {
         @include btn('secondary', 'active', 'normal');
@@ -21,26 +108,210 @@ button.secondary {
     }
 }
 
-button.terciary {
+// Radius variations
+button.secondary-rm, a.secondary-rm {
+    @include btn('secondary', 'active', 'normal', 'light', 'medium');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    @media(min-width: $screen-md) {
+        @include btn('secondary', 'active', 'normal', 'light', 'medium');
+        width: initial;
+    }
+}
+
+button.secondary-rs, a.secondary-rs {
+    @include btn('secondary', 'active', 'normal', 'light', 'small');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    @media(min-width: $screen-md) {
+        @include btn('secondary', 'active', 'normal', 'light', 'small');
+        width: initial;
+    }
+}
+
+// Small size
+button.secondary-s, a.secondary-s {
+    @include btn('secondary', 'active', 'small');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    @media(min-width: $screen-md) {
+        @include btn('secondary', 'active', 'small');
+        width: initial;
+    }
+}
+
+// Radius variations
+button.secondary-s-rm, a.secondary-s-rm {
+    @include btn('secondary', 'active', 'normal', 'light', 'medium');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    @media(min-width: $screen-md) {
+        @include btn('secondary', 'active', 'normal', 'light', 'medium');
+        width: initial;
+    }
+}
+
+button.secondary-s-rs, a.secondary-s-rs {
+    @include btn('secondary', 'active', 'normal', 'light', 'small');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    @media(min-width: $screen-md) {
+        @include btn('secondary', 'active', 'normal', 'light', 'small');
+        width: initial;
+    }
+}
+
+// #endregion
+
+// #region Terciary button
+
+//Normal size
+button.terciary, a.terciary {
     @include btn('terciary', 'active', 'normal');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    @media(min-width: $screen-md) {
+        @include btn('terciary', 'active', 'normal');
+        width: initial;
+    }
 }
 
-button.warning {
+// Radius variations
+button.terciary-rm, a.terciary-rm {
+    @include btn('terciary', 'active', 'normal', 'light', 'medium');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    @media(min-width: $screen-md) {
+        @include btn('terciary', 'active', 'normal');
+        width: initial;
+    }
+}
+
+button.terciary-rs, a.terciary-rs {
+    @include btn('terciary', 'active', 'normal', 'light', 'small');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+
+    @media(min-width: $screen-md) {
+        @include btn('terciary', 'active', 'small');
+        width: initial;
+    }
+}
+
+// Small size
+button.terciary-s, a.terciary-s {
+    @include btn('terciary', 'active', 'small');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    
+
+    @media(min-width: $screen-md) {
+        @include btn('terciary', 'active', 'small');
+        width: initial;
+    }
+}
+
+//Radius variations
+button.terciary-s-rm, a.terciary-s-rm {
+    @include btn('terciary', 'active', 'small', 'light', 'medium');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    
+
+    @media(min-width: $screen-md) {
+        @include btn('terciary', 'active', 'small', 'light', 'medium');
+        width: initial;
+    }
+}
+
+button.terciary-s-rs, a.terciary-s-rs {
+    @include btn('terciary', 'active', 'small', 'light', 'small');
+    @include font(16px);
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    
+
+    @media(min-width: $screen-md) {
+        @include btn('terciary', 'active', 'small', 'light', 'small');
+        width: initial;
+    }
+}
+
+
+// #endregion
+
+//TODO: Decide and implement all the variations for this "special" buttons
+
+button.warning, a.warning {
     @include btn('warning', 'active', 'normal');
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
 }
 
-button.dark {
+button.dark, a.dark {
     @include btn('primary', 'active', 'normal', 'dark');
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
 }
 
-button.disabled-dark {
+button.disabled-dark, a.disabled-dark {
     @include btn('primary', 'disabled', 'normal', 'dark');
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
 }
 
-button.disabled {
+button.disabled, a.disabled {
     @include btn('primary', 'disabled', 'normal', 'light');
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
 }
 
-button.secondary-dark {
+button.secondary-dark, a.secondary-dark {
     @include btn('secondary', 'active', 'normal', 'dark');
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
 }

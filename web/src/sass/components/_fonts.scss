@@ -1,0 +1,142 @@
+// #region Headings
+
+h1, h2, h3, h4, h5, h6 {
+    color: $font-dark;
+}
+
+.title-xl {
+    @include font(36px, bold, 40px);
+
+    @media (min-width: $screen-md) {
+        @include font(48px, bold, 52px);
+    }
+
+    @media (min-width: $screen-lg) {
+        @include font(56px, bold, 68px);
+    }    
+}
+
+.title-l {
+    @include font(24px, bold, 32px);
+
+    @media (min-width: $screen-md) {
+        @include font(36px, bold, 40px);
+    }
+
+    @media (min-width: $screen-lg) {
+        @include font(48px, bold, 52px);
+    }
+}
+
+.title-m {
+    @include font(24px, bold, 32px);
+
+    @media (min-width: $screen-md) {
+        @include font(36px, bold, 40px);
+    }
+
+    @media (min-width: $screen-lg) {
+        @include font(36px, bold, 40px);
+    }
+}
+
+.title-s {
+    @include font(18px, bold, 24px);
+
+    @media (min-width: $screen-md) {
+        @include font(24px, bold, 32px);
+    }
+
+    @media (min-width: $screen-lg) {
+        @include font(24px, bold, 32px);
+    }
+}
+
+.title-xs {
+    @include font(18px, bold, 24px);
+
+    @media (min-width: $screen-md) {
+        @include font(18px, bold, 24px);
+    }
+
+    @media (min-width: $screen-lg) {
+        @include font(18px, bold, 24px);
+    }
+}
+
+// #endregion Headings
+
+// #region Body
+p {
+    color: $font-light;
+}
+
+.text-p-24 {
+    @include font(18px, normal, 28px);
+
+    @media (min-width: $screen-md) {
+        @include font(24px, normal, 28px);
+    }
+
+    @media (min-width: $screen-lg) {
+        @include font(24px, normal, 32px);
+    }
+}
+
+.text-p-18 {
+    @include font(16px, normal, 24px);
+
+    @media (min-width: $screen-md) {
+        @include font(18px, normal, 28px);
+    }
+
+    @media (min-width: $screen-lg) {
+        @include font(18px, normal, 28px);
+    }
+}
+
+.text-p-16 {
+    @include font(16px, normal, 24px);
+
+    @media (min-width: $screen-md) {
+        @include font(16px, normal, 24px);
+    }
+
+    @media (min-width: $screen-lg) {
+        @include font(16px, normal, 24px);
+    }
+}
+
+.text-p-14 {
+    @include font(14px, normal, 20px);
+
+    @media (min-width: $screen-md) {
+        @include font(14px, normal, 20px);
+    }
+
+    @media (min-width: $screen-lg) {
+        @include font(14px, normal, 20px);
+    }
+}
+
+.p-semibold {
+    font-weight: 600;
+}
+
+.p-dark {
+    color: $font-dark;
+}
+
+.p-white {
+    color: $white;
+}
+
+// #endregion
+
+a {
+    color: $font-main-color;
+}
+
+.link-grey {
+    color: $grey-01;
+}

@@ -3,14 +3,6 @@
     .first-banner {
         background-color: $grey-04;
 
-        button {
-            margin-bottom: 1rem;
-        }
-
-        a {
-            color: $primary-color-main;
-        }
-
         .column-1 {
             @media (min-width: $screen-md) {
                 border-right: 1px solid $grey-03;
@@ -35,10 +27,6 @@
 
     h3 {
         margin: 0;
-    }
-
-    a {
-        color: $grey-01;
     }
 
     .steps {
@@ -80,9 +68,5 @@
 
     .access-banner {
         padding-top: 6rem;
-
-        button {
-            margin-bottom: 1rem;
-        }
     }
 }

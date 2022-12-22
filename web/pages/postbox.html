@@ -19,7 +19,7 @@
                     <a href="#" aria-label="Ajuntament de Badalona, ves a l'inici">
                         <img src="assets/logo.png" alt="">
                     </a>
-                    <p class="text-p-18-grey">Seu electrónica</p>
+                    <p class="text-p-18">Seu electrónica</p>
                 </div>
                 <div class="col-12 col-sm-2 dropdown-column">
                     <div class="dropdown">
@@ -41,16 +41,147 @@
     </header>
     <div class="container g-0">
         <div class="row g-0">
-            <div class="col-12">
-                <h1 class="h-size-1">Bùstia de notificacions</h1>
+            <div class="col-12 intro-col">
+                <h1 class="title-l">Bùstia de notificacions</h1>
                 <p class="text-p-24">Notificacions electròniques i altres comunicacions de les Administracions Públiques Catalanes</p>
                 <a href="#">Saber-ne més</a>
             </div>
         </div>
         <div class="row g-0">
-            <div class="col-12">
-                <input type="text" placeholder="Buscar per nom o número d'expedient">
+            <div class="col-6">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar per nom o número d'expedient">
+                    <button>
+                        <span class="sr-only">Cerca</span>
+                        <span class="material-icons" aria-hidden="true">search</span>
+                    </button>
+                </div>
             </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-12 filters-col">
+                <div class="filter-container">
+                    <button class="btn-filter" aria-expanded="false">
+                        <span>Filter</span>
+                        <span class="material-icons filter-icon" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="filter-content">
+                        <div class="filter-header">
+                            <h2 class="title-xs">Emissor</h2>
+                            <button class="text-p-16 link-grey btn-filter-rmv">Restaurar</button>
+                        </div>
+                        <div class="filter-main">
+                            <div class="search-bar">
+                                <input type="text" placeholder="Cercar emissor">
+                                <button>
+                                    <span class="sr-only">Cerca</span>
+                                    <span class="material-icons" aria-hidden="true">search</span>
+                                </button>
+                            </div>
+                            <ul class="custom-rb-container">
+                                <li>
+                                    <input type="radio" id="tots" value="Tots" name="emissor">
+                                    <label for="tots" class="custom-rb-label">
+                                        <span class="material-icons custom-rb" aria-hidden="true">radio_button_checked</span>
+                                        <span class="text-p-16 p-dark">Altres no relacionats</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-footer">
+                            <button class="terciary-s">Cancel·lar</button>
+                            <button class="primary-s-rm">Mostrar resultats</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-container">
+                    <button class="btn-filter" aria-expanded="false">
+                        <span>Filter</span>
+                        <span class="material-icons filter-icon" aria-hidden="true">expand_more</span>
+                    </button>
+                    <div class="filter-content">
+                        <div class="filter-header">
+                            <h2 class="title-xs">Emissor</h2>
+                            <button class="text-p-16 link-grey btn-filter-rmv">Restaurar</button>
+                        </div>
+                        <div class="filter-main">
+                            <div class="search-bar">
+                                <input type="text" placeholder="Cercar emissor">
+                                <button>
+                                    <span class="sr-only">Cerca</span>
+                                    <span class="material-icons" aria-hidden="true">search</span>
+                                </button>
+                            </div>
+                            <ul class="custom-rb-container">
+                                <li>
+                                    <input type="radio" id="tots" value="Tots" name="emissor">
+                                    <label for="tots" class="custom-rb-label">
+                                        <span class="material-icons custom-rb" aria-hidden="true">radio_button_checked</span>
+                                        <span class="text-p-16 p-dark">Altres no relacionats</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-footer">
+                            <button class="terciary-s">Cancel·lar</button>
+                            <button class="primary-s-rm">Mostrar resultats</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0 justify-content-between align-items-center results-container">
+            <div class="col-2">
+                <p class="text-p-16">26 enviaments</p>
+            </div>
+            <div class="col-2">
+                <p class="text-p-16">Ordenar per</p>
+            </div>
+        </div>
+        <div class="row g-0 align-items-center post-container">
+            <div class="col-1 logo-icon">
+                <img src="../assets/logo-icon.png" alt="Ajuntament de Badalona">
+            </div>
+            <article class="post col">
+                <div class="post-row-1">
+                    <h2 class="text-p-18 p-semibold">Notificació Resolució 806/2019 (Reclamació 787/2019)</h2>
+                    <span class="text-p-14 p-dark">En termini</span>
+                </div>
+                <div class="post-row-2">
+                    <p class="text-p-14">Aj. de Badalona · Expedient 34234/2021</p>
+                    <p class="text-p-14">10/11/21 · Venç el 20/11/21</p>
+                </div>
+            </article>
+        </div>
+        <div class="row g-0 align-items-center post-container">
+            <div class="col-1 logo-icon">
+                <img src="../assets/logo-icon.png" alt="Ajuntament de Badalona">
+            </div>
+            <article class="post col">
+                <div class="post-row-1">
+                    <h2 class="text-p-18 p-semibold">Notificació Resolució 806/2019 (Reclamació 787/2019)</h2>
+                    <span class="text-p-14 p-dark">En termini</span>
+                </div>
+                <div class="post-row-2">
+                    <p class="text-p-14">Aj. de Badalona · Expedient 34234/2021</p>
+                    <p class="text-p-14">10/11/21 · Venç el 20/11/21</p>
+                </div>
+            </article>
+        </div>
+        <div class="row g-0 align-items-center post-container">
+            <div class="col-1 logo-icon">
+                <img src="../assets/logo-icon.png" alt="Ajuntament de Badalona">
+            </div>
+            <article class="post col">
+                <div class="post-row-1">
+                    <h2 class="text-p-18 p-semibold">Notificació Resolució 806/2019 (Reclamació 787/2019)</h2>
+                    <span class="text-p-14 p-dark">En termini</span>
+                </div>
+                <div class="post-row-2">
+                    <p class="text-p-14">Aj. de Badalona · Expedient 34234/2021</p>
+                    <p class="text-p-14">10/11/21 · Venç el 20/11/21</p>
+                </div>
+            </article>
         </div>
     </div>
     <footer class="container-fluid g-0">
@@ -60,8 +191,8 @@
                     <div class="feature-container">
                         <span class="material-icons-outlined" aria-hidden="true">question_answer</span>
                         <div>
-                            <h2 class="h-size-4">Els meus drets</h2>
-                            <p class="text-p-16-grey">Coneix els teus drets quan et relaciones amb l’administració pública (no inclou persones jurídiques)</p>
+                            <h2 class="title-xs">Els meus drets</h2>
+                            <p class="text-p-16">Coneix els teus drets quan et relaciones amb l’administració pública (no inclou persones jurídiques)</p>
                         </div>
                     </div>
                 </div>
@@ -69,8 +200,8 @@
                     <div class="feature-container">
                         <span class="material-icons-outlined" aria-hidden="true">people</span>
                         <div>
-                            <h2 class="h-size-4">Recomanador social</h2>
-                            <p class="text-p-16-grey">Ajuts socials que t’ofereixen les administracions públiques en funció de la teva situació personal i familiar.</p>
+                            <h2 class="title-xs">Recomanador social</h2>
+                            <p class="text-p-16">Ajuts socials que t’ofereixen les administracions públiques en funció de la teva situació personal i familiar.</p>
                         </div>
                     </div>
                 </div>
@@ -78,8 +209,8 @@
                     <div class="feature-container">
                         <span class="material-icons-outlined" aria-hidden="true">record_voice_over</span>
                         <div>
-                            <h2 class="h-size-4">Atenció ciutadana</h2>
-                            <p class="text-p-16-grey">Vegeu les diverses formes de contactar amb l’ajuntament.</p>
+                            <h2 class="title-xs">Atenció ciutadana</h2>
+                            <p class="text-p-16">Vegeu les diverses formes de contactar amb l’ajuntament.</p>
                         </div>
                     </div>
                 </div>
@@ -125,7 +256,7 @@
             </div>
             <div class="row g-0 time-row">
                 <div class="col-md-12">
-                    <p class="text-p-14-grey"><strong>Hora oficial:</strong> 09:55h - 19 novembre 2021</p>
+                    <p class="text-p-14"><strong>Hora oficial:</strong> 09:55h - 19 novembre 2021</p>
                 </div>
             </div>
             <div class="row g-0">
@@ -133,7 +264,7 @@
                     <div class="logos-container">
                         <img src="assets/logo.png" alt="">
                         <div class="credits-container">
-                            <p class="text-p-14-grey">Servei prestat per l’<a href="#">Administració Oberta de Catalunya</a></p>
+                            <p class="text-p-14">Servei prestat per l’<a href="#" class="link-grey">Administració Oberta de Catalunya</a></p>
                             <img src="assets/aoc-logo.png" alt="">
                         </div>
                     </div>
@@ -143,4 +274,5 @@
     </footer>
     <script src="../src/js/dropdowns.js"></script>
     <script src="../src/js/accordions.js"></script>
+    <script src="../src/js/filters.js"></script>
 </body>

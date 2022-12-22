@@ -1,0 +1,52 @@
+.filter-container {
+    position: relative;
+    display: inline-block;
+
+    .btn-filter {
+        @include filter-button;
+    }
+
+    .btn-filter-dark {
+        @include filter-button(dark);
+    }
+
+    .filter-content {
+        display: none;
+        position: absolute;
+        left: 0;
+        padding: 1rem;
+        min-width: rem(300px);
+        background-color: $bg-white;
+        border: 1px solid $grey-03;
+        border-radius: $radius-large;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 25px 35px rgba(0, 0, 0, 0.03);
+        z-index: 1;
+
+        .btn-filter-rmv {
+            background: none;
+            border: none;
+            text-decoration: underline;
+        }
+
+        .filter-header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid $grey-03;
+        }
+
+        .filter-main {
+            border-bottom: 1px solid $grey-03;
+            padding-top: 0.8rem;
+        }
+
+        .filter-footer {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 0.8rem;
+        }
+    }
+
+    .show {
+        display: block;
+    }
+}

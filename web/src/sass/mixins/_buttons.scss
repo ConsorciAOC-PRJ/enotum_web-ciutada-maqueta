@@ -1,6 +1,7 @@
-@mixin btn($type, $state: active, $btn-size: normal, $color-mode: light) {
+@mixin btn($type, $state: active, $btn-size: normal, $color-mode: light, $btn-radius: large) {
     // Size variations
     $btn-font-size: $font-base-size;
+    $border-radius: $radius-large;
 
     @if $btn-size == 'small' {
         $btn-font-size: 16px;
@@ -10,11 +11,21 @@
         $btn-font-size: $font-base-size;
         padding: 0.5rem 0.8rem;
     }
+    
+    // Button radius changes
+    @if $btn-radius == 'medium' {
+        $border-radius: $radius-medium;
+    }
+    @else if $btn-radius == 'small' {
+        $border-radius: $radius-small;
+    }
 
     // General styles
     border: none; // Remove HTML button native border styling
+    background: none; //Remove HTML button native background
     border-radius: $border-radius;
     @include font($btn-font-size);
+    margin-bottom: 0.5rem;
 
     // Button types
     @if $type == 'primary' {
@@ -53,7 +64,6 @@
     @if $type == 'secondary' {
         @if $state == 'active' {
             @if $color-mode == 'light' {
-                background-color: $btn-white;
                 color: $font-dark;
                 border: 1px solid $black;
 
@@ -70,7 +80,6 @@
 
             }
             @else if $color-mode == 'dark' {
-                background-color: transparent;
                 color: $btn-white;
                 border: 1px solid $btn-white;
            

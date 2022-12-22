@@ -1,0 +1,18 @@
+@mixin filter-button($color-mode: light) {
+    // General styles
+    border: none; // Remove HTML button native border styling
+    background: none; // Remove HTML button native background styling
+    border-radius: $radius-full;
+    @include font($font-base-size);
+    padding: 0.5rem 0.8rem;
+    @include btn-center-icon();
+
+    @if $color-mode == 'light' {
+        background-color: $bg-lightgray;
+    }
+    @else if $color-mode == 'dark' {
+        background-color: $bg-dark;
+        color: $white;
+    }
+
+}

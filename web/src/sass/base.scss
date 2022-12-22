@@ -1,6 +1,22 @@
 html {
     font-size: $font-base-size;
     font-family: $font-family;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+//Customizing the browser's native text-selector to match the Design System
+body *::selection {
+    color: $white;
+    background: $primary-color-main; // WebKit/Blink Browsers
+}
+  
+body *::-moz-selection {
+    color: $white;
+    background: $primary-color-main; //Gecko Browsers
 }
 
 .material-icons {
@@ -15,106 +31,13 @@ html {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: $font-dark;
-}
-
-// Styles for the different "sizes" that don't match heading levels
-
-.h-size-0 {
-    @include font(24px, bold);
-
-    @media (min-width: $screen-md) {
-        @include font(56px, bold);
-    }    
-}
-
-.h-size-1 {
-    @include font(24px, bold);
-
-    @media (min-width: $screen-md) {
-        @include font(48px, bold);
-    }
-}
-
-.h-size-2 {
-    @include font(24px, bold);
-
-    @media (min-width: $screen-md) {
-        @include font(36px, bold);
-    }
-}
-
-.h-size-3 {
-    @include font(20px, bold);
-
-    @media (min-width: $screen-md) {
-        @include font(24px, bold);
-    }
-}
-
-.h-size-4 {
-    @include font(18px, bold);
-
-    @media (min-width: $screen-md) {
-        @include font(20px, bold);
-    }
-}
-
-p {
-    @include font(16px);
-    color: $font-dark;
-
-    @media (min-width: $screen-md) {
-        @include font(18px);
-    }
-}
-
-p.text-p-24 {
-    @include font(18px);
-    color: $font-dark;
-
-    @media (min-width: $screen-md) {
-        @include font(24px);
-    }
-}
-
-p.text-p-18-grey {
-    @include font(16px);
-    color: $font-light;
-
-    @media (min-width: $screen-md) {
-        @include font(18px);
-    }
-}
-
-p.text-p-18-white {
-    @include font(16px);
-    color: $font-white;
-
-    @media (min-width: $screen-md) {
-        @include font(18px);
-    }
-}
-
-p.text-p-16-grey {
-    @include font(14px);
-    color: $font-light;
-
-    @media (min-width: $screen-md) {
-        @include font(16px);
-    }
-}
-
-p.text-p-14-grey {
-    @include font(12px);
-    color: $font-light;
-
-    @media (min-width: $screen-md) {
-        @include font(14px);
-    }
-}
-
-a {
-    color: $font-main-color;
-}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }

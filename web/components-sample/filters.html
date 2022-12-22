@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple dropwdowns</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <div class="filter-container">
+        <button class="btn-filter" aria-expanded="false">
+            <span>Filter</span>
+            <span class="material-icons filter-icon" aria-hidden="true">expand_more</span>
+        </button>
+        <div class="filter-content">
+            <div class="filter-header">
+                <h2 class="title-xs">Emissor</h2>
+                <button class="text-p-16 link-grey btn-filter-rmv">Restaurar</button>
+            </div>
+            <div class="filter-main">
+                <div class="search-bar">
+                    <input type="text" placeholder="Cercar emissor">
+                    <button>
+                        <span class="sr-only">Cerca</span>
+                        <span class="material-icons" aria-hidden="true">search</span>
+                    </button>
+                </div>
+                <ul class="custom-rb-container">
+                    <li>
+                        <input type="radio" id="tots" value="Tots" name="emissor">
+                        <label for="tots" class="custom-rb-label">
+                            <span class="material-icons custom-rb" aria-hidden="true">radio_button_checked</span>
+                            <span class="text-p-16 p-dark">Altres no relacionats</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-footer">
+                <button class="terciary-s">Cancel·lar</button>
+                <button class="primary-s-rm">Mostrar resultats</button>
+            </div>
+        </div>
+    </div>
+    <div class="filter-container">
+        <button class="btn-filter-dark">
+            <span class="material-icons" aria-hidden="true">calendar_today</span>
+            <span>Filter</span>
+            <span class="material-icons" aria-hidden="true">expand_more</span>
+        </button>
+    </div>
+    <script src="../src/js/filters.js"></script>
+</body>
+</html>

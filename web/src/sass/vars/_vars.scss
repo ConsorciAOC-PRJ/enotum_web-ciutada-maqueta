@@ -23,6 +23,7 @@ $info: #005CD1;
 // Backgrounds
 $bg-lightgray: $grey-04; 
 $bg-dark: $black;
+$bg-white: $white;
 
 // Fonts
 $font-dark: $black;
@@ -46,7 +47,11 @@ $btn-disabled-gray: #E5E6E8;
 $btn-disabled-gray-font: #B1B4B6;
 
 
-$border-radius: 12px;
+// $border-radius: 12px;
+$radius-large: 12px;
+$radius-medium: 8px;
+$radius-small: 4px;
+$radius-full: 100px;
 
 
 // Breakpoints
