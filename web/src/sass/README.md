@@ -1,4 +1,4 @@
-Command to compile SASS (run it from project root): 
+Command to compile SASS (**run it from project root**): 
 
 ```
 sass --watch web/src/sass/index.scss:web/src/style.css
