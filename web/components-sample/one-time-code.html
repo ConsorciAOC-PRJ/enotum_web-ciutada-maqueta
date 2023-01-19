@@ -12,12 +12,9 @@
     <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
-    <p>Esto es una prueba</p>
-    <a href="#">Enlace de prueba</a>
-    <a href="#">Enlace de prueba</a>
-    <button onclick="modal()">Open modal</button>
-    <div id="login-modal" role="dialog" aria-modal="true" style="display:none;">
-        <button onclick="Oculta2('login-modal')">Close</button>
+    <button id="open-modal" class="open-modal secondary">Accedir sense identitat digital</button>
+    <div id="login-modal" class="login-modal" role="dialog" aria-modal="true" aria-labelledby="open-modal">
+        <button class="close-modal" id="close-modal">Close</button>
         <h1 class="title-m">S’ha enviat un codi</h1>
         <p class="text-p-18">Número: <span class="p-semibold">666 555 444</span></p>
         <form>
@@ -25,56 +22,5 @@
         </form>
     </div>
 </body>
-<script>
-    function Oculta2(md){
-        var x = document.getElementById(md);
-        x.style.display = 'none';
-    }
-
-    function TancarFlotant() {
-        Oculta2('login-modal');
-    }
-
-    function modal() {
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape') {
-                TancarFlotant();
-                console.log("Hello escape");//TODO: only close modal on ESCAPE if it's open, and it happens with all the keyboard events.
-            }
-        })
-
-        // add all the elements inside modal which you want to make focusable
-        const  focusableElements = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
-        const modal = document.querySelector('#login-modal'); // select the modal by it's id
-
-        const firstFocusableElement = modal.querySelectorAll(focusableElements)[0]; // get first element to be focused inside modal
-        const focusableContent = modal.querySelectorAll(focusableElements);
-        const lastFocusableElement = focusableContent[focusableContent.length - 1]; // get last element to be focused inside modal
-
-        modal.style.display = 'block';
-
-        document.addEventListener('keydown', function(e) {
-            let isTabPressed = e.key === 'Tab' || e.keyCode === 9;
-
-            if (!isTabPressed) {
-                return;
-            }
-
-            if (e.shiftKey) { // if shift key pressed for shift + tab combination
-                if (document.activeElement === firstFocusableElement) {
-                    lastFocusableElement.focus(); // add focus for the last focusable element
-                    e.preventDefault();
-                }
-            } else { // if tab key is pressed
-                  if (document.activeElement === lastFocusableElement) { // if focused has reached to last focusable element then focus first focusable element after pressing tab
-                      firstFocusableElement.focus(); // add focus for the first focusable element
-                      e.preventDefault();
-                   }
-                  }
-                });
-
-        firstFocusableElement.focus();
-
-    }
-</script>
+<script src="../src/js/modal-dialogs.js"></script>
 </html>
