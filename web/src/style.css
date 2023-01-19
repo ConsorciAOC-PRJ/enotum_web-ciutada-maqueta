@@ -6775,6 +6775,14 @@ input[type=radio]:focus-visible + label {
   font-size: 1.2rem;
 }
 
+.login-modal {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 header {
   border-bottom: 4px solid #1B2124;
 }
