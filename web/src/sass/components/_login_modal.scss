@@ -1,7 +1,25 @@
 .login-modal {
-    display: none;
+    position: fixed;
+    right: -100px;
+    top: 0;
+    height: 100vh;
+    width: 0px;
+
+    .field-legend {
+        display: flex;
+    }
+
+    fieldset {
+        border: none;
+    }
 }
 
-.show {
-    display: block; 
+.login-modal.show { 
+    right: 0;
+    width: 25vw;
+    -webkit-transition: width 0.3s linear;
+    -moz-transition: width 0.3s linear;
+    -ms-transition: width 0.3s linear;
+    -o-transition: width 0.3s linear;
+    transition: width 0.3s linear;
 }

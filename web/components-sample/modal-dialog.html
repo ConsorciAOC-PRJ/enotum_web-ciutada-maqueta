@@ -15,10 +15,21 @@
     <button id="open-modal" class="open-modal secondary">Accedir sense identitat digital</button>
     <div id="login-modal" class="login-modal" role="dialog" aria-modal="true" aria-labelledby="open-modal">
         <button class="close-modal" id="close-modal">Close</button>
-        <h1 class="title-m">S’ha enviat un codi</h1>
-        <p class="text-p-18">Número: <span class="p-semibold">666 555 444</span></p>
+        <h1 class="title-m">Accés sense identitat digital</h1>
+        <p class="text-p-18">Introdueix les dades adreçades a la notificació</p>
         <form>
-            <input type="text"/>     
+            <fieldset>
+                <div class="field-legend">
+                    <legend>Document identificatiu</legend>
+                    <a href="#">Quin document</a>
+                </div>
+                <label for="select-id" class="sr-only">Tipus de document</label>
+                <select id="select-id">
+                    <option value="vat">VAT</option>
+                </select>
+                <label for="number-id" class="sr-only">Número de document</label>
+                <input type="text" id="number-id">
+            </fieldset>     
         </form>
     </div>
 </body>
