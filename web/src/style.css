@@ -6745,6 +6745,25 @@ input[type=radio]:focus-visible + label {
   display: block;
 }
 
+input.field, select.field {
+  border: 2px solid #1B2124;
+  border-radius: 2px;
+  min-height: 2.5rem;
+}
+
+.select-input {
+  width: 100%;
+  position: relative;
+  padding: 0.5rem 0rem 1rem 0rem;
+}
+.select-input input {
+  width: 100%;
+}
+.select-input select {
+  position: absolute;
+  min-width: 4rem;
+}
+
 .search-bar {
   position: relative;
   display: flex;
@@ -6776,20 +6795,28 @@ input[type=radio]:focus-visible + label {
 }
 
 .login-modal {
-  position: fixed;
-  right: -1000px;
+  position: absolute;
+  right: 0;
   top: 0;
   height: 100vh;
-  width: 30%;
+  width: 0;
   background-color: #FFFFFF;
-  padding: 3rem;
+  overflow-x: hidden;
   z-index: 15;
+}
+@media (min-width: 768px) {
+  .login-modal {
+    position: fixed;
+    width: 0;
+  }
 }
 .login-modal .field-legend {
   display: flex;
+  justify-content: space-between;
 }
 .login-modal fieldset {
   border: none;
+  padding: 0;
 }
 .login-modal .close-modal-container {
   display: flex;
@@ -6820,12 +6847,16 @@ input[type=radio]:focus-visible + label {
 }
 
 .login-modal.show {
-  right: 0;
-  transition: right 0.3s linear;
-  -webkit-transition: right 0.3s linear;
-  -moz-transition: right 0.3s linear;
-  -ms-transition: right 0.3s linear;
-  -o-transition: right 0.3s linear;
+  width: 100%;
+  transition: width 0.3s linear;
+  padding: 1.5rem;
+}
+@media (min-width: 768px) {
+  .login-modal.show {
+    position: absolute;
+    width: 30%;
+    padding: 3rem;
+  }
 }
 
 header {

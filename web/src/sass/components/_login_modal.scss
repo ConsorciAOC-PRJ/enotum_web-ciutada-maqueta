@@ -1,19 +1,26 @@
 .login-modal {
-    position: fixed;
-    right: -1000px;
+    position: absolute;
+    right: 0;
     top: 0;
     height: 100vh;
-    width: 30%;
+    width: 0;
     background-color: $white;
-    padding: 3rem;
+    overflow-x: hidden;
     z-index: 15;
+
+    @media (min-width: $screen-md) {
+        position: fixed;
+        width: 0;
+    }
 
     .field-legend {
         display: flex;
+        justify-content: space-between;
     }
 
     fieldset {
         border: none;
+        padding: 0;
     }
 
     .close-modal-container {
@@ -48,10 +55,13 @@
 }
 
 .login-modal.show { 
-    right: 0;
-    transition: right 0.3s linear;
-        -webkit-transition: right 0.3s linear;
-        -moz-transition: right 0.3s linear;
-        -ms-transition: right 0.3s linear;
-        -o-transition: right 0.3s linear;
+    width: 100%;
+    transition: width 0.3s linear;
+    padding: 1.5rem;
+
+    @media (min-width: $screen-md) {
+        position: absolute;
+        width: 30%;
+        padding: 3rem;
+    }
 }

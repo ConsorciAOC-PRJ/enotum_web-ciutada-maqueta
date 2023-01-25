@@ -27,16 +27,32 @@
             <form>
                 <fieldset>
                     <div class="field-legend">
-                        <legend>Document identificatiu</legend>
-                        <a href="#" tabindex="-1">Quin document</a>
+                        <legend class="text-p-16">Document identificatiu</legend>
+                        <a href="#" class="text-p-14" tabindex="-1">Quin document</a>
                     </div>
-                    <label for="select-id" class="sr-only">Tipus de document</label>
-                    <select id="select-id" tabindex="-1">
-                        <option value="vat">VAT</option>
-                    </select>
-                    <label for="number-id" class="sr-only">Número de document</label>
-                    <input type="text" id="number-id" tabindex="-1">
-                </fieldset>     
+                    <div class="select-input">
+                        <label for="select-id" class="sr-only">Tipus de document</label>
+                        <select id="select-id" class="field" tabindex="-1">
+                            <option value="vat">VAT</option>
+                        </select>
+                        <label for="number-id" class="sr-only">Número de document</label>
+                        <input class="field" type="text" id="number-id" tabindex="-1">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="field-legend">
+                        <legend class="text-p-16">Persona vinculada</legend>
+                        <a href="#" class="text-p-14" tabindex="-1">Quina persona</a>
+                    </div>
+                    <div class="select-input">
+                        <label for="select-id" class="sr-only">Tipus de document</label>
+                        <select id="select-id" class="field" tabindex="-1">
+                            <option value="nif">NIF</option>
+                        </select>
+                        <label for="number-id" class="sr-only">Número de document</label>
+                        <input class="field" type="text" id="number-id" tabindex="-1">
+                    </div>
+                </fieldset>         
             </form>
             <button class="send-code primary" aria-describedby="send-description" tabindex="-1">Envia’m un codi</button>
             <div id="send-description">
