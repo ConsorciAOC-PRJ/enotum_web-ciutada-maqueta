@@ -1,4 +1,10 @@
 const modalManage = (openClass, closeClass) => {
+    // #region Manage clicks outside the modal to close it
+    const modalOverlay = document.getElementsByClassName('modal-overlay')[0];
+    modalOverlay.addEventListener('click', function(){modalClose('login-modal')});
+    //TODO: It would be better to not use the absolute id of the modal to manage clicks outside of it
+    // #endregion
+
     // #region Get all modal dialogs and all buttons to close those modals and add an event listener for clicks
     const modalButtons = document.querySelectorAll(openClass);
     
@@ -7,29 +13,48 @@ const modalManage = (openClass, closeClass) => {
         // Get modalId based on the aria-labelledby of the modal that contains the button id. 
         let modalId = document.querySelector('[aria-labelledby="' + buttonId + '"').getAttribute('id');
 
-        button.addEventListener("click", function(){modalOpen(buttonId, modalId )});
+        button.addEventListener("click", function(){modalOpen(buttonId, modalId)});
     });
 
     const closeButtons = document.querySelectorAll(closeClass);
 
     closeButtons.forEach(function(button){
         let buttonId = button.getAttribute('id');
-        let modalId = button.parentNode.getAttribute('id');
+        let modalId = button.parentNode.parentNode.getAttribute('id');
 
         button.addEventListener("click", function(){modalClose(modalId)});
     });
 
-    // #endregion 
-
+    // #endregion
+    
+    // #region Functions to manage the modal behaviour
     const modalClose = (modalId) => {
         let modal = document.getElementById(modalId);
         modal.classList.toggle('show');
+        modal.setAttribute('aria-hidden', 'true');
+
+        let tabIndexElements = modal.querySelectorAll('[tabindex="0"]');
+
+        tabIndexElements.forEach(function(element) {
+            element.setAttribute('tabindex', '-1');
+        })
+
+        modalOverlayToggle();
     }
 
     const modalOpen = (buttonId, modalId) => { 
-
         const modal = document.getElementById(modalId);
         modal.classList.toggle('show');
+        modal.setAttribute('aria-hidden', 'false');
+
+        let tabIndexElements = modal.querySelectorAll('[tabindex="-1"]');
+
+        tabIndexElements.forEach(function(element) {
+            element.setAttribute('tabindex', '0');
+        })
+
+
+        modalOverlayToggle();
         
         document.addEventListener('keydown', (event) => {
             if (event.key === 'Escape') {
@@ -58,7 +83,8 @@ const modalManage = (openClass, closeClass) => {
             } 
             else { // If tab key is pressed
                 if (document.activeElement === lastFocusableElement) {
-                    // If focus has reached to last focusable element then focus first focusable element after pressing tab
+                    /* If focus has reached to last focusable element then focus first 
+                     *  focusable element after pressing tab */
                     firstFocusableElement.focus(); // Add focus for the first focusable element
                     e.preventDefault();
                 }
@@ -67,6 +93,11 @@ const modalManage = (openClass, closeClass) => {
 
         firstFocusableElement.focus(); // Focus first focusable element by default
     }
+
+    const modalOverlayToggle = () => {
+        modalOverlay.classList.toggle('show');
+    }
+    // #endregion
 }
 
 document.ready = modalManage('.open-modal', '.close-modal');

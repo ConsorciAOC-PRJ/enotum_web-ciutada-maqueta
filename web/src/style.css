@@ -5280,7 +5280,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-p {
+p, li {
   color: #656D72;
 }
 
@@ -6776,11 +6776,56 @@ input[type=radio]:focus-visible + label {
 }
 
 .login-modal {
-  display: none;
+  position: fixed;
+  right: -1000px;
+  top: 0;
+  height: 100vh;
+  width: 30%;
+  background-color: #FFFFFF;
+  padding: 3rem;
+  z-index: 15;
+}
+.login-modal .field-legend {
+  display: flex;
+}
+.login-modal fieldset {
+  border: none;
+}
+.login-modal .close-modal-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+}
+.login-modal .close-modal-container .close-modal {
+  background: none;
+  border: none;
+}
+.login-modal .send-code {
+  width: 100%;
 }
 
-.show {
+.modal-overlay {
+  display: none;
+  background-color: rgba(101, 109, 114, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.modal-overlay.show {
   display: block;
+}
+
+.login-modal.show {
+  right: 0;
+  transition: right 0.3s linear;
+  -webkit-transition: right 0.3s linear;
+  -moz-transition: right 0.3s linear;
+  -ms-transition: right 0.3s linear;
+  -o-transition: right 0.3s linear;
 }
 
 header {

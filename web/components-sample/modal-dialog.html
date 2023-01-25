@@ -13,24 +13,43 @@
 </head>
 <body>
     <button id="open-modal" class="open-modal secondary">Accedir sense identitat digital</button>
-    <div id="login-modal" class="login-modal" role="dialog" aria-modal="true" aria-labelledby="open-modal">
-        <button class="close-modal" id="close-modal">Close</button>
-        <h1 class="title-m">Accés sense identitat digital</h1>
-        <p class="text-p-18">Introdueix les dades adreçades a la notificació</p>
-        <form>
-            <fieldset>
-                <div class="field-legend">
-                    <legend>Document identificatiu</legend>
-                    <a href="#">Quin document</a>
-                </div>
-                <label for="select-id" class="sr-only">Tipus de document</label>
-                <select id="select-id">
-                    <option value="vat">VAT</option>
-                </select>
-                <label for="number-id" class="sr-only">Número de document</label>
-                <input type="text" id="number-id">
-            </fieldset>     
-        </form>
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div id="login-modal" class="login-modal" role="dialog" aria-modal="true" aria-labelledby="open-modal" aria-hidden="true">
+            <div class="close-modal-container">
+                <button class="close-modal" id="close-modal" tabindex="-1">
+                    <span class="material-icons sr-only">Tancar</span>
+                    <span class="material-icons" aria-hidden="true">close</span>
+                </button>
+            </div>
+            <h1 class="title-m">Accés sense identitat digital</h1>
+            <p class="text-p-18">Introdueix les dades adreçades a la notificació</p>
+            <form>
+                <fieldset>
+                    <div class="field-legend">
+                        <legend>Document identificatiu</legend>
+                        <a href="#" tabindex="-1">Quin document</a>
+                    </div>
+                    <label for="select-id" class="sr-only">Tipus de document</label>
+                    <select id="select-id" tabindex="-1">
+                        <option value="vat">VAT</option>
+                    </select>
+                    <label for="number-id" class="sr-only">Número de document</label>
+                    <input type="text" id="number-id" tabindex="-1">
+                </fieldset>     
+            </form>
+            <button class="send-code primary" aria-describedby="send-description" tabindex="-1">Envia’m un codi</button>
+            <div id="send-description">
+                <p class="text-p-14">T'enviarem un missatge de text amb un codi de verificació de sis dígits al mòbil o al correu electrònic introduït.</p>
+                <h2 class="text-p-16 p-semibold">Els codis d’un sol ús tenen les següents característiques:</h2>
+                <ul>
+                    <li class="text-p-16">Només es poden fer servir per accedir al sistema que l’està sol·licitant.</li>
+                    <li class="text-p-16">Tenen una vigència temporal limitada (en general de 30 minuts).</li>
+                    <li class="text-p-16">Només es poden fer servir en una transacció.</li>
+                    <li class="text-p-16">Són d’ús personal i intransferible.</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 <script src="../src/js/modal-dialogs.js"></script>

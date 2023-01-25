@@ -1,9 +1,12 @@
 .login-modal {
     position: fixed;
-    right: -100px;
+    right: -1000px;
     top: 0;
     height: 100vh;
-    width: 0px;
+    width: 30%;
+    background-color: $white;
+    padding: 3rem;
+    z-index: 15;
 
     .field-legend {
         display: flex;
@@ -12,14 +15,43 @@
     fieldset {
         border: none;
     }
+
+    .close-modal-container {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 2rem;
+
+        .close-modal {
+            background: none;
+            border: none;
+        }
+    }
+
+    .send-code {
+        width: 100%;
+    }
+}
+
+.modal-overlay {
+    display: none;
+    background-color: rgba($grey-01, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+.modal-overlay.show {
+    display: block;
 }
 
 .login-modal.show { 
     right: 0;
-    width: 25vw;
-    -webkit-transition: width 0.3s linear;
-    -moz-transition: width 0.3s linear;
-    -ms-transition: width 0.3s linear;
-    -o-transition: width 0.3s linear;
-    transition: width 0.3s linear;
+    transition: right 0.3s linear;
+        -webkit-transition: right 0.3s linear;
+        -moz-transition: right 0.3s linear;
+        -ms-transition: right 0.3s linear;
+        -o-transition: right 0.3s linear;
 }
