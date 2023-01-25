@@ -1,0 +1,80 @@
+.notification-banner.info {
+
+    .notification-header {
+        background-color: $info;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+
+        p {
+            margin: 0;
+            display: none;
+
+            @media (min-width: $screen-md) {
+                display: block;
+            }
+        }
+    }
+
+    .notification-body {
+        border: 1px solid $info;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+
+        a {
+            color: $info;
+        }
+    }
+
+}
+
+.notification-banner.success {
+
+    .notification-header {
+        background-color: $success;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+
+        p {
+            margin: 0;
+            display: none;
+
+            @media (min-width: $screen-md) {
+                display: block;
+            }
+        }
+    }
+
+    .notification-body {
+        border: 1px solid $success;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+
+        a {
+            color: $success;
+        }
+    }
+
+}
+
+.notification-banner.error {
+
+    .notification-header {
+        background-color: $error;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+
+        p {
+            margin: 0;
+            display: none;
+
+            @media (min-width: $screen-md) {
+                display: block;
+            }
+        }
+    }
+
+    .notification-body {
+        border: 1px solid $error;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+
+        a {
+            color: $error;
+        }
+    }
+
+}

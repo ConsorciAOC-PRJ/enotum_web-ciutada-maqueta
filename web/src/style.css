@@ -6848,7 +6848,7 @@ input.field, select.field {
 
 .login-modal.show {
   width: 100%;
-  transition: width 0.3s linear;
+  transition: width 0.2s linear;
   padding: 1.5rem;
 }
 @media (min-width: 768px) {
@@ -6857,6 +6857,69 @@ input.field, select.field {
     width: 30%;
     padding: 3rem;
   }
+}
+
+.notification-banner.info .notification-header {
+  background-color: #005CD1;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.notification-banner.info .notification-header p {
+  margin: 0;
+  display: none;
+}
+@media (min-width: 768px) {
+  .notification-banner.info .notification-header p {
+    display: block;
+  }
+}
+.notification-banner.info .notification-body {
+  border: 1px solid #005CD1;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.notification-banner.info .notification-body a {
+  color: #005CD1;
+}
+
+.notification-banner.success .notification-header {
+  background-color: #14857A;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.notification-banner.success .notification-header p {
+  margin: 0;
+  display: none;
+}
+@media (min-width: 768px) {
+  .notification-banner.success .notification-header p {
+    display: block;
+  }
+}
+.notification-banner.success .notification-body {
+  border: 1px solid #14857A;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.notification-banner.success .notification-body a {
+  color: #14857A;
+}
+
+.notification-banner.error .notification-header {
+  background-color: #DA0250;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.notification-banner.error .notification-header p {
+  margin: 0;
+  display: none;
+}
+@media (min-width: 768px) {
+  .notification-banner.error .notification-header p {
+    display: block;
+  }
+}
+.notification-banner.error .notification-body {
+  border: 1px solid #DA0250;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.notification-banner.error .notification-body a {
+  color: #DA0250;
 }
 
 header {
