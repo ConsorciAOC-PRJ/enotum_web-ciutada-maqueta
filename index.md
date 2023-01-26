@@ -7,7 +7,8 @@
 * [Dropdowns](./components/dropdowns/)
 * [Grid](./components/grid/)
 * [Footer](./components/footer/)
-* [Accordion](./components/accordion)
+* [Accordion](./components/accordion/)
+* [Banner notificació](./components/notification-banner/)
 
 ## Maqueta del web
 * [Accés a la maqueta del web (Pàgina d'inici)](./web/index.html)
