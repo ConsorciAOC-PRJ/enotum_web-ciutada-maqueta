@@ -6751,6 +6751,32 @@ input.field, select.field {
   min-height: 2.5rem;
 }
 
+input::placeholder {
+  font-size: 0.8888888889rem;
+  font-weight: normal;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0px;
+  line-height: 1.3333333333rem;
+}
+@media (min-width: 768px) {
+  input::placeholder {
+    font-size: 0.8888888889rem;
+    font-weight: normal;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0px;
+    line-height: 1.3333333333rem;
+  }
+}
+@media (min-width: 992px) {
+  input::placeholder {
+    font-size: 0.8888888889rem;
+    font-weight: normal;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0px;
+    line-height: 1.3333333333rem;
+  }
+}
+
 .select-input {
   width: 100%;
   position: relative;
@@ -6758,6 +6784,9 @@ input.field, select.field {
 }
 .select-input input {
   width: 100%;
+}
+.select-input input::placeholder {
+  text-align: right;
 }
 .select-input select {
   position: absolute;

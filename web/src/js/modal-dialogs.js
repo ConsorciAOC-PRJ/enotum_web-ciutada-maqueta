@@ -10,8 +10,8 @@ const modalManage = (openClass, closeClass) => {
     
     modalButtons.forEach(function(button){
         let buttonId = button.getAttribute('id');
-        // Get modalId based on the aria-labelledby of the modal that contains the button id. 
-        let modalId = document.querySelector('[aria-labelledby="' + buttonId + '"').getAttribute('id');
+        // Get modalId based on the modal being the button's next element in the DOM 
+        let modalId = button.nextElementSibling.getAttribute('id');
 
         button.addEventListener("click", function(){modalOpen(buttonId, modalId)});
     });
