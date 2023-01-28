@@ -24,4 +24,4 @@ Per fer servir el DS d'AOC definit pel projecte e-notum la clau està en fer ser
 
 Els colors del banner canvien fent referència als colors definits al DS que es troben a `_vars`. 
 
-**[Enllaç al component amb un exemple](../../web/components-sample/notification-banner.html)**
+## [Enllaç al component amb un exemple](../../web/components-sample/notification-banner.html)

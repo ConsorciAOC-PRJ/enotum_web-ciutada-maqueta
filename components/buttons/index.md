@@ -43,4 +43,4 @@ Hi ha un mixin preparat (_buttons.scss) per aplicar els estils directament amb t
 3. $btn-size: normal / small ('normal' per defecte)
 4. $color-mode: light / dark ('light' per defecte)
 
-**[Exemples amb els diferents botons del DS](../../web/components-sample/buttons.html)**
+## [Exemples amb els diferents botons del DS](../../web/components-sample/buttons.html)

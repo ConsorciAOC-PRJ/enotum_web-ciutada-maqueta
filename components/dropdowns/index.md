@@ -43,4 +43,4 @@ Per això, hem d'afegir un atribut `aria-label` al botó. Aquest ha de començar
 </div>
 ```
 
-**[Exemple de dropdown](../../web/components-sample/dropdowns.html)**
+## [Exemple de dropdown](../../web/components-sample/dropdowns.html)

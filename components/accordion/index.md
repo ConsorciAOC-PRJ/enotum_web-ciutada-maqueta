@@ -22,7 +22,7 @@ Per tant, l'estructura bàsica d'un accordion hauria de ser similar a:
 
 En l'àmbit visual hem de tenir en compte que la icona ha de canviar quan es fa el toggle. A més el color, d'hover ha de ser el primary-main-color que estigui definit. La gestió dels estils dels borders que canvien amb el toggle la fem amb la classe `.aoc-border`. 
 
-**[Exemple d'accordion seguint el DS](../../web/components-sample/accordions.html)**
+## [Exemple d'accordion seguint el DS](../../web/components-sample/accordions.html)
 
 
 
