@@ -7059,6 +7059,21 @@ footer .logos-container .credits-container {
   }
 }
 
+.loader {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 6px solid #005CD1;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .home .first-banner {
   background-color: #F5F5F6;
 }

@@ -9,6 +9,7 @@
   "author": "Alejandro Suárez Domínguez <alejandro.suarez@tothomweb.com> (https://www.tothomweb.com)",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "easy-pie-chart": "^2.1.7"
   }
 }
