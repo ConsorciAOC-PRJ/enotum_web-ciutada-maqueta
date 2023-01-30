@@ -9,7 +9,7 @@
 * [Footer](./components/footer/)
 * [Accordion](./components/accordion/)
 * [Banner notificació](./components/notification-banner/)
-
+* [Modal dialog](./components/modal-dialog/)
 ## Maqueta del web
 * [Accés a la maqueta del web (Pàgina d'inici)](./web/index.html)
 * [Accés a la maqueta del web (Bùstia de notificacions)](./web/pages/postbox.html)
