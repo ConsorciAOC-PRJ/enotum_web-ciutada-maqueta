@@ -36,6 +36,30 @@
             display: flex;
             justify-content: space-between;
         }
+
+        .status-tag {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            .material-icons-outlined {
+                font-size: rem(20px);
+            }
+        }
+
+        .tag-opened {
+            color: $success;
+        }
+
+        .tag-closed {
+            color: $error;
+        }
+
+        .tag-on-time {
+            background-color: $warning;
+            padding: 0.5rem 1rem;
+            border-radius: $radius-full;
+        }
     }
 
 }

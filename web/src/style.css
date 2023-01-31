@@ -6630,6 +6630,10 @@ button.secondary-dark:active, a.secondary-dark:active {
   gap: 0.3rem;
   background-color: #F5F5F6;
 }
+.filter-container .filter-remove {
+  background: none;
+  border: none;
+}
 .filter-container .btn-filter-dark {
   border: none;
   background: none;
@@ -7161,6 +7165,25 @@ footer .logos-container .credits-container {
 .postbox .post .post-row-1, .postbox .post .post-row-2 {
   display: flex;
   justify-content: space-between;
+}
+.postbox .post .status-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.postbox .post .status-tag .material-icons-outlined {
+  font-size: 1.1111111111rem;
+}
+.postbox .post .tag-opened {
+  color: #14857A;
+}
+.postbox .post .tag-closed {
+  color: #DA0250;
+}
+.postbox .post .tag-on-time {
+  background-color: #FFD06A;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
