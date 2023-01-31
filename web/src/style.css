@@ -6701,6 +6701,7 @@ input[type=radio]:focus-visible + label {
 }
 .custom-rb-label .material-icons {
   font-size: 1.1111111111rem;
+  color: #1B2124;
 }
 
 .custom-rb-container {

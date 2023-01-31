@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
-    <div class="filter-container">
+    <div class="filter-container" id="filter-1">
         <button class="btn-filter" aria-expanded="false">
             <span>Filter</span>
             <span class="material-icons filter-icon" aria-hidden="true">expand_more</span>
@@ -38,21 +38,29 @@
                             <span class="text-p-16 p-dark">Altres no relacionats</span>
                         </label>
                     </li>
+                    <li>
+                        <input type="radio" id="badalona" value="Badalona" name="emissor">
+                        <label for="badalona" class="custom-rb-label">
+                            <span class="material-icons custom-rb" aria-hidden="true">radio_button_unchecked</span>
+                            <span class="text-p-16 p-dark">Ajuntament Badalona</span>
+                        </label>
+                    </li>
                 </ul>
             </div>
             <div class="filter-footer">
                 <button class="terciary-s">Cancel·lar</button>
-                <button class="primary-s-rm">Mostrar resultats</button>
+                <button class="primary-s-rm" onclick="applyFilter('filter-1')">Mostrar resultats</button>
             </div>
         </div>
     </div>
     <div class="filter-container">
-        <button class="btn-filter-dark">
+        <button class="btn-filter btn-filter-dark">
             <span class="material-icons" aria-hidden="true">calendar_today</span>
             <span>Filter</span>
             <span class="material-icons" aria-hidden="true">expand_more</span>
         </button>
     </div>
     <script src="../src/js/filters.js"></script>
+    <script src="../src/js/radio-buttons.js"></script>
 </body>
 </html>

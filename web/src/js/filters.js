@@ -25,4 +25,31 @@ const filterToggle = () => {
     });
 }
 
+const applyFilter = (filterId) => {
+
+    const filterToApply = document.getElementById(filterId);
+    const radioButtons = filterToApply.getElementsByClassName("custom-rb"); 
+    const button = filterToApply.getElementsByClassName("btn-filter")[0];
+    let checked;
+
+    console.log(radioButtons)
+
+    for (let i = 0; i < radioButtons.length; i++) {
+        if (radioButtons[i].innerText == "radio_button_checked") {
+            checked = radioButtons[i].nextElementSibling.innerText;
+            console.log(checked)
+        }
+    }
+
+    button.innerHTML = "<span>" + checked + "</span>";
+    button.innerHTML += "<button onclick='removeFilter(" + filterId + ")'><span class='material-icons' aria-hidden='true'>clear</span><span class='sr-only'>Eliminar filtre</span></button>";
+}
+
+const removeFilter = (filterId) => {
+
+
+
+
+}
+
 document.ready = filterToggle();
