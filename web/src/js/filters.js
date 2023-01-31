@@ -28,28 +28,34 @@ const filterToggle = () => {
 const applyFilter = (filterId) => {
 
     const filterToApply = document.getElementById(filterId);
+    const content = filterToApply.getElementsByClassName("filter-content")[0];
     const radioButtons = filterToApply.getElementsByClassName("custom-rb"); 
     const button = filterToApply.getElementsByClassName("btn-filter")[0];
     let checked;
 
-    console.log(radioButtons)
-
     for (let i = 0; i < radioButtons.length; i++) {
         if (radioButtons[i].innerText == "radio_button_checked") {
             checked = radioButtons[i].nextElementSibling.innerText;
-            console.log(checked)
         }
     }
 
     button.innerHTML = "<span>" + checked + "</span>";
-    button.innerHTML += "<button onclick='removeFilter(" + filterId + ")'><span class='material-icons' aria-hidden='true'>clear</span><span class='sr-only'>Eliminar filtre</span></button>";
+    button.innerHTML += "<button class='filter-remove' onclick=\"removeFilter(\'" + filterId + "\')\"><span class='material-icons' aria-hidden='true'>clear</span><span class='sr-only'>Eliminar filtre</span></button>";
+
+    content.classList.remove("show");
+    button.setAttribute("aria-expanded", "false");
 }
 
 const removeFilter = (filterId) => {
+    const filter = document.getElementById(filterId);
+    const button = filter.getElementsByClassName("btn-filter")[0];
+    const title = filter.getElementsByClassName("filter-header")[0].getElementsByTagName('h2')[0].innerText;
+    button.onclick = () => {}; // Stop event listener of the whole button
+    
+    button.innerHTML = "<span>" + title + "</span>";
+    button.innerHTML += "<span class='material-icons filter-icon' aria-hidden='true'>expand_more</span>";
 
-
-
-
+    filterToggle();
 }
 
 document.ready = filterToggle();

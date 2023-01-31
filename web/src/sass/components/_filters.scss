@@ -6,6 +6,11 @@
         @include filter-button;
     }
 
+    .filter-remove {
+        background: none;
+        border: none;
+    }
+
     .btn-filter-dark {
         @include filter-button(dark);
     }
