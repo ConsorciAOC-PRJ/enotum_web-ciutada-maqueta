@@ -7,12 +7,17 @@
 
     input[type=text] {
         width: 100%;
-        min-height: 2rem;
+        min-height: 2.5em;
         border: none;
+        
 
         &::placeholder {
-            @include font(16px);
+            @include font(14px);
             color: $grey-01;
+
+            @media (min-width: $screen-md) {
+                @include font(16px);
+            }
         }
     }
 

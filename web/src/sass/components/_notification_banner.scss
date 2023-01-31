@@ -1,8 +1,9 @@
 .notification-banner.info {
+    margin-bottom: 2rem;
 
     .notification-header {
         background-color: $info;
-        padding: 0.5rem 1rem 0.5rem 1rem;
+        padding: 0.3rem 0.5rem 0.3rem 0.5rem;
 
         p {
             margin: 0;
@@ -17,6 +18,10 @@
     .notification-body {
         border: 1px solid $info;
         padding: 0.5rem 1rem 0.5rem 1rem;
+
+        p {
+            margin: 0.5rem;
+        }
 
         a {
             color: $info;
