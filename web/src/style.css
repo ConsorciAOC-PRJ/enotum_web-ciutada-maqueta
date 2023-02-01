@@ -6929,9 +6929,12 @@ input::placeholder {
   color: #005CD1;
 }
 
+.notification-banner.success {
+  margin-bottom: 2rem;
+}
 .notification-banner.success .notification-header {
   background-color: #14857A;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
 }
 .notification-banner.success .notification-header p {
   margin: 0;
@@ -6946,13 +6949,19 @@ input::placeholder {
   border: 1px solid #14857A;
   padding: 0.5rem 1rem 0.5rem 1rem;
 }
+.notification-banner.success .notification-body p {
+  margin: 0.5rem;
+}
 .notification-banner.success .notification-body a {
   color: #14857A;
 }
 
+.notification-banner.error {
+  margin-bottom: 2rem;
+}
 .notification-banner.error .notification-header {
   background-color: #DA0250;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
 }
 .notification-banner.error .notification-header p {
   margin: 0;
@@ -6966,6 +6975,9 @@ input::placeholder {
 .notification-banner.error .notification-body {
   border: 1px solid #DA0250;
   padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.notification-banner.error .notification-body p {
+  margin: 0.5rem;
 }
 .notification-banner.error .notification-body a {
   color: #DA0250;
