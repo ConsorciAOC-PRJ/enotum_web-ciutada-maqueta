@@ -5400,6 +5400,10 @@ p, li {
   color: #FFFFFF;
 }
 
+.p-error {
+  color: #DA0250;
+}
+
 a {
   color: #005CD1;
 }
@@ -6754,6 +6758,7 @@ input.field, select.field {
   border: 2px solid #1B2124;
   border-radius: 2px;
   min-height: 2.5rem;
+  width: 100%;
 }
 
 input::placeholder {
@@ -6780,6 +6785,10 @@ input::placeholder {
     letter-spacing: 0px;
     line-height: 1.3333333333rem;
   }
+}
+
+input[aria-invalid=true] {
+  border-color: #DA0250;
 }
 
 .select-input {
