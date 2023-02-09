@@ -1,7 +1,7 @@
 input.field, select.field {
     border: 2px solid $black;
     border-radius: 2px;
-    min-height: 2.5rem;
+    padding: rem(12px);
     width: 100%;
 }
 
@@ -23,11 +23,12 @@ input[aria-invalid="true"] {
 
 .select-input {
     width: 100%;
-    position: relative;
+    display: flex;
     padding: 0.5rem 0rem 1rem 0rem;
 
     input {
         width: 100%;
+        border-left: none;
 
         &::placeholder {
             text-align: right;
@@ -35,7 +36,6 @@ input[aria-invalid="true"] {
     }
 
     select {
-        position: absolute;
-        min-width: 4rem;
+        width: 5rem;
     }
 }
