@@ -3,9 +3,9 @@
 ## Estructura i comportament (HTML) dels inline errors
 Per fer que els inline errors siguin accessibles hem de tenir en compte 4 coses:
 - Comunicar a l'usuari que la informació introduïda al camp no és vàlida (amb un color vermell i un text per l'usuari visual i amb `aria-invalid="true"` per l'usuari no visual.
-- Comunicar a l'usuari no visual que ha aparegut un error a la pàgina (amb una live area, en aquest cas amb `role="alert"`.
+- Comunicar a l'usuari no visual que ha aparegut un error a la pàgina (amb una live region, en aquest cas amb `role="alert"`.
 - Comunicar a l'usuari no visual la relació entre l'error i el camp (amb l'atribut `aria-describedby`).
-- Comunicar a tots tipus d'usuaris perquè s'ha produït un error amb text (seria el text que reemplaçaria "Això és un error"). Per exemple: "Aquest format d'email no és vàlid".
+- Comunicar a tots tipus d'usuaris perquè s'ha produït un error amb text (seria el text que reemplaçaria "Això és un error"). Per exemple: "Aquest camp és obligatori".
 
 En aquest cas s'ha optat per tenir un `<span>` vuit per introduir l'error, però també seria vàlid fer ser un altre tipus d'element com un `<div>` o injectar directament l'element amb JavaScript. Sigui com sigui el que s'ha de respectar són les 4 premisses anteriors. Per exemple:
 
