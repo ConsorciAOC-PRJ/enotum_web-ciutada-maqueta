@@ -6757,7 +6757,7 @@ input[type=radio]:focus-visible + label {
 input.field, select.field {
   border: 2px solid #1B2124;
   border-radius: 2px;
-  min-height: 2.5rem;
+  padding: 0.6666666667rem;
   width: 100%;
 }
 
@@ -6793,18 +6793,18 @@ input[aria-invalid=true] {
 
 .select-input {
   width: 100%;
-  position: relative;
+  display: flex;
   padding: 0.5rem 0rem 1rem 0rem;
 }
 .select-input input {
   width: 100%;
+  border-left: none;
 }
 .select-input input::placeholder {
   text-align: right;
 }
 .select-input select {
-  position: absolute;
-  min-width: 4rem;
+  width: 5rem;
 }
 
 .search-bar {
@@ -6906,7 +6906,7 @@ input[aria-invalid=true] {
 @media (min-width: 768px) {
   .login-modal.show {
     position: absolute;
-    width: 30%;
+    width: 25rem;
     padding: 3rem;
   }
 }
