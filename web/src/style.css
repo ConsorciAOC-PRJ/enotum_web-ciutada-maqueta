@@ -7301,13 +7301,20 @@ footer .logos-container .credits-container {
   padding-bottom: 0.5rem;
 }
 .notification .notification-menu .notification-pagination {
-  display: flex;
-  align-items: center;
-  border-right: 1px solid #E5E6E8;
-  padding-right: 0.5rem;
+  display: none;
+}
+@media (min-width: 768px) {
+  .notification .notification-menu .notification-pagination {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    border-right: 1px solid #E5E6E8;
+    padding-right: 0.5rem;
+  }
 }
 .notification .notification-menu .notification-pagination .pagination-arrows {
   display: flex;
+  padding-top: 0.3rem;
 }
 .notification .notification-menu .notification-pagination .pagination-arrows .inactive-arrow {
   color: #B1B4B6;
@@ -7410,6 +7417,12 @@ footer .logos-container .credits-container {
 .notification .notification-info .notification-body .notification-btn {
   margin-top: 1rem;
   width: 100%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .notification .notification-info .notification-body .notification-btn {
+    display: block;
+  }
 }
 .notification .notification-info .notification-body .table-title {
   border-bottom: 1px solid #B1B4B6;
@@ -7424,6 +7437,36 @@ footer .logos-container .credits-container {
 }
 .notification .notification-info .notification-body .notification-data tr {
   vertical-align: top;
+}
+.notification .mobile-controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+.notification .mobile-controls .notification-pagination-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  padding: 0rem 1rem;
+}
+.notification .mobile-controls .notification-pagination-mobile .inactive-arrow {
+  color: #B1B4B6;
+}
+.notification .mobile-controls .notification-pagination-mobile .active-arrow {
+  color: #656D72;
+}
+@media (min-width: 768px) {
+  .notification .mobile-controls .notification-pagination-mobile {
+    display: none;
+  }
+}
+.notification .mobile-controls .notification-btn-mobile {
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 1rem 0rem;
 }
 
 /*# sourceMappingURL=style.css.map */
