@@ -1,0 +1,181 @@
+.notification {
+
+    .back-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+        .material-icons-outlined {
+            font-size: rem(16px);
+        }
+
+        .back-link-text {
+            text-decoration: underline;
+        }
+    }
+
+    .notification-menu {
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1rem;
+        padding-bottom: 0.5rem;
+
+        .notification-pagination {
+            display: flex;
+            align-items: center;
+            border-right: 1px solid $grey-03;
+            padding-right: 0.5rem;
+
+            .pagination-arrows {
+                display: flex;
+
+                .inactive-arrow {
+                    color: $grey-02;
+                }
+
+                .active-arrow {
+                    color: $grey-01;
+                }
+            }
+
+        }
+
+
+        .logged-in-user {
+            display: flex;
+            align-items: center;
+            background-color: $black;
+            border-radius: $radius-full;
+            gap: 0.5rem;
+            padding: 0.4rem 0.8rem 0.4rem 0.4rem;
+    
+            .user-initial {
+                color: $white;
+                background-color: $accent-6;
+                border-radius: 100px;
+                width: 2rem;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .user-name {
+                color: $white;
+            }
+        }
+
+        .exit-link {
+            color: $black;
+            border-left: 1px solid $grey-03;
+            padding: 0.7rem;
+        }
+    }
+
+    .notification-no-content {
+        background-color: $grey-01;
+        display: none;
+
+        @media (min-width: $screen-md) {
+            display: flex;
+        }
+
+        .no-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 15rem;
+            margin: auto;
+
+            .no-content-icon {
+                font-size: rem(44px);
+                color: $white;
+            }
+        }
+    }
+
+    .notification-info {
+        @media (min-width: $screen-md) {
+            padding: 2rem;
+        }
+
+        .notification-header {
+            border-bottom: 1px solid $grey-03;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+
+            .entity-info {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                p {
+                    margin: 0;
+                }
+
+                img {
+                    width: 3rem;
+                    height: 3rem;
+                }
+            
+            }
+        }
+
+        .notification-body {
+
+            .state-tag {
+                display: flex;
+                background-color: $warning;
+                align-items: center;
+                gap: 0.3rem;
+                border-radius: 100px;
+                padding: 0.3rem 1rem;
+                width: 13.2rem;
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            .notification-warning {
+                display: flex;
+                gap: 0.5rem;
+                background-color: adjust-color($warning, $alpha: -0.80);
+                border-left: 2px solid $warning;
+                padding: 1rem;
+
+                p {
+                    margin-top: 0;
+                }
+            }
+
+            .notification-btn {
+                margin-top: 1rem;
+                width: 100%;
+            }
+
+            .table-title {
+                border-bottom: 1px solid $grey-02;
+                margin-top: 1.5rem;
+            }
+
+            .notification-data {
+                text-align: left;
+
+                th {
+                    font-weight: normal;
+                    padding-right: 1.5rem;
+                }
+
+                tr {
+                    vertical-align: top;
+                }
+            }
+        }
+
+    }
+}

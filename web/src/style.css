@@ -5280,7 +5280,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-p, li {
+p, li, td {
   color: #656D72;
 }
 
@@ -7279,6 +7279,151 @@ footer .logos-container .credits-container {
 }
 .postbox .pagination .material-icons {
   font-size: 1rem;
+}
+
+.notification .back-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.notification .back-link .material-icons-outlined {
+  font-size: 0.8888888889rem;
+}
+.notification .back-link .back-link-text {
+  text-decoration: underline;
+}
+.notification .notification-menu {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+}
+.notification .notification-menu .notification-pagination {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #E5E6E8;
+  padding-right: 0.5rem;
+}
+.notification .notification-menu .notification-pagination .pagination-arrows {
+  display: flex;
+}
+.notification .notification-menu .notification-pagination .pagination-arrows .inactive-arrow {
+  color: #B1B4B6;
+}
+.notification .notification-menu .notification-pagination .pagination-arrows .active-arrow {
+  color: #656D72;
+}
+.notification .notification-menu .logged-in-user {
+  display: flex;
+  align-items: center;
+  background-color: #1B2124;
+  border-radius: 100px;
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem 0.4rem 0.4rem;
+}
+.notification .notification-menu .logged-in-user .user-initial {
+  color: #FFFFFF;
+  background-color: #3F51B5;
+  border-radius: 100px;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notification .notification-menu .logged-in-user .user-name {
+  color: #FFFFFF;
+}
+.notification .notification-menu .exit-link {
+  color: #1B2124;
+  border-left: 1px solid #E5E6E8;
+  padding: 0.7rem;
+}
+.notification .notification-no-content {
+  background-color: #656D72;
+  display: none;
+}
+@media (min-width: 768px) {
+  .notification .notification-no-content {
+    display: flex;
+  }
+}
+.notification .notification-no-content .no-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 15rem;
+  margin: auto;
+}
+.notification .notification-no-content .no-content .no-content-icon {
+  font-size: 2.4444444444rem;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .notification .notification-info {
+    padding: 2rem;
+  }
+}
+.notification .notification-info .notification-header {
+  border-bottom: 1px solid #E5E6E8;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.notification .notification-info .notification-header .entity-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.notification .notification-info .notification-header .entity-info p {
+  margin: 0;
+}
+.notification .notification-info .notification-header .entity-info img {
+  width: 3rem;
+  height: 3rem;
+}
+.notification .notification-info .notification-body .state-tag {
+  display: flex;
+  background-color: #FFD06A;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 100px;
+  padding: 0.3rem 1rem;
+  width: 13.2rem;
+}
+.notification .notification-info .notification-body .state-tag p {
+  margin: 0;
+}
+.notification .notification-info .notification-body .notification-warning {
+  display: flex;
+  gap: 0.5rem;
+  background-color: rgba(255, 208, 106, 0.2);
+  border-left: 2px solid #FFD06A;
+  padding: 1rem;
+}
+.notification .notification-info .notification-body .notification-warning p {
+  margin-top: 0;
+}
+.notification .notification-info .notification-body .notification-btn {
+  margin-top: 1rem;
+  width: 100%;
+}
+.notification .notification-info .notification-body .table-title {
+  border-bottom: 1px solid #B1B4B6;
+  margin-top: 1.5rem;
+}
+.notification .notification-info .notification-body .notification-data {
+  text-align: left;
+}
+.notification .notification-info .notification-body .notification-data th {
+  font-weight: normal;
+  padding-right: 1.5rem;
+}
+.notification .notification-info .notification-body .notification-data tr {
+  vertical-align: top;
 }
 
 /*# sourceMappingURL=style.css.map */
