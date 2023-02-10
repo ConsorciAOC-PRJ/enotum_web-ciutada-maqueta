@@ -7329,6 +7329,7 @@ footer .logos-container .credits-container {
   border-radius: 100px;
   gap: 0.5rem;
   padding: 0.4rem 0.8rem 0.4rem 0.4rem;
+  text-decoration: none;
 }
 .notification .notification-menu .logged-in-user .user-initial {
   color: #FFFFFF;
@@ -7467,6 +7468,11 @@ footer .logos-container .credits-container {
   border-radius: 0;
   margin-bottom: 0;
   padding: 1rem 0rem;
+}
+@media (min-width: 768px) {
+  .notification .mobile-controls .notification-btn-mobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
