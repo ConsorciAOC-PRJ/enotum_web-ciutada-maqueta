@@ -1,0 +1,128 @@
+.body-container {
+    position: relative;
+}
+
+.notification-modal {
+    background-color: $white;
+    overflow-x: hidden;
+    z-index: 15;
+    display: none;
+    padding: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+
+    @media (min-width: 768px) {
+        position: fixed;
+        height: 90%;
+        top: 71%;
+        left: 50%;
+        transform: translate(-50%, -71%);
+        border-radius: $radius-medium;
+    }
+
+    .notification-header {
+        border-bottom: 1px solid $grey-03;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+
+        .entity-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            p {
+                margin: 0;
+            }
+
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+            
+        }
+    }
+
+    .state-tag {
+        @include state-tag();
+    }
+
+    .notification-warning {
+        display: flex;
+        gap: 0.5rem;
+        background-color: adjust-color($warning, $alpha: -0.80);
+        border-left: 2px solid $warning;
+        padding: 1rem;
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    .modal-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 1rem;
+        border-top: 1px solid $grey-04;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+
+    // @media (min-width: $screen-md) {
+    //     position: fixed;
+    //     width: 0;
+    // }
+
+    // .field-legend {
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+
+    // fieldset {
+    //     border: none;
+    //     padding: 0;
+    // }
+
+    .close-modal-container {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 2rem;
+
+        .close-modal {
+            background: none;
+            border: none;
+        }
+    }
+
+    .send-code {
+        width: 100%;
+    }
+}
+
+.modal-overlay {
+    display: none;
+    background-color: rgba($grey-01, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.modal-overlay.show {
+    display: block;
+}
+
+.notification-modal.show { 
+   display: block;
+
+    // @media (min-width: $screen-md) {
+    //     position: absolute;
+    //     width: 25rem;
+    //     padding: 3rem;
+    // }
+}

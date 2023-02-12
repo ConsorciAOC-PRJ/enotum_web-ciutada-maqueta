@@ -1,0 +1,41 @@
+@mixin state-tag($state: warning) {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    border-radius: 100px;
+    padding: 0.3rem 1rem;
+
+    p {
+        margin: 0;
+    }
+    
+    @if $state == 'warning' {
+        background-color: $warning;
+        color: $dark;
+        width: 13.2rem;
+
+        p {
+            color: $dark;
+        }
+    }
+    @else if $state == 'open' {
+        background-color: $success;
+        color: $white;
+        width: 7rem;
+
+        p {
+            color: $white;
+        }
+    }
+    @else if $state == 'closed' {
+        background-color: $error;
+        color: $white;
+        width: 7rem;
+
+        p {
+            color: $white;
+        }
+    }
+
+
+}

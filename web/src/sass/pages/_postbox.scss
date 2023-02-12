@@ -59,6 +59,11 @@
         h2 {
             margin: 0;
         }
+
+        a {
+            text-decoration: none;
+            color: $black;
+        }
         
         .tag-date-container {
             display: flex;

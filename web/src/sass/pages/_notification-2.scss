@@ -1,4 +1,4 @@
-.notification {
+.notification-2 {
 
     .home-link {
         display: flex;
@@ -109,6 +109,14 @@
         }
     }
 
+    .notification-content {
+        display: none;
+
+        @media (min-width: $screen-md) {
+            display: flex;
+        }
+    }
+
     .notification-info {
         @media (min-width: $screen-md) {
             padding: 2rem;
@@ -139,28 +147,22 @@
         .notification-body {
 
             .state-tag {
-                @include state-tag();
+                @include state-tag('open');
             }
 
             .notification-warning {
                 display: flex;
                 gap: 0.5rem;
-                background-color: adjust-color($warning, $alpha: -0.80);
-                border-left: 2px solid $warning;
+                background-color: $grey-04;
+                border-left: 2px solid $black;
                 padding: 1rem;
 
-                .warning-message {
+                p {
                     margin-top: 0;
                 }
-            }
 
-            .notification-btn {
-                margin-top: 1rem;
-                width: 100%;
-                display: none;
-
-                @media (min-width: $screen-md) {
-                    display: block;
+                button {
+                    width: 100%;
                 }
             }
 
@@ -181,6 +183,17 @@
                     vertical-align: top;
                 }
             }
+
+            .download-files {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 0rem;
+
+                .material-icons {
+                    font-size: 1rem;
+                }
+            }
         }
 
     }
@@ -196,11 +209,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            // position: fixed;
-            // bottom: 0;
-            // left: 0;
-            // z-index: 10;
-            // width: 100%;
             background-color: $white;
             padding: 0rem 1rem;
 
@@ -213,16 +221,6 @@
                 color: $grey-01;
              }
         
-
-            @media (min-width: $screen-md) {
-                display: none;
-            }
-        }
-
-        .notification-btn-mobile {
-            border-radius: 0;
-            margin-bottom: 0;
-            padding: 1rem 0rem;
 
             @media (min-width: $screen-md) {
                 display: none;
