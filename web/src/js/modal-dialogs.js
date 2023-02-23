@@ -30,6 +30,7 @@ const modalManage = (openClass, closeClass) => {
     // #region Functions to manage the modal behaviour
     const modalClose = (modalId) => {
         let modal = document.getElementById(modalId);
+        let openButton = modal.previousElementSibling;
         modal.classList.toggle('show');
         modal.setAttribute('aria-hidden', 'true');
 
@@ -40,6 +41,8 @@ const modalManage = (openClass, closeClass) => {
         })
 
         modalOverlayToggle();
+
+        openButton.focus();
     }
 
     const modalOpen = (buttonId, modalId) => { 

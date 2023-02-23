@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pàgina detall notificació, 2 | Maqueta e-Notum</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/style.css">
 </head>
 <body class="notification-2">
+    <a href="#main-content" id="skip-to-link" class="sr-only">Saltar al contingut principal</a>
     <header>
         <div class="container-fluid g-0">
             <div class="row justify-content-between align-items-center g-0">
@@ -48,7 +50,7 @@
                         <div>
                             <a href="#" class="exit-link">
                                 <span class="sr-only">Sortir</span>
-                                <span class="material-icons-outlined" aria-hidden="true">start</span>
+                                <span class="material-symbols-outlined" aria-hidden="true">right_panel_close</span>
                             </a>
                         </div>
                     </div>
@@ -56,186 +58,102 @@
             </div>
         </div>
     </header>
-    <div class="container-fluid g-0">
-        <div class="row g-0">
-            <div class="col-12 col-sm-8 notification-content">
-                <iframe src="../assets/sample-pdf.pdf" frameborder="0" height="auto" width="100%"></iframe>
-            </div>
-            <div class="col-12 col-sm-4 notification-info">
-                <div class="notification-header">
-                    <h1 class="title-s">Notificació Resolució 806/2019 (Reclamació 787/2019)</h1>
-                    <div class="entity-info">
-                        <img src="../assets/logo-icon.png" alt="Ajuntament de Badalona">
-                        <div>
-                            <p class="text-p-16 p-dark">Aj. de Badalona</p>
-                            <p class="text-p-14">Expedient 03030403</p>
+    <main id="main-content">
+        <a href="#notification-content" id="skip-to-notification" class="sr-only">Saltar a la informació de la notificació</a>
+        <div class="container-fluid g-0">
+            <div class="row g-0 full-height">
+                <div class="col-12 col-sm-8 notification-content">
+                    <p class="sr-only">Nota per als usuaris de lector de pantalla: a continuació es visualitza el contingut del document PDF a través del visor de documents integrat  al navegador. Per tal de garantir l'accés al document amb la màxima compatibilitat amb els lectors de pantalla, recomanem que descarreguis el document al teu  dispositiu a travès del botó "Descarrega la notificació" que trobaràs després del document i obre'l amb l lector de PDF Adobe Reader.</p>
+                    <iframe src="../assets/sample-pdf.pdf" frameborder="0" height="auto" width="100%" title="PDF: Notificació Resolució 806/2019 (Reclamació 787/2019)"></iframe>
+                </div>
+                <div class="col-12 col-sm-4 notification-info" id="notification-content">
+                    <div class="notification-header">
+                        <h1 class="title-s">Notificació Resolució 806/2019 (Reclamació 787/2019)</h1>
+                        <div class="entity-info">
+                            <img src="../assets/logo-icon.png" alt="Ajuntament de Badalona">
+                            <div>
+                                <p class="text-p-16 p-dark">Aj. de Badalona</p>
+                                <p class="text-p-14">Expedient 03030403</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="notification-body">
-                    <div class="state-tag">
-                        <span class="material-icons-outlined" aria-hidden="true">check</span>
-                        <p class="text-p-14">Oberta</p>
-                    </div>
-                    <p class="text-p-16 p-dark">Finalitzada el 06/12/2021 a les 14:26h</p> 
-                    <div class="notification-warning">
-                        <div>
-                            <p class="text-p-16 p-dark">Us notifiquem la Resolució 806/2021, de 27 de desembre en relació a la Reclamació 787/2020.</p>
-                            <button class="secondary">Descarrega la notificació</button>
+                    <div class="notification-body">
+                        <div class="state-tag">
+                            <span class="material-icons-outlined" aria-hidden="true">check</span>
+                            <p class="text-p-14">Oberta</p>
                         </div>
-                    </div>
-                    <div class="accordion">
-                        <button class="accordion-button aoc-border" aria-expanded="false">
-                            <h2 class="title-xs">Dades de l'enviament</h2>
-                            <span class="material-icons" aria-hidden="true">expand_more</span>
-                        </button>
-                        <div class="accordion-content">
-                            <table class="notification-data">
-                                <tr>
-                                    <th scope="row"><span class="text-p-16 p-dark">Tipus enviament</span></th>
-                                    <td class="text-p-16">Notificació</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><span class="text-p-16 p-dark">Destinatari</span></th>
-                                    <td class="text-p-16">Marta Puig Mir</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><span class="text-p-16 p-dark">Emissor</span></th>
-                                    <td class="text-p-16">Ajuntament de Badalona</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><span class="text-p-16 p-dark">Títol</span></th>
-                                    <td class="text-p-16">Notificació de prova inicial</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><span class="text-p-16 p-dark">Data d'entrega</span></th>
-                                    <td class="text-p-16">27/02/2022 a les 14:26h</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><span class="text-p-16 p-dark">Termini d’acceptació</span></th>
-                                    <td class="text-p-16">12/03/2022 a les 23:59h</td>
-                                </tr>
-                            </table>
+                        <p class="text-p-16 p-dark">Finalitzada el 06/12/2021 a les 14:26h</p> 
+                        <div class="notification-warning">
+                            <div>
+                                <p class="text-p-16 p-dark">Us notifiquem la Resolució 806/2021, de 27 de desembre en relació a la Reclamació 787/2020.</p>
+                                <button class="secondary">Descarrega la notificació</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="accordion">
-                        <button class="accordion-button aoc-border" aria-expanded="false">
-                            <h2 class="title-xs">Properes passes</h2>
-                            <span class="material-icons" aria-hidden="true">expand_more</span>
-                        </button>
-                        <div class="accordion-content">
-                            <p class="text-p-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dolore fuga, totam magni, voluptatibus hic aliquam sequi, recusandae pariatur voluptatum nemo. Accusamus in delectus labore a reprehenderit recusandae sapiente impedit?</p>
+                        <div class="accordion">
+                            <button class="accordion-button aoc-border" aria-expanded="false">
+                                <h2 class="title-xs">Dades de l'enviament</h2>
+                                <span class="material-icons" aria-hidden="true">expand_more</span>
+                            </button>
+                            <div class="accordion-content">
+                                <table class="notification-data">
+                                    <tr>
+                                        <th scope="row"><span class="text-p-16 p-dark">Tipus enviament</span></th>
+                                        <td class="text-p-16">Notificació</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><span class="text-p-16 p-dark">Destinatari</span></th>
+                                        <td class="text-p-16">Marta Puig Mir</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><span class="text-p-16 p-dark">Emissor</span></th>
+                                        <td class="text-p-16">Ajuntament de Badalona</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><span class="text-p-16 p-dark">Títol</span></th>
+                                        <td class="text-p-16">Notificació de prova inicial</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><span class="text-p-16 p-dark">Data d'entrega</span></th>
+                                        <td class="text-p-16">27/02/2022 a les 14:26h</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><span class="text-p-16 p-dark">Termini d’acceptació</span></th>
+                                        <td class="text-p-16">12/03/2022 a les 23:59h</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-                    <div class="download-files">
-                        <h2 class="title-xs">2 arxius adjunts</h2>
-                        <span class="material-icons" aria-hidden="true">download</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="mobile-controls">
-        <div class="notification-pagination-mobile">
-            <a href="#">
-                <span class="material-icons-outlined inactive-arrow" aria-hidden="true">chevron_left</span>
-                <span class="sr-only">Notificació anterior</span>
-            </a>
-            <p class="text-p-14">1 de 26</p>
-            <a href="#">
-                <span class="material-icons-outlined active-arrow" aria-hidden="true">chevron_right</span>
-                <span class="sr-only">Notificació següent</span>
-            </a>
-        </div>
-    </div>
-    <footer class="container-fluid g-0">
-        <div class="container g-0">
-            <div class="row g-0 features-row">
-                <div class="col-md">
-                    <div class="feature-container">
-                        <span class="material-icons-outlined" aria-hidden="true">question_answer</span>
-                        <div>
-                            <h2 class="title-xs">Els meus drets</h2>
-                            <p class="text-p-16">Coneix els teus drets quan et relaciones amb l’administració pública (no inclou persones jurídiques)</p>
+                        <div class="accordion">
+                            <button class="accordion-button aoc-border" aria-expanded="false">
+                                <h2 class="title-xs">Properes passes</h2>
+                                <span class="material-icons" aria-hidden="true">expand_more</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p class="text-p-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dolore fuga, totam magni, voluptatibus hic aliquam sequi, recusandae pariatur voluptatum nemo. Accusamus in delectus labore a reprehenderit recusandae sapiente impedit?</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="feature-container">
-                        <span class="material-icons-outlined" aria-hidden="true">people</span>
-                        <div>
-                            <h2 class="title-xs">Recomanador social</h2>
-                            <p class="text-p-16">Ajuts socials que t’ofereixen les administracions públiques en funció de la teva situació personal i familiar.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="feature-container">
-                        <span class="material-icons-outlined" aria-hidden="true">record_voice_over</span>
-                        <div>
-                            <h2 class="title-xs">Atenció ciutadana</h2>
-                            <p class="text-p-16">Vegeu les diverses formes de contactar amb l’ajuntament.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-0 links-row">
-                <div class="col-md">
-                    <h2 class="links-heading">Seu electrònica</h2>
-                    <ul>
-                        <li><a href="#">Què és la Seu-e</a></li>
-                        <li><a href="#">Mapa web</a></li>
-                        <li><a href="#">Accessibilitat</a></li>
-                        <li><a href="#">Avís legal</a></li>
-                    </ul>
-                </div>
-                <div class="col-md">
-                    <h2 class="links-heading">Tràmits i gestions</h2>
-                    <ul>
-                        <li><a href="#">Catàleg de tràmits</a></li>
-                        <li><a href="#">Instància genèrica</a></li>
-                        <li><a href="#">Impostos i tributs</a></li>
-                        <li><a href="#">Presentar una factura</a></li>
-                        <li><a href="#">Presentar una licitació</a></li>
-                        <li><a href="#">Tràmits a altres Administracions</a></li>
-                    </ul>
-                </div>
-                <div class="col-md">
-                    <h2 class="links-heading">Govern Obert i transparència</h2>
-                    <ul>
-                        <li><a href="#">Informació publica</a></li>
-                        <li><a href="#">Dades Obertes</a></li>
-                        <li><a href="#">Indicadors</a></li>
-                        <li><a href="#">Darreres actualitzacions</a></li>
-                    </ul>
-                </div>
-                <div class="col-md">
-                    <h2 class="links-heading">Atenció ciutadana</h2>
-                    <ul>
-                        <li><a href="#">Els meus drets</a></li>
-                        <li><a href="#">Identitat digital</a></li>
-                        <li><a href="#">Contacte</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row g-0 time-row">
-                <div class="col-md-12">
-                    <p class="text-p-14"><strong>Hora oficial:</strong> 09:55h - 19 novembre 2021</p>
-                </div>
-            </div>
-            <div class="row g-0">
-                <div class="col-md-12">
-                    <div class="logos-container">
-                        <img src="../assets/logo.png" alt="">
-                        <div class="credits-container">
-                            <p class="text-p-14">Servei prestat per l’<a href="#" class="link-grey">Administració Oberta de Catalunya</a></p>
-                            <img src="../assets/aoc-logo.png" alt="">
+                        <div class="download-files">
+                            <h2 class="title-xs">2 arxius adjunts</h2>
+                            <span class="material-icons" aria-hidden="true">download</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+        <div class="mobile-controls">
+            <div class="notification-pagination-mobile">
+                <a href="#">
+                    <span class="material-icons-outlined inactive-arrow" aria-hidden="true">chevron_left</span>
+                    <span class="sr-only">Notificació anterior</span>
+                </a>
+                <p class="text-p-14">1 de 26</p>
+                <a href="#">
+                    <span class="material-icons-outlined active-arrow" aria-hidden="true">chevron_right</span>
+                    <span class="sr-only">Notificació següent</span>
+                </a>
+            </div>
+        </div>
+    </main>
     <script src="../src/js/dropdowns.js"></script>
     <script src="../src/js/accordions.js"></script>
     <script src="../src/js/filters.js"></script>

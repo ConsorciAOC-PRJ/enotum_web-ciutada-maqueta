@@ -40,4 +40,15 @@ body *::-moz-selection {
     overflow: hidden;
     clip: rect(0,0,0,0);
     border: 0;
-  }
+}
+
+#skip-to-link:focus {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    padding: 25px;
+    background-color: $grey-04;
+    z-index: 10;
+}

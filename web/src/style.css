@@ -5146,6 +5146,17 @@ body *::-moz-selection {
   border: 0;
 }
 
+#skip-to-link:focus {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  padding: 25px;
+  background-color: #F5F5F6;
+  z-index: 10;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #1B2124;
 }
@@ -7397,6 +7408,9 @@ footer .logos-container .credits-container {
   font-size: 1rem;
 }
 
+.notification .full-height {
+  min-height: 91vh;
+}
 .notification .home-link {
   display: flex;
 }
@@ -7598,6 +7612,19 @@ footer .logos-container .credits-container {
   }
 }
 
+.notification-2 .full-height {
+  min-height: 91vh;
+}
+.notification-2 #skip-to-notification:focus {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  padding: 25px;
+  background-color: #F5F5F6;
+  z-index: 10;
+}
 .notification-2 .home-link {
   display: flex;
 }
