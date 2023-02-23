@@ -3,7 +3,7 @@
 ## Llistat de components
 
 * [Encapçalaments](./components/headings/)
-* [Botons](./components/buttons/)
+* [Buttons](./components/buttons/)
 * [Dropdowns](./components/dropdowns/)
 * [Grid](./components/grid/)
 * [Footer](./components/footer/)
@@ -11,6 +11,7 @@
 * [Banner notificació](./components/notification-banner/)
 * [Modal dialog](./components/modal-dialog/)
 * [Inline error](./components/inline-errors/)
+* [Filters](./components/filters/)
 ## Maqueta del web
 * [Accés a la maqueta del web (Pàgina d'inici)](./web/index.html)
 * [Accés a la maqueta del web (Bùstia de notificacions)](./web/pages/postbox.html)
