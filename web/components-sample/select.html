@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple select</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <div class="custom-select">
+        <label id="combo1-label" class="combo-label">Tipus document</label>
+        <div class="combo js-select">
+            <div aria-controls="listbox1"
+                 aria-expanded="false"
+                 aria-haspopup="listbox"
+                 aria-labelledby="combo1-label"
+                 id="combo1"
+                 class="combo-input"
+                 role="combobox"
+                 tabindex="0">
+            </div>
+            <div class="combo-menu"
+                 role="listbox"
+                 id="listbox1"
+                 aria-labelledby="combo1-label"
+                 tabindex="-1">
+            </div>
+        </div>
+    </div>
+    <script src="../src/js/select.js"></script>
+</body>
+</html>

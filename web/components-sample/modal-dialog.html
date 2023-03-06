@@ -28,13 +28,32 @@
                 <div class="field-legend">
                     <legend class="text-p-16" id="id-document">Document identificatiu</legend>
                     <a href="#" class="text-p-14" tabindex="-1">Quin document</a>
-                  </div>
+                </div>
                 <div class="select-input">
-                    <label for="select-id-document" class="sr-only">Tipus de document</label>
-                    <select id="select-id-document" class="field" tabindex="-1">
-                        <option value="vat">VAT</option>                        </select>
-                    <label for="number-id-document" class="sr-only">Número de document (12345678A)</label>
-                    <input class="field text-p-16" type="text" id="number-id-document" tabindex="-1" placeholder="12345678A">
+                    <div class="custom-select">
+                        <label id="combo1-label" class="combo-label sr-only">Tipus document</label>
+                        <div class="combo js-select">
+                            <div aria-controls="listbox1"
+                                 aria-expanded="false"
+                                 aria-haspopup="listbox"
+                                 aria-labelledby="combo1-label"
+                                 id="combo1"
+                                 class="combo-input"
+                                 role="combobox"
+                                 tabindex="0">
+                            </div>
+                            <div class="combo-menu"
+                                 role="listbox"
+                                 id="listbox1"
+                                 aria-labelledby="combo1-label"
+                                 tabindex="-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-text-field">
+                        <label for="number-id-document" class="sr-only">Número de document (12345678A)</label>
+                        <input class="field text-p-16" type="text" id="number-id-document" tabindex="-1" placeholder="12345678A">
+                    </div>
                 </div>
             </fieldset>
             <fieldset aria-labelledby="id-person">
@@ -43,12 +62,30 @@
                      <a href="#" class="text-p-14" tabindex="-1">Quina persona</a>
                 </div>
                  <div class="select-input">
-                    <label for="select-id-person" class="sr-only">Tipus de document</label>
-                    <select id="select-id-person" class="field" tabindex="-1">
-                        <option value="nif">NIF</option>
-                    </select>
-                    <label for="number-id-person" class="sr-only">Número de document (12345678A)</label>
-                    <input class="field text-p-16" type="text" id="number-id-person" tabindex="-1" placeholder="12345678A">
+                    <div class="custom-select">
+                        <label id="combo2-label" class="combo-label sr-only">Tipus document</label>
+                        <div class="combo js-select-2">
+                            <div aria-controls="listbox2"
+                                 aria-expanded="false"
+                                 aria-haspopup="listbox"
+                                 aria-labelledby="combo2-label"
+                                 id="combo2"
+                                 class="combo-input"
+                                 role="combobox"
+                                 tabindex="0">
+                            </div>
+                            <div class="combo-menu"
+                                 role="listbox"
+                                 id="listbox2"
+                                 aria-labelledby="combo2-label"
+                                 tabindex="-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-text-field">
+                        <label for="number-id-document" class="sr-only">Número de document (12345678A)</label>
+                        <input class="field text-p-16" type="text" id="number-id-document" tabindex="-1" placeholder="12345678A">
+                    </div>
                 </div>
             </fieldset>         
         </form>
@@ -65,5 +102,6 @@
         </div>
     </div>
 </body>
+<script src="../src/js/select.js"></script>
 <script src="../src/js/modal-dialogs.js"></script>
 </html>

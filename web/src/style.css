@@ -5112,6 +5112,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 body *::selection {
   color: #FFFFFF;
   background: #005CD1;
@@ -6768,11 +6772,79 @@ input[type=radio]:focus-visible + label {
   display: block;
 }
 
+.custom-select .combo {
+  display: block;
+  position: relative;
+}
+.custom-select .combo::after {
+  border-bottom: 4px solid #1B2124;
+  border-right: 4px solid #1B2124;
+  border-top: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 4px;
+  pointer-events: none;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translate(0, -65%) rotate(45deg);
+}
+.custom-select .combo-input {
+  background-color: #FFFFFF;
+  border: 2px solid #1B2124;
+  border-radius: 2px 0px 0px 2px;
+  display: block;
+  font-size: 1em;
+  padding: 12px 16px 14px;
+  text-align: left;
+  width: 100%;
+  min-width: 5rem;
+}
+.custom-select .combo-input:focus-visible {
+  border-color: #005CD1;
+  box-shadow: 0 0 4px 2px #005CD1;
+  outline: 4px solid transparent;
+}
+.custom-select .combo-label {
+  display: block;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 0.25em;
+}
+.custom-select .combo-menu {
+  background-color: #FFFFFF;
+  border: 2px solid #1B2124;
+  border-top: none;
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 100;
+}
+.custom-select .open .combo-menu {
+  display: block;
+}
+.custom-select .combo-option {
+  padding: 10px 12px 12px;
+}
+.custom-select .combo-option.option-current .option-text {
+  color: #005CD1;
+  border-bottom: 2px solid #005CD1;
+}
+.custom-select .combo-option[aria-selected=true] {
+  padding-right: 30px;
+  position: relative;
+}
+
 input.field, select.field {
   border: 2px solid #1B2124;
   border-radius: 2px;
   padding: 0.6666666667rem;
   width: 100%;
+  height: 100%;
 }
 
 input::placeholder {
@@ -6813,12 +6885,16 @@ input[aria-invalid=true] {
 .select-input input {
   width: 100%;
   border-left: none;
+  border-radius: 0px 2px 2px 0px;
 }
 .select-input input::placeholder {
   text-align: right;
 }
 .select-input select {
   width: 5rem;
+}
+.select-input .select-text-field {
+  width: 100%;
 }
 
 .search-bar {
@@ -7117,6 +7193,11 @@ input[aria-invalid=true] {
 
 header {
   border-bottom: 4px solid #1B2124;
+}
+@media (min-width: 768px) {
+  header {
+    padding: 0rem 1rem;
+  }
 }
 header .logo-container {
   display: flex;

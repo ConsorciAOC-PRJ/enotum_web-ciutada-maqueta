@@ -8,6 +8,10 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    margin: 0;
+}
+
 //Customizing the browser's native text-selector to match the Design System
 body *::selection {
     color: $white;
