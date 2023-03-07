@@ -1,8 +1,7 @@
 const modalManage = (openClass, closeClass) => {
     // #region Manage clicks outside the modal to close it
     const modalOverlay = document.getElementsByClassName('modal-overlay')[0];
-    modalOverlay.addEventListener('click', function(){modalClose('login-modal')});
-    //TODO: It would be better to not use the absolute id of the modal to manage clicks outside of it
+    modalOverlay.addEventListener('click', function(){modalClose(modalOverlay.dataset.modal)});
     // #endregion
 
     // #region Get all modal dialogs and all buttons to close those modals and add an event listener for clicks
@@ -11,7 +10,7 @@ const modalManage = (openClass, closeClass) => {
     modalButtons.forEach(function(button){
         let buttonId = button.getAttribute('id');
         // Get modalId based on the modal being the button's next element in the DOM 
-        let modalId = button.nextElementSibling.getAttribute('id');
+        let modalId = button.dataset.modal;
 
         button.addEventListener("click", function(){modalOpen(buttonId, modalId)});
     });
@@ -20,7 +19,7 @@ const modalManage = (openClass, closeClass) => {
 
     closeButtons.forEach(function(button){
         let buttonId = button.getAttribute('id');
-        let modalId = button.parentNode.parentNode.getAttribute('id');
+        let modalId = button.dataset.modal;
 
         button.addEventListener("click", function(){modalClose(modalId)});
     });
@@ -30,7 +29,7 @@ const modalManage = (openClass, closeClass) => {
     // #region Functions to manage the modal behaviour
     const modalClose = (modalId) => {
         let modal = document.getElementById(modalId);
-        let openButton = modal.previousElementSibling;
+        let openButton = document.getElementById(modal.dataset.button);
         modal.classList.toggle('show');
         modal.setAttribute('aria-hidden', 'true');
 

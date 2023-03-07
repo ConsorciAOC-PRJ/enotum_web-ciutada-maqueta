@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
-    <div class="modal-overlay"></div>
-    <button id="open-modal" class="open-modal secondary">Accedir sense identitat digital</button>
-    <div id="login-modal" class="login-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" aria-hidden="true">
+    <div class="modal-overlay" data-modal="login-modal"></div>
+    <button id="open-modal" class="open-modal secondary" data-modal="login-modal">Accedir sense identitat digital</button>
+    <div id="login-modal" class="login-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" aria-hidden="true" data-button="open-modal">
         <div class="close-modal-container">
-            <button class="close-modal" id="close-modal" tabindex="-1">
+            <button class="close-modal" id="close-modal" tabindex="-1" data-modal="login-modal">
                 <span class="material-icons sr-only">Tancar</span>
                 <span class="material-icons" aria-hidden="true">close</span>
             </button>

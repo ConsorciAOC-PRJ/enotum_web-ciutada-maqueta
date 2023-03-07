@@ -14,11 +14,10 @@
     height: 100vh;
 
     @media (min-width: $screen-xl) {
-        position: fixed;
         height: auto;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 5%;
+        left: 20%;
+        right: 20%;
         border-radius: $radius-medium;
     }
 
