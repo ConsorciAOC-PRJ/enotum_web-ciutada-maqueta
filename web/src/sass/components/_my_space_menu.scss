@@ -1,0 +1,73 @@
+.my-space-menu {
+    position: absolute;
+    background-color: $white;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    display: none;
+
+    @media (min-width: $screen-xl) {
+        width: 28rem;
+    }
+
+    .menu-header {
+        background-color: $primary-color-main;
+        padding: 2rem;
+
+        .close-menu {
+            border: none;
+            background: none;
+            color: $white; 
+            float: right;
+        }
+
+        h2 {
+            margin: 0;
+            padding-top: 3rem;
+        }
+
+        .logged-in-info {
+            display: block;
+
+            @media (min-width: $screen-xl) {
+                display: flex;
+                align-items: flex-end;
+                gap: 1rem;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .menu-body {
+        padding: 2rem;
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin: 1rem 0rem;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    color: $primary-color-main;
+                    border-bottom: 2px solid $primary-color-main;
+                }
+            }
+        }
+
+        .second-list {
+            margin-top: 2rem;
+        }
+    }
+
+}
+
+.my-space-menu.show {
+    display: block;
+}

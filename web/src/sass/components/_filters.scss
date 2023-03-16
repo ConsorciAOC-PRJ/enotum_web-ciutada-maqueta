@@ -2,7 +2,7 @@
     position: relative;
     display: inline-block;
 
-    .btn-filter {
+    .btn-container {
         @include filter-button;
     }
 

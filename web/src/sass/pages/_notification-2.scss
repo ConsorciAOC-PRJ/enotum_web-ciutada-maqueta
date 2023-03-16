@@ -33,6 +33,11 @@
         }
     }
 
+    .navigation-logo {
+        border-right: 1px solid $grey-03;
+        margin-right: 0.5rem;
+    }
+
     .notification-menu {
         display: flex;
         display: flex;
@@ -65,32 +70,6 @@
                 }
             }
 
-        }
-
-
-        .logged-in-user {
-            display: flex;
-            align-items: center;
-            background-color: $black;
-            border-radius: $radius-full;
-            gap: 0.5rem;
-            padding: 0.4rem 0.8rem 0.4rem 0.4rem;
-            text-decoration: none;
-    
-            .user-initial {
-                color: $white;
-                background-color: $accent-6;
-                border-radius: 100px;
-                width: 2rem;
-                height: 2rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-    
-            .user-name {
-                color: $white;
-            }
         }
 
         .exit-link {

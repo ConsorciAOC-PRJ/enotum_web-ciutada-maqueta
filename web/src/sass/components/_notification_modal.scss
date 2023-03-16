@@ -101,20 +101,20 @@
     }
 }
 
-.modal-overlay {
-    display: none;
-    background-color: rgba($grey-01, 0.2);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-}
+// .modal-overlay {
+//     display: none;
+//     background-color: rgba($grey-01, 0.2);
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 10;
+// }
 
-.modal-overlay.show {
-    display: block;
-}
+// .modal-overlay.show {
+//     display: block;
+// }
 
 .notification-modal.show { 
    display: block;

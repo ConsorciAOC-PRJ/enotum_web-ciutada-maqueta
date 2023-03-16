@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="../src/style.css">
 </head>
 <body class="postbox">
@@ -16,14 +17,110 @@
     <header>
         <div class="container-fluid g-0">
             <div class="row justify-content-between align-items-center g-0">
-                <div class="col-12 col-sm-3 logo-container">
-                    <a href="#" aria-label="Ajuntament de Badalona, ves a l'inici">
-                        <img src="../assets/logo.png" alt="">
+                <div class="col-10 col-sm-4 logo-container">
+                    <div class="menu">
+                        <button class="open-menu burger-menu" aria-expanded="false">
+                            <span class="sr-only">Obrir menú principal</span>
+                            <span class="material-icons-outlined" aria-hidden="true">menu</span>
+                        </button>
+                        <div class="main-menu menu-content animate__animated animate__slideInLeft animate__faster">
+                            <div class="menu-body">
+                                <button class="close-menu">
+                                    <span class="sr-only">Tancar menú principal</span>
+                                    <span class="material-icons-outlined" aria-hidden="true">close</span>
+                                </button>
+                                <div>
+                                    <div class="menu-brand">
+                                        <img src="../assets/logo-icon.png" class="img-fluid logo-menu" alt="Ajuntament de Badalona">
+                                        <div class="menu-info">
+                                            <p class="text-p-18 p-semibold p-dark">Ajuntament de Badalona</p>
+                                            <p class="text-p-18">Seu electrònica</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-block">
+                                        <h2 class="text-p-14 menu-heading"><a href="#">Serveis</a></h2>
+                                        <ul>
+                                            <li><a href="#" class="text-p-16 p-dark">Transport públic</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Plànol</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Borsa de treball</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Policia</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Associacions i entitats</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-block">
+                                        <h2 class="text-p-14 menu-heading"><a href="#">Govern Obert i transparència</a></h2>
+                                        <ul>
+                                            <li><a href="#" class="text-p-16 p-dark">Informació institucional i organitzativa</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Gestió econòmica</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Acció de govern i normativa</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Contractes, convenis i subvencions</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Serveis i tràmits</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Participació</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-block">
+                                        <a class="text-p-14 menu-heading" href="#">Dades obertes</a>
+                                    </div>
+                                    <div class="menu-block">
+                                        <a class="text-p-14 menu-heading" href="#">Els teus drets</a>
+                                    </div>
+                                    <div class="menu-block">
+                                        <h2 class="title-xs p-dark">Seu electrònica</h2>
+                                        <ul>
+                                            <li><a href="#" class="text-p-16 p-dark">Sobre la Seu electrònica</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Titularitat i regulació</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Sistemes de identificació</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="navigation-logo" href="#">
+                        <img src="../assets/logo-icon.png" alt="">
+                        <p class="text-p-18 p-semibold p-dark">Ajuntament de Badalona</p>
                     </a>
-                    <p class="text-p-18">Seu electrónica</p>
+                    <p class="text-p-18 seu-text">Seu electrónica</p>
                 </div>
-                <div class="col-12 col-sm-2 dropdown-column">
-                    <div class="dropdown">
+                <div class="col-2 dropdown-column">
+                    <div class="my-space menu">
+                        <button class="logged-in-user open-menu">
+                            <div class="user-initial"><span class="user-letter">M</span><span class="sr-only">Lletra inicial, usuari autenticat</span></div>
+                            <div class="user-name text-p-16">Marta Puig</div>
+                        </button>
+                        <div class="my-space-menu menu-content animate__animated animate__slideInRight animate__faster">
+                            <div class="menu-header">
+                                <button class="close-menu">
+                                    <span class="sr-only">Tancar menú espai personal</span>
+                                    <span class="material-icons-outlined" aria-hidden="true">close</span>
+                                </button>
+                                <div class="logged-in-info">
+                                    <div>
+                                        <h2 class="title-m p-white">Hola Marta,</h2>
+                                        <p class="text-p-18 p-white">Benvingut al teu espai.</p>
+                                    </div>
+                                    <button class="dark" aria-describedby="btn-login-description">Tancar sessió</button>
+                                </div>
+                            </div>
+                            <div class="menu-body">
+                                <ul>
+                                    <li><a href="#" class="text-p-18 p-dark">El meu espai</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Favorits</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Alertes</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Tràmits</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Bústia de notificacions</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Factures electròniques</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Participació</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Identitat digital</a></li>
+                                </ul>
+                                <ul class="second-list">
+                                    <li><a href="#" class="text-p-18 p-dark">Dades personals</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Preferències</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown language-dropdown">
                         <div class="dropdown-button">
                             <span class="material-icons" aria-hidden="true">language</span>
                             <button class="dropbtn" aria-expanded="false" aria-label="Català (Selecció d'idioma)">Català</button>
@@ -318,6 +415,7 @@
             </div>
         </div>
     </footer>
+    <script src="../src/js/menus.js"></script>
     <script src="../src/js/dropdowns.js"></script>
     <script src="../src/js/accordions.js"></script>
     <script src="../src/js/filters.js"></script>

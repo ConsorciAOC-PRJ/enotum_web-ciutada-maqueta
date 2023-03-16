@@ -30,18 +30,34 @@ const modalManage = (openClass, closeClass) => {
     const modalClose = (modalId) => {
         let modal = document.getElementById(modalId);
         let openButton = document.getElementById(modal.dataset.button);
-        modal.classList.toggle('show');
-        modal.setAttribute('aria-hidden', 'true');
+        
+        if (modal.classList.contains('show')) {
+            modal.classList.toggle('show');
+            modal.setAttribute('aria-hidden', 'true');
 
-        let tabIndexElements = modal.querySelectorAll('[tabindex="0"]');
+            let tabIndexElements = modal.querySelectorAll('[tabindex="0"]');
 
-        tabIndexElements.forEach(function(element) {
-            element.setAttribute('tabindex', '-1');
-        })
+            tabIndexElements.forEach(function(element) {
+                element.setAttribute('tabindex', '-1');
+            })
 
-        modalOverlayToggle();
+            modalOverlayToggle();
 
-        openButton.focus();
+            openButton.focus();
+        }
+        
+        // modal.classList.toggle('show');
+        // modal.setAttribute('aria-hidden', 'true');
+
+        // let tabIndexElements = modal.querySelectorAll('[tabindex="0"]');
+
+        // tabIndexElements.forEach(function(element) {
+        //     element.setAttribute('tabindex', '-1');
+        // })
+
+        // modalOverlayToggle();
+
+        // openButton.focus();
     }
 
     const modalOpen = (buttonId, modalId) => { 
@@ -93,7 +109,8 @@ const modalManage = (openClass, closeClass) => {
             }
         });
 
-        firstFocusableElement.focus(); // Focus first focusable element by default
+        setTimeout(function(){firstFocusableElement.focus()}, 500); // Focus first focusable element by default 
+        // SetTimeout is used because moving the focus at the same time that the modal is opened makes a weird visual effect. 
     }
 
     const modalOverlayToggle = () => {
