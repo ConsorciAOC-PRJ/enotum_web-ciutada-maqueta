@@ -2,7 +2,7 @@ header {
     border-bottom: 4px solid $black;
     
     @media (min-width: $screen-md) {
-        padding: 0rem 1rem;
+        padding: rem(20px) rem(24px);
     }
 
     .logo-container {

@@ -36,6 +36,24 @@ body *::-moz-selection {
     }
 }
 
+.row-padding {
+    @media (min-width: $screen-md) {
+        padding: rem(96px) 0;
+    }
+}
+
+.row-padding-top {
+    @media (min-width: $screen-md) {
+        padding-top: rem(96px);
+    }
+}
+
+.row-padding-bottom {
+    @media (min-width: $screen-md) {
+        padding-bottom: rem(96px);
+    }
+}
+
 .sr-only {
     position: absolute;
     width: 1px;

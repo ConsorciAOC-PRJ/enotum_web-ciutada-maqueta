@@ -5,11 +5,11 @@
 
     @if $btn-size == 'small' {
         $btn-font-size: 16px;
-        padding: 0.3rem 0.6rem;
+        padding: rem(8px) rem(16px);
     } 
     @else if $btn-size == 'normal' {
         $btn-font-size: $font-base-size;
-        padding: 0.5rem 0.8rem;
+        padding: rem(10px) rem(24px);
     }
     
     // Button radius changes

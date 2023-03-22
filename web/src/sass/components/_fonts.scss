@@ -2,6 +2,7 @@
 
 h1, h2, h3, h4, h5, h6 {
     color: $font-dark;
+    margin: 0;
 }
 
 .title-xl {
@@ -13,7 +14,9 @@ h1, h2, h3, h4, h5, h6 {
 
     @media (min-width: $screen-lg) {
         @include font(56px, bold, 68px);
-    }    
+    }
+    
+    margin-bottom: rem(16px);    
 }
 
 .title-l {
@@ -26,6 +29,8 @@ h1, h2, h3, h4, h5, h6 {
     @media (min-width: $screen-lg) {
         @include font(48px, bold, 52px);
     }
+
+    margin-bottom: rem(24px); 
 }
 
 .title-m {
@@ -38,6 +43,8 @@ h1, h2, h3, h4, h5, h6 {
     @media (min-width: $screen-lg) {
         @include font(36px, bold, 40px);
     }
+
+    margin-bottom: rem(24px);
 }
 
 .title-s {
@@ -50,6 +57,8 @@ h1, h2, h3, h4, h5, h6 {
     @media (min-width: $screen-lg) {
         @include font(24px, bold, 32px);
     }
+
+    margin-bottom: rem(8px); 
 }
 
 .title-xs {
@@ -62,13 +71,24 @@ h1, h2, h3, h4, h5, h6 {
     @media (min-width: $screen-lg) {
         @include font(18px, bold, 24px);
     }
+
+    margin-bottom: rem(8px); 
 }
 
 // #endregion Headings
 
 // #region Body
 p, li, td {
-    color: $font-light;
+    color: $font-light; 
+}
+
+p {
+    margin: 0;
+    margin-bottom: rem(16px);
+}
+
+p.no-margin {
+    margin: 0;
 }
 
 .text-p-24 {
@@ -116,6 +136,18 @@ p, li, td {
 
     @media (min-width: $screen-lg) {
         @include font(14px, normal, 20px);
+    }
+}
+
+.text-p-12 {
+    @include font(12px, normal, 18px);
+
+    @media (min-width: $screen-md) {
+        @include font(12px, normal, 18px);
+    }
+
+    @media (min-width: $screen-lg) {
+        @include font(12px, normal, 18px);
     }
 }
 
