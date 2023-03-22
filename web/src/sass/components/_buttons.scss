@@ -315,3 +315,10 @@ button.secondary-dark, a.secondary-dark {
     text-align: center;
     display: inline-block;
 }
+
+button.secondary-dark-s, a.secondary-dark-s {
+    @include btn('secondary', 'active', 'small', 'dark');
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
