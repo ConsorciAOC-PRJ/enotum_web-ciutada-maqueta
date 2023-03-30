@@ -33,7 +33,6 @@
         align-items: center;
         justify-content: flex-end;
         gap: 1rem;
-        padding-bottom: 0.5rem;
 
         .notification-pagination {
             display: none;
@@ -179,11 +178,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            // position: fixed;
-            // bottom: 0;
-            // left: 0;
-            // z-index: 10;
-            // width: 100%;
             background-color: $white;
             padding: 0rem 1rem;
 

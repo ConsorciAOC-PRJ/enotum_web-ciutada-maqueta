@@ -17,22 +17,8 @@ footer {
                 border-right: 1px solid $grey-03;
             }
 
-            // h2 {
-            //     @include font(18px, bold);
-
-            //     @media (min-width: $screen-md) {
-            //         @include font(20px, bold);
-            //     }
-            // }
-
-            // p {
-            //     @include font(16px);
-            //     color: $grey-01;
-            // }
-
             .material-icons-outlined {
                 font-size: rem(40px);
-                margin-top: rem(22px);
             }
         }
 

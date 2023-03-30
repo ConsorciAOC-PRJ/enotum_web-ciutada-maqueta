@@ -2,7 +2,7 @@ header {
     border-bottom: 4px solid $black;
     
     @media (min-width: $screen-md) {
-        padding: rem(20px) rem(24px);
+        padding: rem(12px);
     }
 
     .logo-container {
@@ -101,6 +101,7 @@ header {
             align-items: center;
             gap: 0.5rem;
             margin: 0 0.5rem 0 0;
+            color: $black;
 
             .my-space-text.sr-only {
                 display: block;
