@@ -1,0 +1,98 @@
+<mjml>
+  <mj-head>
+    <mj-title>Email notificació</mj-title>
+    <mj-attributes>
+        <mj-class name="arial-14" font-family="Arial" font-size="14px" line-height="1.4"/>
+        <mj-class name="arial-16" font-family="Arial" font-size="16px" line-height="1.5"/>
+        <mj-class name="arial-16-bold" font-family="Arial" font-size="16px" font-weight="bold"/> line-height="1.5"/>
+        <mj-class name="arial-18" font-family="Arial" font-size="18px" line-height="1.5"/>
+    </mj-attributes>
+    <mj-style inline="inline">
+      .body {
+        padding-top: 100px;
+      }
+      .wrapper {
+        width: 80%;
+      }
+      .cell {
+        padding: 0px;
+      }
+      .data-section {
+        margin: 0px 25px 0px 25px;
+      }
+      td {
+        color: #656D72;
+      }
+      th {
+        color: #1B2124;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#F5F5F6" css-class="body">
+    <mj-wrapper background-color="#FFFFFF" border-radius="12px" css-class="wrapper">
+      <mj-section>
+        <mj-column>
+          <mj-text padding="0px 25px 0px 25px">
+            <h1 style="margin:0"><img src="../assets/logo.png" width="180px" align="left" alt="Ajuntament de Badalona" /></h1>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="0px">
+        <mj-column>
+          <mj-text padding="0px 25px" mj-class="arial-18" color="#1B2124">
+            <h2 style="margin:0">Hola, Marta</h2>
+          </mj-text>
+          <mj-text padding="0px 25px" mj-class="arial-16" color="#1B2124">
+            <p>Has rebut una nova notificació de l'ajuntament de Badalona.</p>
+          </mj-text>
+          <mj-button href="#" background-color="#005CD1" border-radius="8px" align="left" inner-padding="8px 16px" mj-class="arial-16-bold">Identifica't per accedir-hi</mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="20px 25px 0px 25px">
+        <mj-column>
+            <mj-text padding="0px 0px 8px 0px" mj-class="arial-18" color="#1B2124"><h2 style="margin:0">Dades de l'enviament</h2></mj-text>
+            <mj-divider padding="0px" border-width="1px" border-style="solid" border-color="#B1B4B6"/>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="0px">
+        <mj-column>
+          <mj-table mj-class="arial-16">
+            <tr>
+              <th align="left" style="width:30%">Destinatari</th>
+              <td>Marta Puig Mir</td>
+            </tr>
+            <tr>
+              <th align="left">Emissor</th>
+              <td>Ajuntament de Badalona</td>
+            </tr>
+            <tr>
+              <th align="left">Data d'entrega</th>
+              <td>10/03/2022 a les 14:26h</td>
+            </tr>
+            <tr>
+              <th align="left">Accés fins</th>
+              <td>20/08/2022 a les 23:59h</td>
+            </tr>
+            <tr>
+              <th align="left">Expedient</th>
+              <td>34234/2021</td>
+            </tr>
+            <tr>
+              <th align="left">Id. Notificació</th>
+              <td>98234</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="20px 25px 0px 25px">
+        <mj-column>
+            <mj-divider padding="0px" border-width="1px" border-style="solid" border-color="#E5E6E8"/>
+            <mj-text padding="0px" color="#656D72" mj-class="arial-14">
+                <p>Si voleu fer alguna consulta sobre els mètodes d'accés, podreu posar-vos en contacte amb el nostre <a href="#" style="color:#656D72">portal de suport.</a></p>
+                <p>Aquest missatge de correu electrònic procedeix d'una adreça exclusivament d'enviament. No respongueu aquest missatge.</p>
+            </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>
