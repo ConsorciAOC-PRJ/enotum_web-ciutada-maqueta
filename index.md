@@ -12,6 +12,7 @@
 * [Modal dialog](./components/modal-dialog/)
 * [Inline error](./components/inline-errors/)
 * [Filters](./components/filters/)
+* [Animacions CSS](./components/css-animations/)
 ## Maqueta del web
 * [Accés a la maqueta del web (Pàgina d'inici)](./web/index.html)
 * [Accés a la maqueta del web (Bùstia de notificacions)](./web/pages/postbox.html)
