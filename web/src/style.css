@@ -5180,6 +5180,11 @@ body *::-moz-selection {
   z-index: 10;
 }
 
+@media (max-width: 768px) {
+  .animate__animated {
+    animation-duration: 0s !important;
+  }
+}
 h1, h2, h3, h4, h5, h6 {
   color: #1B2124;
   margin: 0;
@@ -6759,6 +6764,46 @@ button.secondary-dark-s:active, a.secondary-dark-s:active {
   background-color: #F5F5F6;
   padding: 0;
 }
+.filter-container .btn-container-dark {
+  border: none;
+  background: none;
+  border-radius: 100px;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0px;
+  line-height: 1.3333333333rem;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  background-color: #1B2124;
+  color: #FFFFFF;
+}
+.filter-container .btn-container-dark .btn-filter {
+  border: none;
+  background: none;
+  border-radius: 100px;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0px;
+  line-height: 1.3333333333rem;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  background-color: #1B2124;
+  color: #FFFFFF;
+  padding: 0;
+}
+.filter-container .btn-container-dark .material-icons {
+  color: #FFFFFF;
+}
 .filter-container .filter-remove {
   background: none;
   border: none;
@@ -7099,6 +7144,77 @@ input[aria-invalid=true] {
 }
 
 .login-modal.show {
+  display: block;
+}
+
+.filter-open-modal {
+  border: none;
+  background: none;
+  border-radius: 100px;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0px;
+  line-height: 1.3333333333rem;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  background-color: #F5F5F6;
+}
+
+.filters-modal {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 1.5rem;
+  background-color: #FFFFFF;
+  z-index: 15;
+  display: none;
+}
+@media (min-width: 768px) {
+  .filters-modal {
+    left: auto;
+    width: 28rem;
+    padding: 3rem;
+  }
+}
+.filters-modal .filter-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.8rem;
+  border-top: 1px solid #E5E6E8;
+}
+.filters-modal .close-modal-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+}
+.filters-modal .close-modal-container .close-modal {
+  background: none;
+  border: none;
+}
+
+.modal-overlay {
+  display: none;
+  background-color: rgba(101, 109, 114, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.modal-overlay.show {
+  display: block;
+}
+
+.filters-modal.show {
   display: block;
 }
 
@@ -7481,19 +7597,44 @@ footer .logos-container .credits-container {
   }
 }
 
-.loader {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 6px solid #005CD1;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  animation: spin 1.2s linear infinite;
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 32px 0;
+  margin: 0 -5%;
+  overflow: hidden;
 }
 
-@keyframes spin {
+.dot-typing {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #E0EBF9;
+  color: #E0EBF9;
+  box-shadow: 9984px 0 0 0 #005CD1, 9999px 0 0 0 #E0EBF9, 10014px 0 0 0 #E0EBF9;
+  animation: dot-typing 1s infinite linear;
+  margin: 0 5px;
+}
+
+@keyframes dot-typing {
+  0% {
+    box-shadow: 9984px 0 0 0 #005CD1, 9999px 0 0 0 #E0EBF9, 10014px 0 0 0 #E0EBF9;
+  }
+  25% {
+    box-shadow: 9984px -10px 0 0 #005CD1, 9999px 0 0 0 #E0EBF9, 10014px 0 0 0 #E0EBF9;
+  }
+  50% {
+    box-shadow: 9984px 0 0 0 #E0EBF9, 9999px -10px 0 0 #005CD1, 10014px 0 0 0 #E0EBF9;
+  }
+  75% {
+    box-shadow: 9984px 0 0 0 #E0EBF9, 9999px 0 0 0 #E0EBF9, 10014px -10px 0 0 #005CD1;
+  }
   100% {
-    transform: rotate(360deg);
+    box-shadow: 9984px 0 0 0 #E0EBF9, 9999px 0 0 0 #E0EBF9, 10014px 0 0 0 #E0EBF9;
   }
 }
 .main-menu {

@@ -17,10 +17,21 @@
     </style>
 </head>
 <body>
-    <div class="col-3">
-        <div class="stage">
-          <div class="dot-typing"></div>
-        </div>
-    </div>
+    <div class="loader" aria-label="Carregant" role="img"></div>
+    <div class="chart" data-percent="100" aria-label="100%" role="img"></div>
+    <script src="../src/js/easypiechart.min.js"></script>
+    <script>
+        let element = document.querySelector('.chart');
+        let chart = new EasyPieChart(element, {
+            barColor: '#005CD1',
+            scaleLength: 0, 
+            animate: {
+                duration: 1000,
+                enabled: true,
+            },
+            size: 90,
+            lineWidth: 8,
+        });
+    </script>
 </body>
 </html>
