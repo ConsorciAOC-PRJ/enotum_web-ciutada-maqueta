@@ -11,6 +11,19 @@
         }
     }
 
+    .btn-container-dark {
+        @include filter-button(dark);
+
+        .btn-filter {
+            @include filter-button(dark);
+            padding: 0;
+        }
+
+        .material-icons {
+            color: $white;
+        }
+    }
+
     .filter-remove {
         background: none;
         border: none;

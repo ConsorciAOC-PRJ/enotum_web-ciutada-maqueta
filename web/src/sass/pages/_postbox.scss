@@ -7,11 +7,106 @@
         }
     }
 
+    .filters-row {
+        padding: 0;
+    }
+
     .filters-col {
         padding-top: 0rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
 
-        @media (min-width: 768px) {
+        @media (min-width: $screen-xl) {
             padding-top: 2rem;
+            flex-direction: row;
+        }
+
+        .date-filter {
+            border-right: 1px solid $grey-04;
+
+            @media(min-width: $screen-xl){
+                padding-right: 1rem;
+            }
+
+            .filter-container {
+                width: 100%;
+
+                .btn-container {
+                    border-radius: 0;
+                }
+
+                .btn-container-dark {
+                    border-radius: 0;
+                }
+
+                @media (min-width:$screen-xl) {
+                    width: auto;
+
+                    .btn-container {
+                        border-radius: $radius-full;
+                    }
+
+                    .btn-container-dark {
+                        border-radius: $radius-full;
+                    }
+                }
+
+                .filter-content {
+                    width: 100%;
+                }
+            }
+        }
+
+        .all-filters-container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            gap: 1rem;
+            width: 100%;
+            padding: 0rem 0.8rem;
+
+            @media (min-width: $screen-xl) {
+                justify-content: flex-start;
+                flex-direction: row;
+            }
+
+            .all-filters {
+                display: flex;
+                gap: 1rem;
+                overflow-x: auto;
+
+                @media (min-width: $screen-xl) {
+                    overflow-x: inherit;
+                }
+
+                .filter-mobile {
+                    display: block;
+
+                    @media (min-width: $screen-xl) {
+                        display: none;
+                    }
+                }
+
+                .filter-desktop {
+                    display: none;
+
+                    @media (min-width: $screen-xl) {
+                        display: block;
+                    }
+                }
+            }
+
+            .all-filters-button {
+                border-right: 1px solid $grey-04;
+                padding-right: 1rem;
+
+                @media (min-width: $screen-xl) {
+                    padding-right: 0;
+                    border-right: none;
+                }
+            }
+
         }
     }
 

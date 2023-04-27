@@ -1,6 +1,3 @@
-// This script is very similar to the one for dropdowns. 
-//It is on a separate file to make it easier to use componentes independently.
-
 const filterToggle = () => {
    
     const filters = document.querySelectorAll(".filter-container");
@@ -22,6 +19,15 @@ const filterToggle = () => {
             }
         }
        
+        // Add event listener to document to close filter when clicking outside of it
+        document.addEventListener('click', (event) => {
+            const isClickInsideFilter = filter.contains(event.target);
+            if (!isClickInsideFilter && content.classList.contains('show')) {
+                content.classList.remove('show');
+                button.setAttribute('aria-expanded', 'false');
+                icon.innerText = 'expand_more';
+            }
+        });
     });
 }
 
@@ -44,8 +50,12 @@ const applyFilter = (filterId) => {
 
     content.classList.remove("show");
     button.setAttribute("aria-expanded", "false");
-
-    buttonContainer.innerHTML += "<button class='filter-remove' onclick=\"removeFilter(\'" + filterId + "\')\"><span class='material-icons' aria-hidden='true'>clear</span><span class='sr-only'>Eliminar filtre</span></button>";
+    
+    // Check if the "remove filter" button has already been added.
+    if (!filterToApply.getElementsByClassName("filter-remove")[0]) {
+        // Add the "remove filter" button to the button container.
+        buttonContainer.innerHTML += "<button class='filter-remove' onclick=\"removeFilter(\'" + filterId + "\')\"><span class='material-icons' aria-hidden='true'>clear</span><span class='sr-only'>Eliminar filtre</span></button>";
+    }
 
     filterToggle();
 }

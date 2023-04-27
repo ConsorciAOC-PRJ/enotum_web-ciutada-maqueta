@@ -1,0 +1,67 @@
+.filter-open-modal {
+    @include filter-button;
+}
+
+.filters-modal {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 1.5rem;
+    background-color: $white;
+    z-index: 15;
+    display: none;
+
+    @media (min-width: $screen-md) {
+        left: auto;
+        width: 28rem;
+        padding: 3rem;
+    }
+
+    .filter-footer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0.8rem;
+        border-top: 1px solid $grey-03;
+    }
+
+    .close-modal-container {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid $grey-04;
+
+        .close-modal {
+            background: none;
+            border: none;
+        }
+
+        @media (min-width: $screen-md) {
+            margin-left: -3rem;
+            margin-right: -3rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+    }
+}
+
+.modal-overlay {
+    display: none;
+    background-color: rgba($grey-01, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.modal-overlay.show {
+    display: block;
+}
+
+.filters-modal.show {
+    display: block;
+}

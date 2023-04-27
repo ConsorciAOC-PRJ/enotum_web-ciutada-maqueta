@@ -75,3 +75,10 @@ body *::-moz-selection {
     background-color: $grey-04;
     z-index: 10;
 }
+
+// Don't use animations in responsive version
+@media (max-width: $screen-md) {
+    .animate__animated {
+      animation-duration: 0s !important;
+    }
+  }
