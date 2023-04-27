@@ -14,11 +14,15 @@
         .loader {
             margin-bottom: 80px;
         }
+        #container {
+            width: 30%;
+        }
     </style>
 </head>
 <body>
     <div class="loader" aria-label="Carregant" role="img"></div>
     <div class="chart" data-percent="100" aria-label="100%" role="img"></div>
+    <div id="container"></div>
     <script src="../src/js/easypiechart.min.js"></script>
     <script>
         let element = document.querySelector('.chart');
@@ -31,6 +35,18 @@
             },
             size: 90,
             lineWidth: 8,
+        });
+    </script>
+    <script src="../node_modules/progressbar.js/dist/progressbar.min.js"></script>
+    <script>
+        var line = new ProgressBar.Line('#container', {
+            color: '#005CD1',
+            trailColor: '#E0EEFF',
+            strokeWidth: 1,
+            trailWidth: 1,
+        });
+        line.animate(1, {
+            duration: 800
         });
     </script>
 </body>
