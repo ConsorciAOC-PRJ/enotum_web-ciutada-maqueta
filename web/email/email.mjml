@@ -40,17 +40,17 @@
       <mj-section padding="0px">
         <mj-column>
           <mj-text padding="0px 25px" mj-class="arial-18" color="#1B2124">
-            <h2 style="margin:0">Hola, Marta</h2>
+            <h2 style="margin:0;font-size:18px;">Hola, Marta</h2>
           </mj-text>
           <mj-text padding="0px 25px" mj-class="arial-16" color="#1B2124">
             <p>Has rebut una nova notificació de l'ajuntament de Badalona.</p>
           </mj-text>
-          <mj-button href="#" background-color="#005CD1" border-radius="8px" align="left" inner-padding="8px 16px" mj-class="arial-16-bold">Identifica't per accedir-hi</mj-button>
+          <mj-button href="#" background-color="#005CD1" border-radius="8px" align="left" inner-padding="12px 16px" mj-class="arial-16-bold">Identifica't per accedir-hi</mj-button>
         </mj-column>
       </mj-section>
       <mj-section padding="20px 25px 0px 25px">
         <mj-column>
-            <mj-text padding="0px 0px 8px 0px" mj-class="arial-18" color="#1B2124"><h2 style="margin:0">Dades de l'enviament</h2></mj-text>
+            <mj-text padding="0px 0px 6px 0px" mj-class="arial-18" color="#1B2124"><h2 style="margin:0;font-size:18px;">Dades de l'enviament</h2></mj-text>
             <mj-divider padding="0px" border-width="1px" border-style="solid" border-color="#B1B4B6"/>
         </mj-column>
       </mj-section>
