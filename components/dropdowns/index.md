@@ -25,13 +25,13 @@ NOTA: A l'exemple s'ha afegit una icona amb `aria-hidden` per exemplificar que a
 
 En el cas del desplegable d'idioma estem agafant com a nom del botó la primera opció del desplegable. Visualment, estem indicant amb la icona de bola del món que aquest component serveix per canviar d'idioma, però aquesta informació no l'estem donant als usuaris de lector de pantalla.
 
-Per això, hem d'afegir un atribut `aria-label` al botó. Aquest ha de començar igual que el nom del botó però afegirà informació sobre la seva funcionalitat. És a dir, si l'opció per defecte és "Català", el botó tindrà un `aria-label="Català (Selecció d'idioma)"`. Aquest `aria-label` haurà de canviar automàticament quan hi hagi un altre idioma seleccionat i el text "Selector d'idioma" haurà de canviar amb l'idioma de la pàgina.
+Per això, hem d'afegir un atribut `aria-label` al botó. Aquest ha de començar igual que el nom del botó però afegirà informació sobre la seva funcionalitat. És a dir, si l'opció per defecte és "CA", el botó tindrà un `aria-label="CA (Català), Selecció d'idioma"`. Aquest `aria-label` haurà de canviar automàticament quan hi hagi un altre idioma seleccionat i el text "Selector d'idioma" haurà de canviar amb l'idioma de la pàgina.
 
 ```html
 <div class="dropdown">
     <div class="dropdown-button">
         <span class="material-icons" aria-hidden="true">language</span>
-        <button class="dropbtn" aria-expanded="false" aria-label="Català (Selecció d'idioma)">Català</button>
+        <button class="dropbtn" aria-expanded="false" aria-label="CA (Català), Selecció d'idioma">CA</button>
         <span class="material-icons" aria-hidden="true">arrow_drop_down</span>
     </div>
     <div class="dropdown-content">
