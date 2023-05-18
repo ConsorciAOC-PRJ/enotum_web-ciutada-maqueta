@@ -19,12 +19,6 @@ const menuToggle = () => {
             button.setAttribute("aria-expanded", "false");
             overlay.classList.remove("show");
         }
-
-        // overlay.onclick = () => {
-        //     content.classList.remove("show");
-        //     button.setAttribute("aria-expanded", "false");
-        //     overlay.classList.remove("show");
-        // }
        
     });
 }

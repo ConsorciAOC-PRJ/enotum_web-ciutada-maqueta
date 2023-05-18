@@ -46,18 +46,6 @@ const modalManage = (openClass, closeClass) => {
             openButton.focus();
         }
         
-        // modal.classList.toggle('show');
-        // modal.setAttribute('aria-hidden', 'true');
-
-        // let tabIndexElements = modal.querySelectorAll('[tabindex="0"]');
-
-        // tabIndexElements.forEach(function(element) {
-        //     element.setAttribute('tabindex', '-1');
-        // })
-
-        // modalOverlayToggle();
-
-        // openButton.focus();
     }
 
     const modalOpen = (buttonId, modalId) => { 
