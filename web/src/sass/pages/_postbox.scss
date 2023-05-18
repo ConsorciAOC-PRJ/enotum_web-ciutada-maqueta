@@ -108,6 +108,15 @@
             }
 
         }
+        .all-filters-container.fixed-filters {
+            position: fixed;
+            top: 0;
+            background-color: $white;
+
+            @media (min-width: $screen-xl) {
+                position: relative;
+            }
+        }
     }
 
     .results-container {

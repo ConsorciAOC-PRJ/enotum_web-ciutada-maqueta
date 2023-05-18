@@ -7931,6 +7931,16 @@ footer .logos-container .credits-container {
     border-right: none;
   }
 }
+.postbox .filters-col .all-filters-container.fixed-filters {
+  position: fixed;
+  top: 0;
+  background-color: #FFFFFF;
+}
+@media (min-width: 1200px) {
+  .postbox .filters-col .all-filters-container.fixed-filters {
+    position: relative;
+  }
+}
 .postbox .results-container {
   border-top: 1px solid #E5E6E8;
   border-bottom: 1px solid #E5E6E8;
