@@ -279,7 +279,7 @@ button.terciary-s-rs, a.terciary-s-rs {
 
 // #endregion
 
-//TODO: Decide and implement all the variations for this "special" buttons
+// #region Other buttons in the DS
 
 button.warning, a.warning {
     @include btn('warning', 'active', 'normal');
@@ -322,3 +322,4 @@ button.secondary-dark-s, a.secondary-dark-s {
     text-align: center;
     display: inline-block;
 }
+// #endregion
