@@ -6,7 +6,7 @@ const progressBar = () => {
         strokeWidth: 1,
         trailWidth: 1,
     });
-    line.animate(1, {
+    line.animate(0.8, {
         duration: 800
     });
 }
