@@ -158,6 +158,7 @@
         align-items: flex-start;
         flex-direction: column;
         border-bottom: 1px solid $grey-03;
+        position: relative;
         
         @media (min-width: $screen-md) {
             align-items: center;
@@ -207,6 +208,16 @@
             background-color: $warning;
             padding: 0.5rem 1rem;
             border-radius: $radius-full;
+        }
+
+        .overlay-link {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 8;
         }
     }
 

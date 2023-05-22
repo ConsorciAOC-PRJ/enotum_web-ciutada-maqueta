@@ -7974,6 +7974,7 @@ footer .logos-container .credits-container {
   align-items: flex-start;
   flex-direction: column;
   border-bottom: 1px solid #E5E6E8;
+  position: relative;
 }
 @media (min-width: 768px) {
   .postbox .post {
@@ -8018,6 +8019,15 @@ footer .logos-container .credits-container {
   background-color: #FFD06A;
   padding: 0.5rem 1rem;
   border-radius: 100px;
+}
+.postbox .post .overlay-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
 }
 .postbox .pagination {
   display: flex;
