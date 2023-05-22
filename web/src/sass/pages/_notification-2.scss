@@ -76,6 +76,11 @@
             color: $black;
             border-left: 1px solid $grey-03;
             padding: 0.7rem;
+            display: none;
+
+            @media (min-width: $screen-xl) {
+                display: block;
+            }
         }
     }
 
@@ -190,6 +195,11 @@
             }
         }
 
+    }
+
+
+    .notification-info.hide {
+        display: none;
     }
 
     .mobile-controls {

@@ -8107,6 +8107,12 @@ footer .logos-container .credits-container {
   color: #1B2124;
   border-left: 1px solid #E5E6E8;
   padding: 0.7rem;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .notification .notification-menu .exit-link {
+    display: block;
+  }
 }
 .notification .notification-no-content {
   background-color: #656D72;
@@ -8201,6 +8207,9 @@ footer .logos-container .credits-container {
 }
 .notification .notification-info .notification-body .notification-data tr {
   vertical-align: top;
+}
+.notification .notification-info.hide {
+  display: none;
 }
 .notification .mobile-controls {
   position: fixed;
@@ -8303,6 +8312,12 @@ footer .logos-container .credits-container {
   color: #1B2124;
   border-left: 1px solid #E5E6E8;
   padding: 0.7rem;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .notification-2 .notification-menu .exit-link {
+    display: block;
+  }
 }
 .notification-2 .notification-no-content {
   background-color: #656D72;
@@ -8407,6 +8422,9 @@ footer .logos-container .credits-container {
 }
 .notification-2 .notification-info .notification-body .download-files .material-icons {
   font-size: 1rem;
+}
+.notification-2 .notification-info.hide {
+  display: none;
 }
 .notification-2 .mobile-controls {
   position: fixed;
