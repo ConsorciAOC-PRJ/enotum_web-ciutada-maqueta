@@ -12,12 +12,17 @@ const menuToggle = () => {
             content.classList.add("show");
             button.setAttribute("aria-expanded", "true");
             overlay.classList.add("show");
+            button.setAttribute("aria-hidden", "true");
+            button.setAttribute("tabindex", "-1");
         }
 
         close.onclick = () => {
             content.classList.remove("show");
             button.setAttribute("aria-expanded", "false");
             overlay.classList.remove("show");
+            button.removeAttribute("aria-hidden");
+            button.removeAttribute("tabindex");
+            button.focus();
         }
        
     });
