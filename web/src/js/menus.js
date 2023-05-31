@@ -14,6 +14,7 @@ const menuToggle = () => {
             overlay.classList.add("show");
             button.setAttribute("aria-hidden", "true");
             button.setAttribute("tabindex", "-1");
+            close.focus();
         }
 
         close.onclick = () => {
