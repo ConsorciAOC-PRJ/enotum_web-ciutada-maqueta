@@ -15,6 +15,8 @@ const overlayManage = () => {
                 content.classList.remove("show");
                 button.setAttribute("aria-expanded", "false");
                 overlay.classList.remove("show");
+                button.removeAttribute("aria-hidden");
+                button.removeAttribute("tabindex");
             }
 
         });
