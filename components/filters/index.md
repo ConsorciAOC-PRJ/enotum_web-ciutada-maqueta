@@ -7,11 +7,11 @@ Aquest és el codi d'exemple que es fa servir a l'exemple enllaçat al final d'a
   <div class="filter-container" id="filter-1">
     <div class="btn-container">
         <button class="btn-filter" aria-expanded="false">
-            <span>Emissor</span>
+            <span id="filter-1-name">Emissor</span>
             <span class="material-icons filter-icon" aria-hidden="true">expand_more</span>
         </button>
     </div>
-    <div class="filter-content">
+    <div class="filter-content" role="group" aria-labelledby="filter-1-name">
         <div class="filter-header">
             <h2 class="title-xs">Emissor</h2>
             <button class="text-p-16 link-grey btn-filter-rmv">Restaurar</button>
@@ -49,6 +49,8 @@ Aquest és el codi d'exemple que es fa servir a l'exemple enllaçat al final d'a
 </div>
 ```
 Per motius d'accessibilitat, tot i que sembla que el botó pels filtres és només un component, en realitat són dos botons. Això és perquè no es pot tenir el botó "d'esborrar" a dintre d'un altre botó perquè els usuaris que naveguen amb tecnologies d'assistència no podrien fer-los servir. Per això, hi ha un contenidor per al filtre i a aquest contenidor tenim el botó per obrir i tancar el filtre i també el botó per esborrar el filtre.
+
+A més, hem d'afegir l'atribut `role="group"` i l'atribut `aria-labelledby` amb l'id del `<span>` que conté el nom del filtre (a dins del botó).
 
 Pel que fa al comportament, el comportament bàsic dels filtres està a: [filters.js](../../web/src/js/filters.js). Tenim una funció per gestionar els filtres i una per aplicar els filtres i per esborrar-los.
 
