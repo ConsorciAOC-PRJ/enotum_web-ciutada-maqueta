@@ -174,13 +174,6 @@
                                     <button class="text-p-16 link-grey btn-filter-rmv">Restaurar</button>
                                 </div>
                                 <div class="filter-main">
-                                    <!-- <div class="search-bar">
-                                        <input type="text" placeholder="Cercar emissor">
-                                        <button>
-                                            <span class="sr-only">Cerca</span>
-                                            <span class="material-icons" aria-hidden="true">search</span>
-                                        </button>
-                                    </div> -->
                                     <ul class="custom-rb-container">
                                         <li>
                                             <input type="radio" id="6-mesos" value="6-mesos" name="data">
@@ -210,11 +203,11 @@
                             <div class="filter-container  filter-desktop" id="filter-1">
                                 <div class="btn-container">
                                     <button class="btn-filter" aria-expanded="false">
-                                        <span>Emissor</span>
+                                        <span id="filter-1-name">Emissor</span>
                                         <span class="material-icons filter-icon" aria-hidden="true">expand_more</span>
                                     </button>
                                 </div>
-                                <div class="filter-content">
+                                <div class="filter-content" role="group" aria-labelledby="filter-1-name">
                                     <div class="filter-header">
                                         <h2 class="title-xs">Emissor</h2>
                                         <button class="text-p-16 link-grey btn-filter-rmv">Restaurar</button>
@@ -253,11 +246,11 @@
                             <div class="filter-container filter-desktop" id="filter-2">
                                 <div class="btn-container">
                                     <button class="btn-filter" aria-expanded="false">
-                                        <span>Emissor</span>
+                                        <span id="filter-2-name">Emissor</span>
                                         <span class="material-icons filter-icon" aria-hidden="true">expand_more</span>
                                     </button>
                                 </div>
-                                <div class="filter-content">
+                                <div class="filter-content" role="group" aria-labelledby="filter-2-name">
                                     <div class="filter-header">
                                         <h2 class="title-xs">Emissor</h2>
                                         <button class="text-p-16 link-grey btn-filter-rmv">Restaurar</button>
@@ -316,11 +309,13 @@
                                     </button>
                                 </div>
                                 <div class="accordion">
-                                    <button class="accordion-button aoc-border" aria-expanded="false">
-                                        <h2>Emissor</h2>
-                                        <span class="material-icons" aria-hidden="true">expand_more</span>
-                                    </button>
-                                    <div class="accordion-content filter-container">
+                                    <h2>
+                                        <button id="accordion-modal-1-btn" class="accordion-button aoc-border" aria-expanded="false" aria-controls="accordion-modal-1">
+                                            <span class="title-xs">Emissor</span>
+                                            <span class="material-icons" aria-hidden="true">expand_more</span>
+                                        </button>
+                                    </h2>
+                                    <div id="accordion-modal-1" class="accordion-content" role="region" aria-labelledby="accordion-modal-1-btn">
                                         <div class="filter-main">
                                             <div class="search-bar">
                                                 <input type="text" placeholder="Cercar emissor">
