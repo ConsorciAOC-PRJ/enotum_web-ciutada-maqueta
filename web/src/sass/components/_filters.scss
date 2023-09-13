@@ -43,7 +43,7 @@
         border: 1px solid $grey-03;
         border-radius: $radius-large;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 25px 35px rgba(0, 0, 0, 0.03);
-        z-index: 1;
+        z-index: 10;
 
         .btn-filter-rmv {
             background: none;
