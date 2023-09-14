@@ -3,7 +3,7 @@
 @import './mixins/fonts.scss';
 @import './mixins/buttons.scss';
 @import './mixins/filters.scss';
-@import './mixins/state-tags.scss';
+@import './mixins/state_tags.scss';
 
 // Custom.scss
 // Option B: Include parts of Bootstrap
@@ -56,8 +56,8 @@
 @import './components/loader';
 @import './components/main_menu';
 @import './components/my_space_menu';
+@import './components/state_tags';
 
 @import './pages/home';
 @import './pages/postbox';
-@import './pages/notification-1';
-@import './pages/notification-2';
+@import './pages/notification';
