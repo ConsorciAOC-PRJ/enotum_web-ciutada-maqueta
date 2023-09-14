@@ -8240,6 +8240,9 @@ footer .logos-container .credits-container {
 .notification .notification-info .notification-body .notification-warning button {
   width: 100%;
 }
+.notification .notification-info .notification-body .notification-warning div {
+  width: 100%;
+}
 .notification .notification-info .notification-body .notification-warning.yellow {
   background-color: rgba(255, 208, 106, 0.2);
   border-left: 2px solid #FFD06A;
