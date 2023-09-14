@@ -8104,10 +8104,10 @@ footer .logos-container .credits-container {
   font-size: 1rem;
 }
 
-.notification-only .full-height {
+.notification .full-height {
   min-height: 91vh;
 }
-.notification-only #skip-to-notification:focus {
+.notification #skip-to-notification:focus {
   position: absolute;
   width: auto;
   height: auto;
@@ -8117,36 +8117,36 @@ footer .logos-container .credits-container {
   background-color: #F5F5F6;
   z-index: 10;
 }
-.notification-only .home-link {
+.notification .home-link {
   display: flex;
 }
-.notification-only .back-link {
+.notification .back-link {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-.notification-only .back-link .material-icons-outlined {
+.notification .back-link .material-icons-outlined {
   font-size: 0.8888888889rem;
 }
-.notification-only .back-link .back-link-text {
+.notification .back-link .back-link-text {
   text-decoration: underline;
 }
-.notification-only .navigation-logo {
+.notification .navigation-logo {
   border-right: 1px solid #E5E6E8;
   margin-right: 0.5rem;
 }
-.notification-only .notification-menu {
+.notification .notification-menu {
   display: flex;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
 }
-.notification-only .notification-menu .notification-pagination {
+.notification .notification-menu .notification-pagination {
   display: none;
 }
 @media (min-width: 768px) {
-  .notification-only .notification-menu .notification-pagination {
+  .notification .notification-menu .notification-pagination {
     display: flex;
     gap: 0.3rem;
     align-items: center;
@@ -8154,37 +8154,37 @@ footer .logos-container .credits-container {
     padding-right: 0.5rem;
   }
 }
-.notification-only .notification-menu .notification-pagination .pagination-arrows {
+.notification .notification-menu .notification-pagination .pagination-arrows {
   display: flex;
   padding-top: 0.3rem;
 }
-.notification-only .notification-menu .notification-pagination .pagination-arrows .inactive-arrow {
+.notification .notification-menu .notification-pagination .pagination-arrows .inactive-arrow {
   color: #B1B4B6;
 }
-.notification-only .notification-menu .notification-pagination .pagination-arrows .active-arrow {
+.notification .notification-menu .notification-pagination .pagination-arrows .active-arrow {
   color: #656D72;
 }
-.notification-only .notification-menu .exit-link {
+.notification .notification-menu .exit-link {
   color: #1B2124;
   border-left: 1px solid #E5E6E8;
   padding: 0.7rem;
   display: none;
 }
 @media (min-width: 1200px) {
-  .notification-only .notification-menu .exit-link {
+  .notification .notification-menu .exit-link {
     display: block;
   }
 }
-.notification-only .notification-no-content {
+.notification .notification-no-content {
   background-color: #656D72;
   display: none;
 }
 @media (min-width: 768px) {
-  .notification-only .notification-no-content {
+  .notification .notification-no-content {
     display: flex;
   }
 }
-.notification-only .notification-no-content .no-content {
+.notification .notification-no-content .no-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8193,125 +8193,125 @@ footer .logos-container .credits-container {
   width: 15rem;
   margin: auto;
 }
-.notification-only .notification-no-content .no-content .no-content-icon {
+.notification .notification-no-content .no-content .no-content-icon {
   font-size: 2.4444444444rem;
   color: #FFFFFF;
 }
-.notification-only .notification-content {
+.notification .notification-content {
   display: none;
 }
 @media (min-width: 768px) {
-  .notification-only .notification-content {
+  .notification .notification-content {
     display: flex;
   }
 }
 @media (min-width: 768px) {
-  .notification-only .notification-info {
+  .notification .notification-info {
     padding: 2rem;
   }
 }
-.notification-only .notification-info .notification-header {
+.notification .notification-info .notification-header {
   border-bottom: 1px solid #E5E6E8;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
-.notification-only .notification-info .notification-header .entity-info {
+.notification .notification-info .notification-header .entity-info {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.notification-only .notification-info .notification-header .entity-info p {
+.notification .notification-info .notification-header .entity-info p {
   margin: 0;
 }
-.notification-only .notification-info .notification-header .entity-info img {
+.notification .notification-info .notification-header .entity-info img {
   width: 3rem;
   height: 3rem;
 }
-.notification-only .notification-info .notification-body .notification-warning {
+.notification .notification-info .notification-body .notification-warning {
   display: flex;
   gap: 0.5rem;
   background-color: #F5F5F6;
   border-left: 2px solid #1B2124;
   padding: 1rem;
 }
-.notification-only .notification-info .notification-body .notification-warning p {
+.notification .notification-info .notification-body .notification-warning p {
   margin-top: 0;
 }
-.notification-only .notification-info .notification-body .notification-warning button {
+.notification .notification-info .notification-body .notification-warning button {
   width: 100%;
 }
-.notification-only .notification-info .notification-body .notification-warning.yellow {
+.notification .notification-info .notification-body .notification-warning.yellow {
   background-color: rgba(255, 208, 106, 0.2);
   border-left: 2px solid #FFD06A;
 }
-.notification-only .notification-info .notification-body .table-title {
+.notification .notification-info .notification-body .table-title {
   border-bottom: 1px solid #B1B4B6;
   margin-top: 1.5rem;
 }
-.notification-only .notification-info .notification-body .notification-data {
+.notification .notification-info .notification-body .notification-data {
   text-align: left;
 }
-.notification-only .notification-info .notification-body .notification-data th {
+.notification .notification-info .notification-body .notification-data th {
   font-weight: normal;
   padding-right: 1.5rem;
 }
-.notification-only .notification-info .notification-body .notification-data tr {
+.notification .notification-info .notification-body .notification-data tr {
   vertical-align: top;
 }
-.notification-only .notification-info .notification-body .download-files {
+.notification .notification-info .notification-body .download-files {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0rem;
 }
-.notification-only .notification-info .notification-body .download-files .material-icons {
+.notification .notification-info .notification-body .download-files .material-icons {
   font-size: 1rem;
 }
-.notification-only .notification-info .notification-body .notification-btn {
+.notification .notification-info .notification-body .notification-btn {
   margin-top: 1rem;
   width: 100%;
   display: none;
 }
 @media (min-width: 768px) {
-  .notification-only .notification-info .notification-body .notification-btn {
+  .notification .notification-info .notification-body .notification-btn {
     display: block;
   }
 }
-.notification-only .notification-info.hide {
+.notification .notification-info.hide {
   display: none;
 }
-.notification-only .mobile-controls {
+.notification .mobile-controls {
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 10;
   width: 100%;
 }
-.notification-only .mobile-controls .notification-pagination-mobile {
+.notification .mobile-controls .notification-pagination-mobile {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #FFFFFF;
   padding: 0rem 1rem;
 }
-.notification-only .mobile-controls .notification-pagination-mobile .inactive-arrow {
+.notification .mobile-controls .notification-pagination-mobile .inactive-arrow {
   color: #B1B4B6;
 }
-.notification-only .mobile-controls .notification-pagination-mobile .active-arrow {
+.notification .mobile-controls .notification-pagination-mobile .active-arrow {
   color: #656D72;
 }
 @media (min-width: 768px) {
-  .notification-only .mobile-controls .notification-pagination-mobile {
+  .notification .mobile-controls .notification-pagination-mobile {
     display: none;
   }
 }
-.notification-only .mobile-controls .notification-btn-mobile {
+.notification .mobile-controls .notification-btn-mobile {
   border-radius: 0;
   margin-bottom: 0;
   padding: 1rem 0rem;
 }
 @media (min-width: 768px) {
-  .notification-only .mobile-controls .notification-btn-mobile {
+  .notification .mobile-controls .notification-btn-mobile {
     display: none;
   }
 }
