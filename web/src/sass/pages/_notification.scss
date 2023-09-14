@@ -1,7 +1,18 @@
-.notification {
+.notification-only {
 
     .full-height {
-        min-height: 93vh;
+        min-height: 91vh;
+    }
+
+    #skip-to-notification:focus {
+        position: absolute;
+        width: auto;
+        height: auto;
+        overflow: visible;
+        clip: auto;
+        padding: 25px;
+        background-color: $grey-04;
+        z-index: 10;
     }
 
     .home-link {
@@ -96,6 +107,14 @@
         }
     }
 
+    .notification-content {
+        display: none;
+
+        @media (min-width: $screen-md) {
+            display: flex;
+        }
+    }
+
     .notification-info {
         @media (min-width: $screen-md) {
             padding: 2rem;
@@ -125,30 +144,25 @@
 
         .notification-body {
 
-            .state-tag {
-                @include state-tag();
-            }
-
             .notification-warning {
                 display: flex;
                 gap: 0.5rem;
-                background-color: adjust-color($warning, $alpha: -0.80);
-                border-left: 2px solid $warning;
+                background-color: $grey-04;
+                border-left: 2px solid $black;
                 padding: 1rem;
 
-                .warning-message {
+                p {
                     margin-top: 0;
+                }
+
+                button {
+                    width: 100%;
                 }
             }
 
-            .notification-btn {
-                margin-top: 1rem;
-                width: 100%;
-                display: none;
-
-                @media (min-width: $screen-md) {
-                    display: block;
-                }
+            .notification-warning.yellow {
+                background-color: adjust-color($warning, $alpha: -0.80);
+                border-left: 2px solid $warning;
             }
 
             .table-title {
@@ -166,6 +180,27 @@
 
                 tr {
                     vertical-align: top;
+                }
+            }
+
+            .download-files {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 0rem;
+
+                .material-icons {
+                    font-size: 1rem;
+                }
+            }
+
+            .notification-btn {
+                margin-top: 1rem;
+                width: 100%;
+                display: none;
+
+                @media (min-width: $screen-md) {
+                    display: block;
                 }
             }
         }
@@ -214,6 +249,6 @@
                 display: none;
             }
         }
-
     }
+
 }

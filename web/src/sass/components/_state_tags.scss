@@ -1,0 +1,11 @@
+.state-tag.warning {
+    @include state-tag();
+}
+
+.state-tag.open {
+    @include state-tag('open');
+}
+
+.state-tag.closed {
+    @include state-tag('closed');
+}
