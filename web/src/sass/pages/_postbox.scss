@@ -237,8 +237,12 @@
             align-items: center;
             text-decoration: none;
 
-            span:first-of-type {
+            span {
                 text-decoration: underline;
+            }
+
+            span.material-icons {
+                text-decoration: none;
             }
         }
 
