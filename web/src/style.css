@@ -8049,6 +8049,33 @@ footer .logos-container .credits-container {
 .postbox .results-container .order-options {
   text-align: right;
 }
+.postbox .results-container .order-options p {
+  display: flex;
+  justify-content: end;
+  gap: 0.3rem;
+}
+.postbox .results-container .order-options p .order-text {
+  display: none;
+}
+@media (min-width: 992px) {
+  .postbox .results-container .order-options p .order-text {
+    display: block;
+  }
+}
+.postbox .results-container .order-options p .order-link {
+  display: flex;
+  align-items: center;
+}
+.postbox .results-container .order-options p a {
+  text-decoration: none;
+}
+.postbox .results-container .order-options p a span {
+  text-decoration: underline;
+}
+.postbox .results-container .order-options p a span.material-icons-outlined {
+  text-decoration: none;
+  font-size: 1rem;
+}
 .postbox .logo-icon {
   display: flex;
   justify-content: center;

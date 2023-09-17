@@ -130,6 +130,37 @@
 
         .order-options {
             text-align: right;
+
+            p {
+                display: flex;
+                justify-content: end;
+                gap: 0.3rem;
+
+                .order-text {
+                    display: none;
+
+                    @media (min-width: $screen-lg) {
+                        display: block;
+                    }
+                }
+
+                .order-link {
+                    display: flex;
+                    align-items: center;
+                }
+
+                a {
+                    text-decoration: none;
+
+                    span {
+                        text-decoration: underline;
+                    }
+                    span.material-icons-outlined {
+                        text-decoration: none;
+                        font-size: 1rem;
+                    }
+                }
+            }
         }
     }
 
