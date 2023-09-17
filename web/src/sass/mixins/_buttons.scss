@@ -26,6 +26,7 @@
     border-radius: $border-radius;
     @include font($btn-font-size);
     margin-bottom: 0.5rem;
+    cursor: pointer;
 
     // Button types
     @if $type == 'primary' {

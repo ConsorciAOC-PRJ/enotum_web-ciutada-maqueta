@@ -5568,6 +5568,7 @@ button.primary, a.primary {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #005CD1;
   color: #FFFFFF;
   font-size: 0.8888888889rem;
@@ -5598,6 +5599,7 @@ button.primary:active, a.primary:active {
     letter-spacing: 0px;
     line-height: 1.3333333333rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     background-color: #005CD1;
     color: #FFFFFF;
     width: initial;
@@ -5621,6 +5623,7 @@ button.primary-rm, a.primary-rm {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #005CD1;
   color: #FFFFFF;
   font-size: 0.8888888889rem;
@@ -5651,6 +5654,7 @@ button.primary-rm:active, a.primary-rm:active {
     letter-spacing: 0px;
     line-height: 1.3333333333rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     background-color: #005CD1;
     color: #FFFFFF;
     width: initial;
@@ -5674,6 +5678,7 @@ button.primary-rs, a.primary-rs {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #005CD1;
   color: #FFFFFF;
   font-size: 0.8888888889rem;
@@ -5704,6 +5709,7 @@ button.primary-rs:active, a.primary-rs:active {
     letter-spacing: 0px;
     line-height: 1.3333333333rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     background-color: #005CD1;
     color: #FFFFFF;
     width: initial;
@@ -5727,6 +5733,7 @@ button.primary-s, a.primary-s {
   letter-spacing: 0px;
   line-height: 1.2222222222rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #005CD1;
   color: #FFFFFF;
   font-size: 0.8888888889rem;
@@ -5757,6 +5764,7 @@ button.primary-s:active, a.primary-s:active {
     letter-spacing: 0px;
     line-height: 1.2222222222rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     background-color: #005CD1;
     color: #FFFFFF;
     width: initial;
@@ -5780,6 +5788,7 @@ button.primary-s-rm, a.primary-s-rm {
   letter-spacing: 0px;
   line-height: 1.2222222222rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #005CD1;
   color: #FFFFFF;
   font-size: 0.8888888889rem;
@@ -5810,6 +5819,7 @@ button.primary-s-rm:active, a.primary-s-rm:active {
     letter-spacing: 0px;
     line-height: 1.2222222222rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     background-color: #005CD1;
     color: #FFFFFF;
     width: initial;
@@ -5833,6 +5843,7 @@ button.primary-s-rs, a.primary-s-rs {
   letter-spacing: 0px;
   line-height: 1.2222222222rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #005CD1;
   color: #FFFFFF;
   font-size: 0.8888888889rem;
@@ -5863,6 +5874,7 @@ button.primary-s-rs:active, a.primary-s-rs:active {
     letter-spacing: 0px;
     line-height: 1.2222222222rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     background-color: #005CD1;
     color: #FFFFFF;
     width: initial;
@@ -5886,6 +5898,7 @@ button.secondary, a.secondary {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   color: #1B2124;
   border: 1px solid #1B2124;
   font-size: 0.8888888889rem;
@@ -5919,6 +5932,7 @@ button.secondary:active, a.secondary:active {
     letter-spacing: 0px;
     line-height: 1.3333333333rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     color: #1B2124;
     border: 1px solid #1B2124;
     width: initial;
@@ -5945,6 +5959,7 @@ button.secondary-rm, a.secondary-rm {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   color: #1B2124;
   border: 1px solid #1B2124;
   font-size: 0.8888888889rem;
@@ -5978,6 +5993,7 @@ button.secondary-rm:active, a.secondary-rm:active {
     letter-spacing: 0px;
     line-height: 1.3333333333rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     color: #1B2124;
     border: 1px solid #1B2124;
     width: initial;
@@ -6004,6 +6020,7 @@ button.secondary-rs, a.secondary-rs {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   color: #1B2124;
   border: 1px solid #1B2124;
   font-size: 0.8888888889rem;
@@ -6037,6 +6054,7 @@ button.secondary-rs:active, a.secondary-rs:active {
     letter-spacing: 0px;
     line-height: 1.3333333333rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     color: #1B2124;
     border: 1px solid #1B2124;
     width: initial;
@@ -6063,6 +6081,7 @@ button.secondary-s, a.secondary-s {
   letter-spacing: 0px;
   line-height: 1.2222222222rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   color: #1B2124;
   border: 1px solid #1B2124;
   font-size: 0.8888888889rem;
@@ -6096,6 +6115,7 @@ button.secondary-s:active, a.secondary-s:active {
     letter-spacing: 0px;
     line-height: 1.2222222222rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     color: #1B2124;
     border: 1px solid #1B2124;
     width: initial;
@@ -6122,6 +6142,7 @@ button.secondary-s-rm, a.secondary-s-rm {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   color: #1B2124;
   border: 1px solid #1B2124;
   font-size: 0.8888888889rem;
@@ -6155,6 +6176,7 @@ button.secondary-s-rm:active, a.secondary-s-rm:active {
     letter-spacing: 0px;
     line-height: 1.3333333333rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     color: #1B2124;
     border: 1px solid #1B2124;
     width: initial;
@@ -6181,6 +6203,7 @@ button.secondary-s-rs, a.secondary-s-rs {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   color: #1B2124;
   border: 1px solid #1B2124;
   font-size: 0.8888888889rem;
@@ -6214,6 +6237,7 @@ button.secondary-s-rs:active, a.secondary-s-rs:active {
     letter-spacing: 0px;
     line-height: 1.3333333333rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     color: #1B2124;
     border: 1px solid #1B2124;
     width: initial;
@@ -6240,6 +6264,7 @@ button.terciary, a.terciary {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #005CD1;
   font-size: 0.8888888889rem;
@@ -6273,6 +6298,7 @@ button.terciary:active, a.terciary:active {
     letter-spacing: 0px;
     line-height: 1.3333333333rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     background-color: #FFFFFF;
     color: #005CD1;
     width: initial;
@@ -6299,6 +6325,7 @@ button.terciary-rm, a.terciary-rm {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #005CD1;
   font-size: 0.8888888889rem;
@@ -6332,6 +6359,7 @@ button.terciary-rm:active, a.terciary-rm:active {
     letter-spacing: 0px;
     line-height: 1.3333333333rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     background-color: #FFFFFF;
     color: #005CD1;
     width: initial;
@@ -6358,6 +6386,7 @@ button.terciary-rs, a.terciary-rs {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #005CD1;
   font-size: 0.8888888889rem;
@@ -6391,6 +6420,7 @@ button.terciary-rs:active, a.terciary-rs:active {
     letter-spacing: 0px;
     line-height: 1.2222222222rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     background-color: #FFFFFF;
     color: #005CD1;
     width: initial;
@@ -6417,6 +6447,7 @@ button.terciary-s, a.terciary-s {
   letter-spacing: 0px;
   line-height: 1.2222222222rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #005CD1;
   font-size: 0.8888888889rem;
@@ -6450,6 +6481,7 @@ button.terciary-s:active, a.terciary-s:active {
     letter-spacing: 0px;
     line-height: 1.2222222222rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     background-color: #FFFFFF;
     color: #005CD1;
     width: initial;
@@ -6476,6 +6508,7 @@ button.terciary-s-rm, a.terciary-s-rm {
   letter-spacing: 0px;
   line-height: 1.2222222222rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #005CD1;
   font-size: 0.8888888889rem;
@@ -6509,6 +6542,7 @@ button.terciary-s-rm:active, a.terciary-s-rm:active {
     letter-spacing: 0px;
     line-height: 1.2222222222rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     background-color: #FFFFFF;
     color: #005CD1;
     width: initial;
@@ -6535,6 +6569,7 @@ button.terciary-s-rs, a.terciary-s-rs {
   letter-spacing: 0px;
   line-height: 1.2222222222rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #005CD1;
   font-size: 0.8888888889rem;
@@ -6568,6 +6603,7 @@ button.terciary-s-rs:active, a.terciary-s-rs:active {
     letter-spacing: 0px;
     line-height: 1.2222222222rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     background-color: #FFFFFF;
     color: #005CD1;
     width: initial;
@@ -6594,6 +6630,7 @@ button.warning, a.warning {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #DA0250;
   color: #FFFFFF;
   text-decoration: none;
@@ -6620,6 +6657,7 @@ button.dark, a.dark {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #1B2124;
   text-decoration: none;
@@ -6644,6 +6682,7 @@ button.disabled-dark, a.disabled-dark {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #E5E6E8;
   color: #B1B4B6;
   text-decoration: none;
@@ -6662,6 +6701,7 @@ button.disabled, a.disabled {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   background-color: #E5E6E8;
   color: #B1B4B6;
   text-decoration: none;
@@ -6680,6 +6720,7 @@ button.secondary-dark, a.secondary-dark {
   letter-spacing: 0px;
   line-height: 1.3333333333rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   text-decoration: none;
@@ -6708,6 +6749,7 @@ button.secondary-dark-s, a.secondary-dark-s {
   letter-spacing: 0px;
   line-height: 1.2222222222rem;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   text-decoration: none;
@@ -6723,6 +6765,10 @@ button.secondary-dark-s:active, a.secondary-dark-s:active {
   background-color: rgba(255, 255, 255, 0.15);
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
+}
+
+button {
+  cursor: pointer;
 }
 
 .filter-container {
