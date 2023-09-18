@@ -7953,6 +7953,7 @@ footer .logos-container .credits-container {
 @media (min-width: 1200px) {
   .postbox .filters-col .date-filter {
     padding-right: 1rem;
+    min-width: fit-content;
   }
 }
 .postbox .filters-col .date-filter .filter-container {
@@ -7960,6 +7961,15 @@ footer .logos-container .credits-container {
 }
 .postbox .filters-col .date-filter .filter-container .btn-container {
   border-radius: 0;
+}
+.postbox .filters-col .date-filter .filter-container .btn-container .date-icon {
+  display: none;
+  font-size: 1rem;
+}
+@media (min-width: 992px) {
+  .postbox .filters-col .date-filter .filter-container .btn-container .date-icon {
+    display: block;
+  }
 }
 .postbox .filters-col .date-filter .filter-container .btn-container-dark {
   border-radius: 0;

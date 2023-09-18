@@ -27,6 +27,7 @@
 
             @media(min-width: $screen-xl){
                 padding-right: 1rem;
+                min-width: fit-content;
             }
 
             .filter-container {
@@ -34,6 +35,15 @@
 
                 .btn-container {
                     border-radius: 0;
+
+                    .date-icon {
+                        display: none;
+                        font-size: 1rem;
+
+                        @media (min-width: $screen-lg) {
+                            display: block;
+                        }
+                    }
                 }
 
                 .btn-container-dark {

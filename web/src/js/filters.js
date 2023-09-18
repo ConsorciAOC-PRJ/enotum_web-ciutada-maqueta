@@ -11,7 +11,10 @@ const filterToggle = () => {
             if (!content.classList.contains("show")) {
                 content.classList.add("show");
                 button.setAttribute("aria-expanded", "true");
-                icon.innerText = "expand_less";
+
+                if (icon){
+                    icon.innerText = "expand_less";
+                }
             } else {
                 content.classList.remove("show");
                 button.setAttribute("aria-expanded", "false");
@@ -47,7 +50,12 @@ const applyFilter = (filterId) => {
         }
     }
 
-    button.innerHTML = "<span>" + checked + "</span>";
+    if (button.getElementsByClassName("date-icon")[0]) {
+        button.innerHTML = `<span class="date-icon material-icons-outlined" 
+        aria-hidden="true">calendar_today</span><span>${checked}</span>`;
+    } else {
+        button.innerHTML = "<span>" + checked + "</span>";
+    }
 
     content.classList.remove("show");
     button.setAttribute("aria-expanded", "false");
@@ -67,10 +75,20 @@ const removeFilter = (filterId) => {
     const button = filter.getElementsByClassName("btn-filter")[0];
     const removeButton = filter.getElementsByClassName("filter-remove")[0];
     const title = filter.getElementsByClassName("filter-header")[0].getElementsByTagName('h2')[0].innerText;
+    let dateIcon = false;
     button.onclick = () => {}; // Stop event listener of the whole button
     
+    if (button.getElementsByClassName("date-icon")[0]){
+        dateIcon = true;
+    }
+
     removeButton.remove();
-    button.innerHTML = "<span>" + title + "</span>";
+    if (dateIcon){
+        button.innerHTML = '<span class="date-icon material-icons-outlined" aria-hidden="true">calendar_today</span>';
+        button.innerHTML += "<span>" + title + "</span>";
+    } else {
+        button.innerHTML = "<span>" + title + "</span>";
+    }
     button.innerHTML += "<span class='material-icons filter-icon' aria-hidden='true'>expand_more</span>";
 
     if (!content.classList.contains("show")) {
