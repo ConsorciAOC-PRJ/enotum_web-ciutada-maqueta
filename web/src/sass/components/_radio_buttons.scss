@@ -23,4 +23,8 @@ input[type=radio] {
 .custom-rb-container {
     list-style: none;
     padding: 0px;
+
+    .label-description {
+      padding-left: 1.5rem;
+    }
 }

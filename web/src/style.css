@@ -6944,6 +6944,9 @@ input[type=radio]:focus-visible + label {
   list-style: none;
   padding: 0px;
 }
+.custom-rb-container .label-description {
+  padding-left: 1.5rem;
+}
 
 .accordion .accordion-button {
   background: none;
