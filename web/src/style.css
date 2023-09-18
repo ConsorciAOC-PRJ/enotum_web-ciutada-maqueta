@@ -6792,6 +6792,7 @@ button {
   gap: 0.3rem;
   background-color: #F5F5F6;
   border: 1.5px solid #F5F5F6;
+  padding: 0;
 }
 .filter-container .btn-container .btn-filter {
   border: none;
@@ -6810,7 +6811,6 @@ button {
   gap: 0.3rem;
   background-color: #F5F5F6;
   border: 1.5px solid #F5F5F6;
-  padding: 0;
 }
 .filter-container .btn-container.filter-border {
   border: 1.5px solid #1B2124;
@@ -6833,6 +6833,7 @@ button {
   background-color: #1B2124;
   border: 1.5px solid #1B2124;
   color: #FFFFFF;
+  padding: 0;
 }
 .filter-container .btn-container-dark .btn-filter {
   border: none;
@@ -6852,7 +6853,6 @@ button {
   background-color: #1B2124;
   border: 1.5px solid #1B2124;
   color: #FFFFFF;
-  padding: 0;
 }
 .filter-container .btn-container-dark .material-icons {
   color: #FFFFFF;
@@ -6860,6 +6860,10 @@ button {
 .filter-container .filter-remove {
   background: none;
   border: none;
+  padding: 0.7rem 0.2rem;
+  margin-right: 0.8rem;
+  margin-left: -0.6rem;
+  border-radius: 100px;
 }
 .filter-container .btn-filter-dark {
   border: none;

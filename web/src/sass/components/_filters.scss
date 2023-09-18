@@ -4,10 +4,10 @@
 
     .btn-container {
         @include filter-button;
+        padding: 0;
 
         .btn-filter {
             @include filter-button;
-            padding: 0;
         }
     }
 
@@ -17,10 +17,10 @@
 
     .btn-container-dark {
         @include filter-button(dark);
+        padding: 0;
 
         .btn-filter {
             @include filter-button(dark);
-            padding: 0;
         }
 
         .material-icons {
@@ -31,6 +31,10 @@
     .filter-remove {
         background: none;
         border: none;
+        padding: 0.7rem 0.2rem;
+        margin-right: 0.8rem;
+        margin-left: -0.6rem;
+        border-radius: $radius-full;
     }
 
     .btn-filter-dark {
