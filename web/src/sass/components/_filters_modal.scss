@@ -1,5 +1,16 @@
 .filter-open-modal {
     @include filter-button;
+
+    .filter-count {
+        padding: rem(1px) rem(8px) rem(1px) rem(8px);
+        background-color: $black;
+        color: $white;
+        border-radius: 100%;
+    }
+}
+
+.filter-open-modal.filter-border {
+    border: 1.5px solid $black;
 }
 
 .filters-modal {

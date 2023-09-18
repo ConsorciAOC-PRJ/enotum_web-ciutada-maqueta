@@ -7219,6 +7219,16 @@ input[aria-invalid=true] {
   background-color: #F5F5F6;
   border: 1.5px solid #F5F5F6;
 }
+.filter-open-modal .filter-count {
+  padding: 0.0555555556rem 0.4444444444rem 0.0555555556rem 0.4444444444rem;
+  background-color: #1B2124;
+  color: #FFFFFF;
+  border-radius: 100%;
+}
+
+.filter-open-modal.filter-border {
+  border: 1.5px solid #1B2124;
+}
 
 .filters-modal {
   position: absolute;
