@@ -105,4 +105,20 @@ const removeFilter = (filterId) => {
     filterToggle();
 }
 
-document.ready = filterToggle();
+const readFilter = () => {
+    const filter = document.querySelector(".read-filter");
+    filter.onclick = () => {
+        if (!filter.classList.contains("filter-border")) {
+            filter.setAttribute("aria-pressed", "true");
+            filter.classList.add("filter-border");
+            filter.setAttribute("aria-label", "Deixa de filtrar les notificacions no llegides");
+        } else {
+            filter.setAttribute("aria-pressed", "false");
+            filter.classList.remove("filter-border");
+            filter.setAttribute("aria-label", "Filtra les notificacions no llegides");
+        }
+    }
+
+}
+
+document.ready = filterToggle(), readFilter();

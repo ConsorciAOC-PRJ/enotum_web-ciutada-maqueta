@@ -114,6 +114,14 @@
                 }
             }
 
+            .read-filter {
+                @include filter-button;
+            }
+
+            .read-filter.filter-border {
+                border: 1.5px solid $black;
+            }
+
             .all-filters-button {
                 border-right: 1px solid $grey-04;
                 padding-right: 1rem;

@@ -8058,6 +8058,27 @@ footer .logos-container .credits-container {
     display: block;
   }
 }
+.postbox .filters-col .all-filters-container .read-filter {
+  border: none;
+  background: none;
+  border-radius: 100px;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0px;
+  line-height: 1.3333333333rem;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  background-color: #F5F5F6;
+  border: 1.5px solid #F5F5F6;
+}
+.postbox .filters-col .all-filters-container .read-filter.filter-border {
+  border: 1.5px solid #1B2124;
+}
 .postbox .filters-col .all-filters-container .all-filters-button {
   border-right: 1px solid #F5F5F6;
   padding-right: 1rem;
