@@ -7932,6 +7932,14 @@ footer .logos-container .credits-container {
     padding-bottom: 2rem;
   }
 }
+.postbox .search-bar {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .postbox .search-bar {
+    margin-bottom: 2rem;
+  }
+}
 .postbox .filters-row {
   padding: 0;
 }
@@ -7943,7 +7951,6 @@ footer .logos-container .credits-container {
 }
 @media (min-width: 1200px) {
   .postbox .filters-col {
-    padding-top: 2rem;
     flex-direction: row;
   }
 }

@@ -7,6 +7,14 @@
         }
     }
 
+    .search-bar {
+        margin-bottom: 0;
+
+        @media (min-width: $screen-md) {
+            margin-bottom: 2rem;
+        }
+    }
+
     .filters-row {
         padding: 0;
     }
@@ -18,7 +26,6 @@
         gap: 1rem;
 
         @media (min-width: $screen-xl) {
-            padding-top: 2rem;
             flex-direction: row;
         }
 
