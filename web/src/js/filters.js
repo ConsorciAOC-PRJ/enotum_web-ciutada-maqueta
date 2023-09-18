@@ -59,6 +59,7 @@ const applyFilter = (filterId) => {
 
     content.classList.remove("show");
     button.setAttribute("aria-expanded", "false");
+    buttonContainer.classList.add('filter-border');
     
     // Check if the "remove filter" button has already been added.
     if (!filterToApply.getElementsByClassName("filter-remove")[0]) {
@@ -73,6 +74,7 @@ const removeFilter = (filterId) => {
     const filter = document.getElementById(filterId);
     const content = filter.getElementsByClassName("filter-content")[0];
     const button = filter.getElementsByClassName("btn-filter")[0];
+    const buttonContainer = filter.getElementsByClassName("btn-container")[0];
     const removeButton = filter.getElementsByClassName("filter-remove")[0];
     const title = filter.getElementsByClassName("filter-header")[0].getElementsByTagName('h2')[0].innerText;
     let dateIcon = false;
@@ -83,6 +85,7 @@ const removeFilter = (filterId) => {
     }
 
     removeButton.remove();
+    buttonContainer.classList.remove('filter-border');
     if (dateIcon){
         button.innerHTML = '<span class="date-icon material-icons-outlined" aria-hidden="true">calendar_today</span>';
         button.innerHTML += "<span>" + title + "</span>";

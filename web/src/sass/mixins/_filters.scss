@@ -9,9 +9,11 @@
 
     @if $color-mode == 'light' {
         background-color: $bg-lightgray;
+        border: 1.5px solid $bg-lightgray;
     }
     @else if $color-mode == 'dark' {
         background-color: $bg-dark;
+        border: 1.5px solid $bg-dark;
         color: $white;
     }
 

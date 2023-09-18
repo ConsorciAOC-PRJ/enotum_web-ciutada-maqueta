@@ -11,6 +11,10 @@
         }
     }
 
+    .btn-container.filter-border {
+        border: 1.5px solid $black;
+    }
+
     .btn-container-dark {
         @include filter-button(dark);
 
