@@ -20,3 +20,5 @@
 * [Accés a la maqueta del web (Notificació detall 1)](./web/pages/notification-1.html)
 * [Accés a la maqueta del web (Notificació detall 2)](./web/pages/notification-2.html)
 * [Accés a la maqueta del email](./web/email/email.html)
+* [Accés a la maqueta de transicions (bústia)](./web/transitions/postbox.html)
+* [Accés a la maqueta de transicions (notificació)](./web/transitions/notification-1.html)

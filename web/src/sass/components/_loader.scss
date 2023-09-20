@@ -1,7 +1,9 @@
 .stage {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
     position: relative;
     padding: 32px 0;
     margin: 0 -5%;
@@ -11,30 +13,61 @@
 .dot-typing {
     position: relative;
     left: -9999px;
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
     background-color: $primary-color-subtle;
     color: $primary-color-subtle;
-    box-shadow: 9984px 0 0 0 $primary-color-main, 9999px 0 0 0 $primary-color-subtle, 10014px 0 0 0 $primary-color-subtle;
+    box-shadow: 9964px 0 0 0 $primary-color-main, 9999px 0 0 0 $primary-color-subtle, 10034px 0 0 0 $primary-color-subtle;
     animation: dot-typing 1s infinite linear;
     margin: 0 5px;
 }
   
 @keyframes dot-typing {
     0% {
-      box-shadow: 9984px 0 0 0 $primary-color-main, 9999px 0 0 0 $primary-color-subtle, 10014px 0 0 0 $primary-color-subtle;
+      box-shadow: 9964px 0 0 0 $primary-color-main, 9999px 0 0 0 $primary-color-subtle, 10034px 0 0 0 $primary-color-subtle;
     }
     25% {
-      box-shadow: 9984px -10px 0 0 $primary-color-main, 9999px 0 0 0 $primary-color-subtle, 10014px 0 0 0 $primary-color-subtle;
+      box-shadow: 9964px -20px 0 0 $primary-color-main, 9999px 0 0 0 $primary-color-subtle, 10034px 0 0 0 $primary-color-subtle;
     }
     50% {
-      box-shadow: 9984px 0 0 0 $primary-color-subtle, 9999px -10px 0 0 $primary-color-main, 10014px 0 0 0 $primary-color-subtle;
+      box-shadow: 9964px 0 0 0 $primary-color-subtle, 9999px -20px 0 0 $primary-color-main, 10034px 0 0 0 $primary-color-subtle;
     }
     75% {
-      box-shadow: 9984px 0 0 0 $primary-color-subtle, 9999px 0 0 0 $primary-color-subtle, 10014px -10px 0 0 $primary-color-main;
+      box-shadow: 9964px 0 0 0 $primary-color-subtle, 9999px 0 0 0 $primary-color-subtle, 10034px -20px 0 0 $primary-color-main;
     }
     100% {
-      box-shadow: 9984px 0 0 0 $primary-color-subtle, 9999px 0 0 0 $primary-color-subtle, 10014px 0 0 0 $primary-color-subtle;
+      box-shadow: 9964px 0 0 0 $primary-color-subtle, 9999px 0 0 0 $primary-color-subtle, 10034px 0 0 0 $primary-color-subtle;
     }
+}
+
+.dot-typing.white {
+  position: relative;
+  left: -9999px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: $white-subtle;
+  color: $white-subtle;
+  box-shadow: 9964px 0 0 0 $white, 9999px 0 0 0 $white-subtle, 10034px 0 0 0 $white-subtle;
+  animation: dot-typing-white 1s infinite linear;
+  margin: 0 5px;
+}
+
+@keyframes dot-typing-white {
+  0% {
+    box-shadow: 9964px 0 0 0 $white, 9999px 0 0 0 $white-subtle, 10034px 0 0 0 $white-subtle;
+  }
+  25% {
+    box-shadow: 9964px -20px 0 0 $white, 9999px 0 0 0 $white-subtle, 10034px 0 0 0 $white-subtle;
+  }
+  50% {
+    box-shadow: 9964px 0 0 0 $white-subtle, 9999px -20px 0 0 $white, 10034px 0 0 0 $white-subtle;
+  }
+  75% {
+    box-shadow: 9964px 0 0 0 $white-subtle, 9999px 0 0 0 $white-subtle, 10034px -20px 0 0 $white;
+  }
+  100% {
+    box-shadow: 9964px 0 0 0 $white-subtle, 9999px 0 0 0 $white-subtle, 10034px 0 0 0 $white-subtle;
+  }
 }  
