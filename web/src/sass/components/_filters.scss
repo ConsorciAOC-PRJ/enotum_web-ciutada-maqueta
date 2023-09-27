@@ -8,6 +8,7 @@
 
         .btn-filter {
             @include filter-button;
+            letter-spacing: rem(0.5px);
         }
     }
 
@@ -68,6 +69,14 @@
         .filter-main {
             border-bottom: 1px solid $grey-03;
             padding-top: 0.8rem;
+
+            .search-bar {
+                margin-bottom: 0;
+
+                input[type=text] {
+                    min-height: auto;
+                }
+            }
         }
 
         .filter-footer {

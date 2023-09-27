@@ -171,6 +171,18 @@ p.no-margin {
     color: $error;
 }
 
+.p-spacing {
+    letter-spacing: rem(0.4px);
+}
+
+.p-spacing-lg {
+    letter-spacing: rem(0.5px);
+}
+
+.p-spacing-xl {
+    letter-spacing: rem(1.5px);
+}
+
 // #endregion
 
 a {

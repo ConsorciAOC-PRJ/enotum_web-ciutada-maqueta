@@ -15,6 +15,7 @@
         &::placeholder {
             @include font(14px);
             color: $grey-01;
+            letter-spacing: rem(0.5px);
 
             @media (min-width: $screen-md) {
                 @include font(16px);
