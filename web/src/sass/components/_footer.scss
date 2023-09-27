@@ -52,44 +52,112 @@ footer {
     }
 
     .time-row {
-        margin-top: 2rem;
         border-bottom: 1px solid $grey-02;
-
-        // p {
-        //     @include font(14px);
-        //     color: $grey-01;
-        // }
-    }
-
-    .logos-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 1rem;
-        margin-top: 1rem;
+        align-items: center;
+        padding-bottom: 0.5rem;
 
         @media (min-width: $screen-md) {
-            flex-direction: row;
-            align-items: center;
+            margin-top: 2rem;
         }
 
-        .credits-container {
+
+        .legal-links {
+            display: none;
+
+            @media (min-width: $screen-md) {
+                display: block;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                gap: 1rem;
+            }
+        }
+
+        .time-column {
+            display: flex;
+            justify-content: flex-start;
+
+            @media (min-width: $screen-md) {
+                justify-content: flex-end;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    .logos-row {
+        padding: 0 0.8rem;
+
+        @media (min-width: $screen-md) {
+            padding: 0;
+        }
+
+        .logos-container {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
             gap: 1rem;
+            margin-top: 0.6rem;
 
             @media (min-width: $screen-md) {
                 flex-direction: row;
                 align-items: center;
             }
 
-            // p, a {
-            //     @include font(14px);
-            //     color: $grey-01;
-            // }
+            .credits-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 0.8rem;
+                width: 100%;
+
+                @media (min-width: $screen-md) {
+                    flex-direction: row;
+                    align-items: center;
+                    width: auto;
+                }
+
+                p {
+                    margin: 0;
+                }
+
+                .credits-logos {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0.8rem;
+                    width: 100%;
+
+                    @media (min-width: $screen-md) {
+                        flex-direction: row;
+                        align-items: center;
+                        width: auto;
+                    }
+
+                   div:first-of-type {
+                        border-bottom: 1px solid $grey-02;
+                        padding-bottom: 0.6rem;
+                        width: 100%;
+
+                        @media (min-width: $screen-md) {
+                            border-bottom: none;
+                            padding-bottom: 0;
+                            border-right: 1px solid $grey-02;
+                            padding-right: 0.6rem;
+                        }
+                    }
+                }
+            }
         }
     }
+
+    
 }
