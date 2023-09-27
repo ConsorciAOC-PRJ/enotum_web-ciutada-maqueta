@@ -32,6 +32,10 @@
         .date-filter {
             border-right: 1px solid $grey-04;
 
+            .filter-mobile {
+              display: none;
+            }
+
             @media(min-width: $screen-xl){
                 padding-right: 1rem;
                 min-width: fit-content;
@@ -198,7 +202,7 @@
         @media (min-width: $screen-md) {
             align-self: center;
         }
-        
+
         img {
             max-width: 40%;
         }
@@ -215,7 +219,7 @@
         flex-direction: column;
         border-bottom: 1px solid $grey-03;
         position: relative;
-        
+
         @media (min-width: $screen-md) {
             align-items: center;
             flex-direction: row;
@@ -229,7 +233,7 @@
             text-decoration: none;
             color: $black;
         }
-        
+
         .tag-date-container {
             display: flex;
             flex-direction: column;
