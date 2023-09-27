@@ -7,8 +7,9 @@
 
     input[type=text] {
         width: 100%;
-        min-height: 2.5em;
+        min-height: rem(56px);
         border: none;
+        padding: rem(12px) rem(16px) rem(12px) rem(12px);
         
 
         &::placeholder {
@@ -26,6 +27,7 @@
         right: 0;
         background: none;
         border: none;
+        height: 100%;
 
         .material-icons {
             font-size: 1.2rem;
