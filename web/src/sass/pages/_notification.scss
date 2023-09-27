@@ -86,6 +86,7 @@
     .notification-no-content {
         background-color: $grey-01;
         display: none;
+        height: 100%;
 
         @media (min-width: $screen-md) {
             display: flex;
@@ -114,6 +115,7 @@
 
     .notification-content {
         display: none;
+        height: 100%;
 
         @media (min-width: $screen-md) {
             display: flex;
