@@ -71,7 +71,7 @@
 
         }
 
-        .exit-link {
+        .panel-close-link {
             color: $black;
             border-left: 1px solid $grey-03;
             padding: 0.7rem;
@@ -106,7 +106,7 @@
                 color: $white;
             }
         }
-        
+
         .stage {
             margin: 0;
             width: 100%;
@@ -145,7 +145,7 @@
                     width: 3rem;
                     height: 3rem;
                 }
-            
+
             }
         }
 
@@ -236,7 +236,7 @@
             background-color: $white;
             padding: 0rem 1rem;
 
-        
+
             .inactive-arrow {
                 color: $grey-02;
              }
@@ -244,7 +244,7 @@
             .active-arrow {
                 color: $grey-01;
              }
-        
+
 
             @media (min-width: $screen-md) {
                 display: none;

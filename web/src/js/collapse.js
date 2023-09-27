@@ -1,10 +1,10 @@
 const collapse = () => {
-    const exit = document.querySelector('.exit-link');
+    const close = document.querySelector('.panel-close-link');
     const sidebar = document.querySelector('.notification-info');
     const noContent = document.querySelector('.notification-no-content');
     const content = document.querySelector('.notification-content');
 
-    exit.onclick = () => {
+    close.onclick = () => {
 
         if (sidebar.classList.contains('hide')) {
             sidebar.classList.remove('hide');
@@ -18,7 +18,7 @@ const collapse = () => {
                 noContent.classList.add('col-sm-8');
             }
 
-            exit.setAttribute('aria-expanded', 'true');
+            close.setAttribute('aria-expanded', 'true');
         } 
         else {
             sidebar.classList.add('hide');
@@ -32,7 +32,7 @@ const collapse = () => {
                 noContent.classList.add('col-sm-12');
             }
 
-            exit.setAttribute('aria-expanded', 'false');
+            close.setAttribute('aria-expanded', 'false');
         }
     }
 }

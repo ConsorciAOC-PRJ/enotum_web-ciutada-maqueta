@@ -8339,14 +8339,14 @@ footer .logos-container .credits-container {
 .notification .notification-menu .notification-pagination .pagination-arrows .active-arrow {
   color: #656D72;
 }
-.notification .notification-menu .exit-link {
+.notification .notification-menu .panel-close-link {
   color: #1B2124;
   border-left: 1px solid #E5E6E8;
   padding: 0.7rem;
   display: none;
 }
 @media (min-width: 1200px) {
-  .notification .notification-menu .exit-link {
+  .notification .notification-menu .panel-close-link {
     display: block;
   }
 }
