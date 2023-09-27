@@ -15,6 +15,6 @@
     font-size: rem($size);
     font-weight: $weight;
     font-family: $font-family;
-    letter-spacing: 0px;
+    letter-spacing: rem(0.25px);
     line-height: rem($line-height);
   }
