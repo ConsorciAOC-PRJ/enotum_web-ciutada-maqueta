@@ -7918,6 +7918,7 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   height: 100%;
   width: 100%;
   display: none;
+  overflow-y: auto;
 }
 @media (min-width: 1200px) {
   .my-space-menu {
@@ -8596,6 +8597,30 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   .notification .mobile-controls .notification-btn-mobile {
     display: none;
   }
+}
+
+.notification.other-examples .notification-info {
+  position: relative;
+  overflow-y: auto;
+  max-height: 90vh;
+  padding-bottom: 0;
+}
+.notification.other-examples .notification-info .notification-btn-gradient {
+  position: sticky;
+  bottom: 3.5rem;
+  height: 3rem;
+  background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 55.68%, rgba(255, 255, 255, 0) 111.36%);
+}
+.notification.other-examples .notification-info .notification-btn-container {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-bottom: 1rem;
+  background-color: #FFFFFF;
+}
+.notification.other-examples .notification-info .notification-btn-container .notification-btn {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

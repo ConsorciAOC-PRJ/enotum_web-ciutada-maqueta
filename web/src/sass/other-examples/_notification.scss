@@ -1,0 +1,28 @@
+.notification.other-examples {
+    .notification-info {
+        position: relative;
+        overflow-y: auto;
+        max-height: 90vh;
+        padding-bottom: 0;
+
+        .notification-btn-gradient {
+            position: sticky;
+            bottom: 3.5rem;
+            height: 3rem;
+            background: linear-gradient(360deg, $white 0%, rgba(255, 255, 255, 0.8) 55.68%, rgba(255, 255, 255, 0) 111.36%);
+        }
+
+        .notification-btn-container {
+            position: sticky;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            padding-bottom: 1rem;
+            background-color: $white;
+
+            .notification-btn {
+                width: 100%;
+            }
+        }
+    }
+}

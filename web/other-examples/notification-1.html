@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pàgina detall notificació, 1 | Maqueta e-Notum</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body class="notification other-examples">
+    <div class="modal-overlay" data-modal="notification-modal"></div>
+    <a href="#main-content" id="skip-to-link" class="sr-only">Saltar al contingut principal</a>
+    <div class="body-container">
+        <div class="modal-overlay" data-modal="notification-modal"></div>
+        <header>
+            <div class="container-fluid g-0">
+                <div class="row justify-content-between align-items-center g-0">
+                    <div class="col-10 col-sm-5 col-md-4 logo-container">
+                        <a class="navigation-logo" href="#">
+                            <img src="../assets/logo-icon.png" alt="Ajuntament de Badalona">
+                        </a>
+                        <a href="./postbox.html" class="link-grey back-link">
+                            <span class="material-icons-outlined" aria-hidden="true">chevron_left</span>
+                            <spa n class="text-p-14 back-link-text p-spacing">Tornar a la bústia</span>
+                        </a>
+                    </div>
+                    <div class="col-2 col-sm-6 col-md-7">
+                        <div class="notification-menu">
+                            <div class="notification-pagination" role="region" aria-label="Navegació notificacions">
+                                <p class="text-p-14 no-margin p-spacing">1 de 26</p>
+                                <div class="pagination-arrows">
+                                    <a href="#">
+                                        <span class="material-icons-outlined inactive-arrow" aria-hidden="true">chevron_left</span>
+                                        <span class="sr-only">Notificació anterior</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="material-icons-outlined active-arrow" aria-hidden="true">chevron_right</span>
+                                        <span class="sr-only">Notificació següent</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="my-space menu">
+                                    <button class="logged-in-user open-menu" aria-expanded="false">
+                                        <div class="user-initial"><span class="user-letter">M</span><span class="sr-only">Lletra inicial, usuari autenticat</span></div>
+                                        <div class="user-name text-p-16 p-spacing-lg">Marta Puig</div>
+                                    </button>
+                                    <div class="my-space-menu menu-content" role="region" aria-label="Menú espai personal">
+                                        <div class="menu-header">
+                                            <button class="close-menu" aria-expanded="true">
+                                                <span class="sr-only">Menú espai personal</span>
+                                                <span class="material-icons-outlined" aria-hidden="true">close</span>
+                                            </button>
+                                            <div class="logged-in-info">
+                                                <div>
+                                                    <h2 class="title-m p-white">Hola Marta,</h2>
+                                                    <p class="text-p-18 p-white">Benvingut al teu espai.</p>
+                                                </div>
+                                                <button class="dark" aria-describedby="btn-login-description">Tancar sessió</button>
+                                            </div>
+                                        </div>
+                                        <div class="menu-body">
+                                            <ul>
+                                                <li><a href="#" class="text-p-18 p-dark">El meu espai</a></li>
+                                                <li><a href="#" class="text-p-18 p-dark">Favorits</a></li>
+                                                <li><a href="#" class="text-p-18 p-dark">Alertes</a></li>
+                                                <li><a href="#" class="text-p-18 p-dark">Tràmits</a></li>
+                                                <li><a href="#" class="text-p-18 p-dark">Bústia de notificacions</a></li>
+                                                <li><a href="#" class="text-p-18 p-dark">Factures electròniques</a></li>
+                                                <li><a href="#" class="text-p-18 p-dark">Participació</a></li>
+                                                <li><a href="#" class="text-p-18 p-dark">Identitat digital</a></li>
+                                            </ul>
+                                            <ul class="second-list">
+                                                <li><a href="#" class="text-p-18 p-dark">Dades personals</a></li>
+                                                <li><a href="#" class="text-p-18 p-dark">Preferències</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="panel-close-link" role="button" aria-expanded="true">
+                                    <span class="sr-only">Detalls notificació</span>
+                                    <span class="material-symbols-outlined" aria-hidden="true">right_panel_close</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="main-content">
+            <div class="container-fluid g-0">
+                <div class="row full-height g-0">
+                    <div class="col-12 col-md-7 col-lg-8">
+                        <div class="notification-no-content">
+                            <div class="no-content">
+                                <span class="material-icons-outlined no-content-icon" aria-hidden="true">visibility_off</span>
+                                <p class="title-xs p-white">Contingut no disponible fins obrir la notificació</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 notification-info">
+                        <div class="notification-header">
+                            <h1 class="title-s">Notificació Resolució 806/2019 (Reclamació 787/2019)</h1>
+                            <div class="entity-info">
+                                <img src="../assets/logo-icon.png" alt="Ajuntament de Badalona">
+                                <div>
+                                    <p class="text-p-16 p-dark p-spacing-lg">Aj. de Badalona</p>
+                                    <p class="text-p-14 p-spacing">Expedient 03030403</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-body">
+                            <div class="state-tag warning">
+                                <span class="material-icons-outlined" aria-hidden="true">timer</span>
+                                <p class="text-p-14 p-spacing">En termini · <span class="p-semibold">Resten 3 dies</span></p>
+                            </div>
+                            <p class="text-p-16 p-dark p-spacing-lg">El termini per obrir aquesta notificació venç el <span class="p-semibold">20/11/21 a les 14:26h</span></p>
+                            <div class="notification-warning yellow">
+                                <!-- <span class="material-icons-outlined no-content-icon" aria-hidden="true">visibility_off</span> -->
+                                <div>
+                                    <p class="text-p-18 p-dark warning-message">
+                                        En cas de no obrir-la en el termini establert, la notificació constarà com a vençuda (i a efectes legals s'entendrà com a realitzada per rebuig), tret que s'acrediti la impossibilitat tècnica d'accedir-hi. 
+                                        Aquest rebuig significa que no s'ha accedit al contingut de la notificació dins del termini i no té res a veure amb estar-hi d'acord o no.
+                                    </p>
+                                    <p class="text-p-18 p-dark warning-message">Si es notifica addicionalment en paper, la data d'accés serà la que es produeixi en primer lloc.</p>
+                                    <p class="text-p-18 p-dark warning-message">Les notificacions es regeixien per la següent normativa.</p>
+                                </div>
+                            </div>
+                            <h2 class="title-xs table-title">Dades de l'enviament</h2>
+                            <table class="notification-data">
+                                <tr>
+                                    <th scope="row"><span class="text-p-16 p-dark p-spacing-lg">Tipus enviament</span></th>
+                                    <td class="text-p-16 p-spacing-lg">Notificació</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="text-p-16 p-dark p-spacing-lg">Destinatari</span></th>
+                                    <td class="text-p-16 p-spacing-lg">Marta Puig Mir</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="text-p-16 p-dark p-spacing-lg">Emissor</span></th>
+                                    <td class="text-p-16 p-spacing-lg">Ajuntament de Badalona</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="text-p-16 p-dark p-spacing-lg">Títol</span></th>
+                                    <td class="text-p-16 p-spacing-lg">Notificació de prova inicial</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="text-p-16 p-dark p-spacing-lg">Data d'entrega</span></th>
+                                    <td class="text-p-16 p-spacing-lg">27/02/2022 a les 14:26h</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="text-p-16 p-dark p-spacing-lg">Termini d’acceptació</span></th>
+                                    <td class="text-p-16 p-spacing-lg">12/03/2022 a les 23:59h</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="notification-btn-gradient"></div>
+                        <div class="notification-btn-container">
+                            <a href=""class="primary notification-btn">Obrir la notificació</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-controls">
+                <a href="./notification-2.html" class="primary notification-btn-mobile">Obrir la notificació</a>
+                <div class="notification-pagination-mobile" role="region" aria-label="Navegació notificacions">
+                    <a href="#">
+                        <span class="material-icons-outlined inactive-arrow" aria-hidden="true">chevron_left</span>
+                        <span class="sr-only">Notificació anterior</span>
+                    </a>
+                    <p class="text-p-14">1 de 26</p>
+                    <a href="#">
+                        <span class="material-icons-outlined active-arrow" aria-hidden="true">chevron_right</span>
+                        <span class="sr-only">Notificació següent</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../src/js/menus.js"></script>
+    <script src="../src/js/overlay.js"></script>
+    <script src="../src/js/dropdowns.js"></script>
+    <script src="../src/js/accordions.js"></script>
+    <script src="../src/js/radio-buttons.js"></script>
+    <script src="../src/js/modal-dialogs.js"></script>
+    <script src="../src/js/collapse.js"></script>
+</body>
