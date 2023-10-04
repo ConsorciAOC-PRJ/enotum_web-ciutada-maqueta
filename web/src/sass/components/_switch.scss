@@ -1,0 +1,38 @@
+.switch-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+
+    .switch {
+        display: block;
+        position: relative;
+        background-color: $grey-01;
+        width: rem(36px);
+        height: rem(20px);
+        border-radius: $radius-full;
+        border: 2px solid $grey-01;
+        padding: rem(1px);
+
+        .circle {
+            display: block;
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            width: rem(14px);
+            height: rem(14px);
+            background-color: $white;
+            border-radius: $radius-full;
+        }
+    }
+
+    .switch.on {
+        background-color: $primary-color-main;
+        border: 2px solid $primary-color-main;
+
+        .circle {
+            left: initial;
+            right: 1px;
+        }
+    }
+}

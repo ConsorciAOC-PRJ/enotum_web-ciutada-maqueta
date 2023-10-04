@@ -35,6 +35,14 @@
         justify-content: space-between;
         padding-top: 0.8rem;
         border-top: 1px solid $grey-03;
+        margin-top: 3rem;
+
+        @media (min-width: $screen-md) {
+            margin-left: -3rem;
+            margin-right: -3rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
     }
 
     .close-modal-container {
