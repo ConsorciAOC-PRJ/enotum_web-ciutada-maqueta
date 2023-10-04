@@ -1,0 +1,22 @@
+.attached-documents {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    @media (min-width: $screen-lg) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .red {
+        @include attached_documents('red');
+    }
+    .green {
+        @include attached_documents('green');
+    }
+    .blue {
+        @include attached_documents('blue');
+    }
+    .grey {
+        @include attached_documents('grey');
+    }
+}

@@ -2,6 +2,11 @@
 
     .full-height {
         min-height: 91vh;
+        padding: 1.5rem 0.8rem 3.5rem 0.8rem;
+
+        @media (min-width: $screen-lg) {
+            padding: inherit;
+        }
     }
 
     #skip-to-notification:focus {
@@ -104,6 +109,11 @@
             .no-content-icon {
                 font-size: rem(44px);
                 color: $white;
+                padding-bottom: 1rem;
+            }
+
+            button {
+                margin-top: 0.5rem;
             }
         }
 

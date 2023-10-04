@@ -4,6 +4,7 @@
 @import './mixins/buttons.scss';
 @import './mixins/filters.scss';
 @import './mixins/state_tags.scss';
+@import './mixins/attached_documents.scss';
 
 // Custom.scss
 // Option B: Include parts of Bootstrap
@@ -57,6 +58,7 @@
 @import './components/main_menu';
 @import './components/my_space_menu';
 @import './components/state_tags';
+@import './components/attached_documents';
 
 @import './pages/home';
 @import './pages/postbox';
