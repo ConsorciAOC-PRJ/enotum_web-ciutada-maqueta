@@ -5476,6 +5476,10 @@ p.no-margin {
   color: #1B2124;
 }
 
+.p-grey {
+  color: #656D72;
+}
+
 .p-white {
   color: #FFFFFF;
 }
@@ -6963,6 +6967,9 @@ input[type=radio]:focus-visible + label {
   list-style: none;
   padding: 0px;
 }
+.custom-rb-container li {
+  padding-bottom: 0.8rem;
+}
 .custom-rb-container .label-description {
   padding-left: 1.5rem;
 }
@@ -7276,6 +7283,16 @@ input[aria-invalid=true] {
     width: 28rem;
     padding: 3rem;
   }
+}
+.filters-modal .accordion .aoc-border.show {
+  border-bottom: 1px solid #005CD1;
+}
+.filters-modal .accordion .filter-btn-name {
+  display: flex;
+  flex-direction: column;
+}
+.filters-modal .accordion .filter-btn-name span {
+  margin: 0;
 }
 .filters-modal .filter-footer {
   display: flex;

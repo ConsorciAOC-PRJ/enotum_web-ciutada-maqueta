@@ -30,6 +30,21 @@
         padding: 3rem;
     }
 
+    .accordion .aoc-border.show {
+        border-bottom: 1px solid $primary-color-main;
+    }
+
+    .accordion {
+        .filter-btn-name {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                margin: 0;
+            }
+        }
+    }
+
     .filter-footer {
         display: flex;
         justify-content: space-between;

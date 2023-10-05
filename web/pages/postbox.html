@@ -314,7 +314,48 @@
                                 <div class="accordion">
                                     <h2>
                                         <button id="accordion-modal-1-btn" class="accordion-button aoc-border" aria-expanded="false" aria-controls="accordion-modal-1">
-                                            <span class="title-xs">Emissor</span>
+                                            <div class="filter-btn-name">
+                                                <span class="title-xs">Emissor</span>
+                                                <span class="text-p-14 p-grey"><span class="sr-only">Opció seleccionada: </span>Aj. de Badalona</span>
+                                            </div>
+                                            <span class="material-icons" aria-hidden="true">expand_more</span>
+                                        </button>
+                                    </h2>
+                                    <div id="accordion-modal-1" class="accordion-content" role="region" aria-labelledby="accordion-modal-1-btn">
+                                        <div class="filter-main">
+                                            <div class="search-bar">
+                                                <input type="text" placeholder="Cercar emissor">
+                                                <button>
+                                                    <span class="sr-only">Cerca</span>
+                                                    <span class="material-icons" aria-hidden="true">search</span>
+                                                </button>
+                                            </div>
+                                            <ul class="custom-rb-container">
+                                                <li>
+                                                    <input type="radio" id="modal-tots-1" value="Tots" name="modal-emissor">
+                                                    <label for="modal-tots-1" class="custom-rb-label">
+                                                        <span class="material-icons cu stom-rb" aria-hidden="true">radio_button_checked</span>
+                                                        <span class="text-p-16 p-dark p-spacing-lg">Altres no relacionats</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" id="modal-badalona-1" value="Badalona" name="modal-emissor">
+                                                    <label for="modal-badalona-1" class="custom-rb-label">
+                                                        <span class="material-icons custom-rb" aria-hidden="true">radio_button_unchecked</span>
+                                                        <span class="text-p-16 p-dark p-spacing-lg">Ajuntament Badalona</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>         
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <h2>
+                                        <button id="accordion-modal-1-btn" class="accordion-button aoc-border" aria-expanded="false" aria-controls="accordion-modal-1">
+                                            <div class="filter-btn-name">
+                                                <span class="title-xs">Emissor</span>
+                                                <span class="text-p-14 p-grey"></span>
+                                            </div>
                                             <span class="material-icons" aria-hidden="true">expand_more</span>
                                         </button>
                                     </h2>
