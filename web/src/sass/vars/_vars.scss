@@ -1,9 +1,54 @@
 // Include color vars, only leave the color you want to use uncommented
-@import './color-blue.scss';
-// @import './color-green.scss';
-// @import './color-red.scss';
-// @import './color-purple.scss';
-// @import './color-indigo.scss';
+// @import './color-blue.scss';
+@use './color-blue.scss';
+@use './color-green.scss';
+@use './color-red.scss';
+@use './color-purple.scss';
+@use './color-indigo.scss';
+@use 'sass:meta';
+
+// SASS to CSS maping to include diferent color variations
+body {
+    @each $name, $value in meta.module-variables("color-blue") {
+        --#{$name}: #{$value};
+    }
+}
+
+body.green {
+    @each $name, $value in meta.module-variables("color-green") {
+        --#{$name}: #{$value};
+    }
+}
+
+body.red {
+    @each $name, $value in meta.module-variables("color-red") {
+        --#{$name}: #{$value};
+    }
+}
+
+body.purple {
+    @each $name, $value in meta.module-variables("color-purple") {
+        --#{$name}: #{$value};
+    }
+}
+
+body.indigo {
+    @each $name, $value in meta.module-variables("color-purple") {
+        --#{$name}: #{$value};
+    }
+}
+
+//CSS variables to SASS maping
+$primary-color-main: var(--primary-color-main);
+$primary-color-darker: var(--primary-color-darker) ;
+$primary-color-lighter: var(--primary-color-lighter);
+$primary-color-subtle: var(--primary-color-subtle);
+
+$btn-primary-hover: var(--btn-primary-hover);
+$btn-primary-pressed: var(--btn-primary-pressed);
+$btn-secondary-pressed: var(--btn-secondary-pressed);
+$btn-terciary-hover: var(--btn-terciary-hover);
+$btn-terciary-pressed: var(--btn-terciary-pressed);
 
 // Grey scale
 $black: #1B2124;
@@ -44,6 +89,11 @@ $font-family: 'Inter', sans-serif;
 // Buttons
 $btn-main-color: $primary-color-main;
 $btn-white: $white;
+
+$btn-primary-dark-hover: darken($btn-white, 4%);
+$btn-secondary-dark-hover: adjust-color($btn-white, $alpha: -0.85);
+$btn-error-hover: adjust-color($error, $alpha: -0.15);
+$btn-error-pressed: darken($error, 5%);
 
 // Primary button states
 $btn-disabled-gray: #E5E6E8;

@@ -27,6 +27,7 @@
     @include font($btn-font-size);
     margin-bottom: 0.5rem;
     cursor: pointer;
+    position: relative;
 
     // Button types
     @if $type == 'primary' {
@@ -36,11 +37,11 @@
                 color: $font-white;
 
                 &:hover {
-                    background-color: adjust-color($btn-main-color, $alpha: -0.15);
+                    background-color: $btn-primary-hover;
                 }
 
                 &:active {
-                    background-color: darken($btn-main-color, 5%);
+                    background-color: $btn-primary-pressed;
                 }
             }
             @else if $color-mode == 'dark' {
@@ -48,11 +49,11 @@
                 color: $black;
            
                 &:hover {
-                    background-color: darken($btn-white, 4%);
+                    background-color: $btn-primary-dark-hover;
                 }
            
                 &:active {
-                    background-color: darken($btn-white, 4%);
+                    background-color: $btn-primary-dark-hover;
                 }
             }
         } 
@@ -76,7 +77,7 @@
                 &:active {
                     color: $btn-main-color;
                     border: 1px solid $btn-main-color;
-                    background-color: adjust-color($btn-main-color, $alpha: -0.84);
+                    background-color: $btn-secondary-pressed;
                 }
 
             }
@@ -85,15 +86,13 @@
                 border: 1px solid $btn-white;
            
                 &:hover {
-                    background-color: adjust-color($btn-white, $alpha: -0.85);
+                    background-color: $btn-secondary-dark-hover;
                     color: $btn-white;
-                    border: 1px solid $btn-white;
                 }
            
                 &:active {
-                    background-color: adjust-color($btn-white, $alpha: -0.85);
+                    background-color: $btn-secondary-dark-hover;
                     color: $btn-white;
-                    border: 1px solid $btn-white;
                 }
             }
         } 
@@ -109,14 +108,14 @@
             color: $btn-main-color;
 
             &:hover {
+                border-radius: $border-radius;
                 color: $btn-main-color;
-                background-color:adjust-color($btn-main-color, $alpha: -0.92);
+                background-color: $btn-terciary-hover;
             }
 
             &:active {
                 color: $btn-main-color;
-                border: 1px solid $btn-main-color;
-                background-color: adjust-color($btn-main-color, $alpha: -0.84);
+                background-color: $btn-terciary-pressed;
             }
         } 
         @else if  $state == 'disabled' {
@@ -132,13 +131,12 @@
 
             &:hover {
                 color: $btn-white;
-                background-color:adjust-color($error, $alpha: -0.15);
+                background-color: $btn-error-hover;
             }
 
             &:active {
                 color: $btn-white;
-                background-color: darken($error, 5%);
-                
+                background-color: $btn-error-pressed;
             }
         } 
         @else if  $state == 'disabled' {

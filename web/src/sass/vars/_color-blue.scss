@@ -2,3 +2,10 @@ $primary-color-main: #005CD1;
 $primary-color-darker: #004DB0;
 $primary-color-lighter: #2976D8;
 $primary-color-subtle: #E0EBF9;
+
+// Button variations of main color
+$btn-primary-hover: adjust-color($primary-color-main, $alpha: -0.15);
+$btn-primary-pressed: darken($primary-color-main, 5%) ;
+$btn-secondary-pressed: adjust-color($primary-color-main, $alpha: -0.92);
+$btn-terciary-hover: adjust-color($primary-color-main, $alpha: -0.92);
+$btn-terciary-pressed: adjust-color($primary-color-main, $alpha: -0.84);
