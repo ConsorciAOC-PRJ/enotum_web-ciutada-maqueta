@@ -8460,7 +8460,6 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   padding-top: 0rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 @media (min-width: 1200px) {
   .postbox .filters-col {
@@ -8477,6 +8476,7 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   .postbox .filters-col .date-filter {
     padding-right: 1rem;
     min-width: fit-content;
+    margin-bottom: 1rem;
   }
 }
 .postbox .filters-col .date-filter .filter-container {
@@ -8515,25 +8515,32 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  gap: 1rem;
+  flex-wrap: wrap;
   width: 100%;
   padding: 0rem 0.8rem;
+  margin-top: 1rem;
 }
 @media (min-width: 1200px) {
   .postbox .filters-col .all-filters-container {
     justify-content: flex-start;
     flex-direction: row;
+    margin-top: 0;
   }
 }
 .postbox .filters-col .all-filters-container .all-filters {
   display: flex;
-  gap: 1rem;
+  margin-left: 1rem;
   overflow-x: auto;
 }
 @media (min-width: 1200px) {
   .postbox .filters-col .all-filters-container .all-filters {
     overflow-x: inherit;
+    margin-left: 0;
   }
+}
+.postbox .filters-col .all-filters-container .all-filters .filter-container {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 .postbox .filters-col .all-filters-container .all-filters .filter-mobile {
   display: block;
@@ -8568,6 +8575,14 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   gap: 0.3rem;
   background-color: #F5F5F6;
   border: 1.5px solid #F5F5F6;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .postbox .filters-col .all-filters-container .read-filter {
+    display: block;
+  }
 }
 .postbox .filters-col .all-filters-container .read-filter.filter-border {
   border: 1.5px solid #1B2124;
@@ -8586,6 +8601,7 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   position: fixed;
   top: 0;
   background-color: #FFFFFF;
+  z-index: 10;
 }
 @media (min-width: 1200px) {
   .postbox .filters-col .all-filters-container.fixed-filters {
@@ -8595,7 +8611,7 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
 .postbox .results-container {
   border-top: 1px solid #E5E6E8;
   border-bottom: 1px solid #E5E6E8;
-  margin: 1rem 0rem;
+  margin-bottom: 1rem;
 }
 .postbox .results-container p {
   margin-top: 0.8888888889rem;
