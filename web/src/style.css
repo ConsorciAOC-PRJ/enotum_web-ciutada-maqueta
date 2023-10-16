@@ -8109,6 +8109,9 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
 .my-space-menu .representatives p {
   margin-bottom: 0;
 }
+.my-space-menu .representatives a {
+  text-decoration: none;
+}
 .my-space-menu .representatives a.active-link {
   color: var(--primary-color-main);
   border-bottom: 2px solid var(--primary-color-main);

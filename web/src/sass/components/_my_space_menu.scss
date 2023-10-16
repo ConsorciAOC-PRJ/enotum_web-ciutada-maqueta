@@ -76,6 +76,10 @@
             margin-bottom: 0;
         }
 
+        a {
+            text-decoration: none;
+        }
+
         a.active-link {
             color: $primary-color-main;
             border-bottom: 2px solid $primary-color-main;
