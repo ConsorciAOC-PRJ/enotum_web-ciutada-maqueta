@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="../src/style.css">
 </head>
-<body class="notification other-examples">
+<body class="notification">
     <div class="modal-overlay" data-modal="notification-modal"></div>
     <a href="#main-content" id="skip-to-link" class="sr-only">Saltar al contingut principal</a>
     <div class="body-container">
@@ -124,16 +124,13 @@
                             </div>
                             <p class="text-p-16 p-dark p-spacing-lg">El termini per obrir aquesta notificació venç el <span class="p-semibold">20/11/21 a les 14:26h</span></p>
                             <div class="notification-warning yellow">
-                                <!-- <span class="material-icons-outlined no-content-icon" aria-hidden="true">visibility_off</span> -->
+                                <span class="material-icons-outlined no-content-icon" aria-hidden="true">visibility_off</span>
                                 <div>
-                                    <p class="text-p-18 p-dark warning-message">
-                                        En cas de no obrir-la en el termini establert, la notificació constarà com a vençuda (i a efectes legals s'entendrà com a realitzada per rebuig), tret que s'acrediti la impossibilitat tècnica d'accedir-hi. 
-                                        Aquest rebuig significa que no s'ha accedit al contingut de la notificació dins del termini i no té res a veure amb estar-hi d'acord o no.
-                                    </p>
-                                    <p class="text-p-18 p-dark warning-message">Si es notifica addicionalment en paper, la data d'accés serà la que es produeixi en primer lloc.</p>
-                                    <p class="text-p-18 p-dark warning-message">Les notificacions es regeixien per la següent normativa.</p>
+                                    <p class="text-p-18 p-dark p-semibold warning-message">Cal obrir la notificació electrònica per accedir al seu contingut i els documents annexes.</p>
+                                    <a href="#" id="open-modal" class="open-modal p-spacing-lg" data-modal="notification-modal">Més informació<span class="sr-only">(Obrir la notificació)</span></a>
                                 </div>
                             </div>
+                            <a href="./notification-2.html"class="primary notification-btn">Obrir la notificació</a>
                             <h2 class="title-xs table-title">Dades de l'enviament</h2>
                             <table class="notification-data">
                                 <tr>
@@ -162,10 +159,6 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="notification-btn-gradient"></div>
-                        <div class="notification-btn-container">
-                            <a href=""class="primary notification-btn">Obrir la notificació</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -184,6 +177,36 @@
                 </div>
             </div>
         </main>
+    </div>
+    <div id="notification-modal" class="notification-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" aria-hidden="true" data-button="open-modal">
+        <div class="notification-header">
+            <h1 class="title-s">Notificació Resolució 806/2019 (Reclamació 787/2019)</h1>
+            <div class="entity-info">
+                <img src="../assets/logo-icon.png" alt="Ajuntament de Badalona">
+                <div>
+                    <p class="text-p-16 p-dark">Aj. de Badalona</p>
+                    <p class="text-p-14">Expedient 03030403</p>
+                </div>
+            </div>
+        </div>
+        <div class="state-tag">
+            <span class="material-icons-outlined" aria-hidden="true">timer</span>
+            <p class="text-p-14">En termini · <span class="p-semibold">Resten 3 dies</span></p>
+        </div>
+        <p class="text-p-16 p-dark">El termini per obrir aquesta notificació venç el <span class="p-semibold">20/11/21 a les 14:26h</span></p>
+        <div class="notification-warning">
+            <div>
+                <h2 class="title-xs">Cal obrir la notificació electrònica per accedir al seu contingut i els documents annexes.</h2>
+                <p class="text-p-18">En cas de no obrir-la en el termini de 10 dies naturals, la notificació s'entendrà com a vençuda (i a efectes legals s'entendrà com a rebutjada), tret que s'acrediti la impossibilitat tècnica d'accedir-hi. Aquest rebuig significa que no s'ha accedit al contingut de la notificació dins del termini i no té res a veure amb estar-hi d'acord o no.
+                    Si es notifica addicionalment en paper, la data d'accés serà la que es produeixi en primer lloc.
+                </p>
+                <p class="text-p-18">Les notificacions es regeixen per la normativa legal</p>
+            </div>
+        </div>
+        <div class="modal-buttons">
+            <button class="terciary close-modal" id="close-modal" data-modal="notification-modal" tabindex="-1" >En un altre moment</button>
+            <button class="primary">Obrir notificació</button>
+        </div>
     </div>
     <script src="../src/js/menus.js"></script>
     <script src="../src/js/overlay.js"></script>

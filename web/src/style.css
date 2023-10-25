@@ -8890,9 +8890,16 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
     display: flex;
   }
 }
+.notification .notification-info {
+  position: relative;
+  overflow-y: auto;
+  max-height: 90vh;
+  padding-bottom: 0;
+}
 @media (min-width: 768px) {
   .notification .notification-info {
     padding: 2rem;
+    padding-bottom: 0;
   }
 }
 .notification .notification-info .notification-header {
@@ -8955,13 +8962,27 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
 .notification .notification-info .notification-body .download-files .material-icons {
   font-size: 1rem;
 }
-.notification .notification-info .notification-body .notification-btn {
+.notification .notification-info .notification-btn-gradient {
+  position: sticky;
+  bottom: 3.5rem;
+  height: 3rem;
+  background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 55.68%, rgba(255, 255, 255, 0) 111.36%);
+}
+.notification .notification-info .notification-btn-container {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-bottom: 1rem;
+  background-color: #FFFFFF;
+}
+.notification .notification-info .notification-btn {
   margin-top: 1rem;
   width: 100%;
   display: none;
 }
 @media (min-width: 768px) {
-  .notification .notification-info .notification-body .notification-btn {
+  .notification .notification-info .notification-btn {
     display: block;
   }
 }
@@ -9002,30 +9023,6 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   .notification .mobile-controls .notification-btn-mobile {
     display: none;
   }
-}
-
-.notification.other-examples .notification-info {
-  position: relative;
-  overflow-y: auto;
-  max-height: 90vh;
-  padding-bottom: 0;
-}
-.notification.other-examples .notification-info .notification-btn-gradient {
-  position: sticky;
-  bottom: 3.5rem;
-  height: 3rem;
-  background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 55.68%, rgba(255, 255, 255, 0) 111.36%);
-}
-.notification.other-examples .notification-info .notification-btn-container {
-  position: sticky;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding-bottom: 1rem;
-  background-color: #FFFFFF;
-}
-.notification.other-examples .notification-info .notification-btn-container .notification-btn {
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
