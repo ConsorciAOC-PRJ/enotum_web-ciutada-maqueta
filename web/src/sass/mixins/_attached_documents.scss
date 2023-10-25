@@ -20,7 +20,11 @@
     min-height: rem(136px);
     border: 1px solid $grey-03;
     border-radius: $radius-medium;
-    overflow: hidden;
+    width: 100%;
+
+    @media (min-width: $screen-lg) {
+        min-width: 48%;
+    }
 
     .data {
         display: flex;
@@ -32,6 +36,36 @@
         border-top: 1px solid $grey-03;
         padding: 0.5rem;
         position: relative;
+
+        .document-title {
+            display: flex;
+            gap: 0.5rem;
+            align-items: flex-start;
+            padding-right: 1rem;
+
+            .doc-link {
+                text-decoration: none;
+                word-break: break-word;
+            }
+        }
+
+        .panel {
+            display: none;
+            flex-direction: column;
+            padding-left: 1.6rem;
+
+            .document-btn {
+                margin-top: 0.2rem;
+                margin-bottom: 0;
+                padding: 0.3rem 0.5rem;
+                width: fit-content;
+
+                .material-icons {
+                    font-size: 1.1rem;
+                    color: $black;
+                }
+            }
+        }
 
         .icon {
             width: 20px;
@@ -62,6 +96,19 @@
                 border-right: 10px solid $white;
                 border-bottom: 10px solid $white;
             }
+        }
+    }
+
+    &:hover, &.active {
+        align-items: stretch;
+
+        .data {
+            border-top: none;
+            flex-direction: column;
+        }
+        
+        .panel {
+            display: flex;
         }
     }
 }
