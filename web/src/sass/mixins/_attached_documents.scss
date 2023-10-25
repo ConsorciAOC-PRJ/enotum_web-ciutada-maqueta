@@ -20,10 +20,11 @@
     min-height: rem(136px);
     border: 1px solid $grey-03;
     border-radius: $radius-medium;
+    overflow: hidden;
 
     .data {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
         gap: 0.3rem;
         width: 100%;

@@ -7,6 +7,71 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    // Pasar todo esto al mixin
+    .document-title {
+        display: flex;
+        gap: 0.5rem;
+        align-items: flex-start;
+        overflow: hidden;
+        padding-right: 1rem;
+
+        .doc-link {
+            text-decoration: none;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-wrap: nowrap;
+        }
+    }
+
+    .panel {
+        display: none;
+        flex-direction: column;
+        padding-left: 1.6rem;
+
+        .document-btn {
+            margin-top: 0.2rem;
+            margin-bottom: 0;
+            padding: 0.3rem 0.5rem;
+            width: fit-content;
+
+            .material-icons {
+                font-size: 1.1rem;
+                color: $black;
+            }
+        }
+    }
+
+    .doc-link:focus {
+        text-wrap: wrap;
+        margin: 0.2rem;
+
+        .document-a11y {
+            position: relative;
+            width: auto;
+            height: auto;
+            overflow: visible;
+            clip: auto;
+            z-index: 10;
+        }
+    }
+
+    > div:hover, > div.active {
+        align-items: stretch;
+
+        .data {
+            border-top: none;
+            flex-direction: column;
+
+            .doc-link {
+                text-wrap: wrap;
+            }
+        }
+        
+        .panel {
+            display: flex;
+        }
+    }
+
     .red {
         @include attached_documents('red');
     }
