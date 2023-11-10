@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bùstia de notificacions | Maqueta e-Notum</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body class="postbox">
+    <div class="modal-overlay" data-modal="filters-modal"></div>
+    <a href="#main-content" id="skip-to-link" class="sr-only">Saltar al contingut principal</a>
+    <header>
+        <div class="container-fluid g-0">
+            <div class="row justify-content-between align-items-center g-0">
+                <div class="col-10 col-sm-7 col-md-6 logo-container">
+                    <div class="menu">
+                        <button class="open-menu burger-menu" aria-expanded="false">
+                            <span class="sr-only">Menú principal</span>
+                            <span class="material-icons-outlined" aria-hidden="true">menu</span>
+                        </button>
+                        <div class="main-menu menu-content animate__animated animate__slideInLeft animate__faster" role="region" aria-label="Menú principal">
+                            <div class="menu-body">
+                                <button class="close-menu" aria-expanded="true">
+                                    <span class="sr-only">Menú principal</span>
+                                    <span class="material-icons-outlined" aria-hidden="true">close</span>
+                                </button>
+                                <div>
+                                    <div class="menu-brand">
+                                        <img src="../assets/logo-icon.png" class="img-fluid logo-menu" alt="Ajuntament de Badalona">
+                                        <div class="menu-info">
+                                            <p class="text-p-18 p-semibold p-dark">Ajuntament de Badalona</p>
+                                            <p class="text-p-18">Seu electrònica</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-block">
+                                        <h2 class="text-p-14 menu-heading"><a href="#">Serveis</a></h2>
+                                        <ul>
+                                            <li><a href="#" class="text-p-16 p-dark">Transport públic</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Plànol</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Borsa de treball</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Policia</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Associacions i entitats</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-block">
+                                        <h2 class="text-p-14 menu-heading"><a href="#">Govern Obert i transparència</a></h2>
+                                        <ul>
+                                            <li><a href="#" class="text-p-16 p-dark">Informació institucional i organitzativa</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Gestió econòmica</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Acció de govern i normativa</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Contractes, convenis i subvencions</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Serveis i tràmits</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Participació</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-block">
+                                        <a class="text-p-14 menu-heading" href="#">Dades obertes</a>
+                                    </div>
+                                    <div class="menu-block">
+                                        <a class="text-p-14 menu-heading" href="#">Els teus drets</a>
+                                    </div>
+                                    <div class="menu-block">
+                                        <h2 class="title-xs p-dark">Seu electrònica</h2>
+                                        <ul>
+                                            <li><a href="#" class="text-p-16 p-dark">Sobre la Seu electrònica</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Titularitat i regulació</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark">Sistemes de identificació</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="navigation-logo" href="#">
+                        <img src="../assets/logo-icon.png" alt="">
+                        <p class="text-p-18 p-semibold p-dark no-margin">Ajuntament de Badalona</p>
+                    </a>
+                    <p class="text-p-18 seu-text no-margin">Seu electrónica</p>
+                </div>
+                <div class="col-2 col-sm-5 col-md-6 dropdown-column">
+                    <div class="my-space menu">
+                        <button class="logged-in-user open-menu" aria-expanded="false">
+                            <div class="user-initial"><span class="user-letter">M</span><span class="sr-only">Lletra inicial, usuari autenticat</span></div>
+                            <div class="user-name text-p-16 p-spacing-lg">Marta Puig</div>
+                        </button>
+                        <div class="my-space-menu menu-content animate__animated animate__slideInRight animate__faster" role="region" aria-label="Menú espai personal">
+                            <div class="menu-header">
+                                <button class="close-menu" aria-expanded="true">
+                                    <span class="sr-only">Menú espai personal</span>
+                                    <span class="material-icons-outlined" aria-hidden="true">close</span>
+                                </button>
+                                <div class="logged-in-info">
+                                    <div>
+                                        <h2 class="title-m p-white">Hola Marta,</h2>
+                                        <p class="text-p-18 p-white">Benvingut al teu espai.</p>
+                                    </div>
+                                    <button class="dark" aria-describedby="btn-login-description">Tancar sessió</button>
+                                </div>
+                            </div>
+                            <div class="menu-body">
+                                <ul>
+                                    <li><a href="#" class="text-p-18 p-dark">El meu espai</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Favorits</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Alertes</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Tràmits</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Bústia de notificacions</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Factures electròniques</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Participació</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Identitat digital</a></li>
+                                </ul>
+                                <ul class="second-list">
+                                    <li><a href="#" class="text-p-18 p-dark">Dades personals</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Preferències</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown language-dropdown">
+                        <div class="dropdown-button">
+                            <span class="material-icons" aria-hidden="true">language</span>
+                            <button class="dropbtn p-spacing-lg" aria-expanded="false" aria-label="CA (Català), Selecció d'idioma">CA</button>
+                            <span class="material-icons" aria-hidden="true">arrow_drop_down</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="?/ca" class="active" aria-current="true">Català</a></li>
+                                <li><a href="?/es" class="" aria-current="false">Castellà</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <div>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        <div class="container g-0">
+            <div class="row g-0 row-padding-top">
+                <div class="col-12 intro-col">
+                    <h1 class="title-l">Bùstia de notificacions</h1>
+                    <p class="text-p-24 p-dark">Notificacions electròniques i altres comunicacions de les Administracions Públiques Catalanes</p>
+                    <a href="#" class="p-spacing-lg">Saber-ne més<span class="sr-only">Notificacions electròniques i altres comunicacions de les Administracions Públiques Catalanes</span></a>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col col-md-5">
+                    <div class="search-bar">
+                        <input type="text" class="field" placeholder="Buscar per nom o número d'expedient">
+                        <button>
+                            <span class="sr-only">Cerca</span>
+                            <span class="material-icons" aria-hidden="true">search</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0 filters-row">
+                <div class="col-12 filters-col">
+                    <div class="date-filter">
+                        <div class="filter-container" id="filter-0">
+                            <div class="btn-container btn-container-dark">
+                                <button class="btn-filter btn-filter-dark" aria-expanded="false">
+                                    <span class="date-icon material-icons-outlined" aria-hidden="true">calendar_today</span>
+                                    <span class="p-spacing-lg">Data</span>
+                                    <span class="material-icons filter-icon" aria-hidden="true">expand_more</span>
+                                </button>
+                            </div>
+                            <div class="filter-content">
+                                <div class="filter-header">
+                                    <h2 class="title-xs">Data</h2>
+                                    <button class="text-p-16 link-grey btn-filter-rmv p-spacing-lg">Restaurar</button>
+                                </div>
+                                <div class="filter-main">
+                                    <ul class="custom-rb-container">
+                                        <li>
+                                            <input type="radio" id="6-mesos" value="6-mesos" name="data">
+                                            <label for="6-mesos" class="custom-rb-label">
+                                                <span class="material-icons custom-rb" aria-hidden="true">radio_button_checked</span>
+                                                <span class="text-p-16 p-dark p-spacing-lg">Darrers 6 mesos</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="any" value="Any" name="data">
+                                            <label for="any" class="custom-rb-label">
+                                                <span class="material-icons custom-rb" aria-hidden="true">radio_button_unchecked</span>
+                                                <span class="text-p-16 p-dark p-spacing-lg">Darrer any</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="filter-footer">
+                                    <button class="terciary-s">Cancel·lar</button>
+                                    <button class="primary-s-rm" onclick="applyFilter('filter-0')">Mostrar resultats</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all-filters-container">
+                        <div class="all-filters">
+                            <div class="filter-container  filter-desktop" id="filter-1">
+                                <div class="btn-container">
+                                    <button class="btn-filter" aria-expanded="false">
+                                        <span id="filter-1-name">Emissor</span>
+                                        <span class="material-icons filter-icon" aria-hidden="true">expand_more</span>
+                                    </button>
+                                </div>
+                                <div class="filter-content" role="group" aria-labelledby="filter-1-name">
+                                    <div class="filter-header">
+                                        <h2 class="title-xs">Emissor</h2>
+                                        <button class="text-p-16 link-grey btn-filter-rmv p-spacing-lg">Restaurar</button>
+                                    </div>
+                                    <div class="filter-main">
+                                        <div class="search-bar">
+                                            <input type="text" placeholder="Cercar emissor">
+                                            <button>
+                                                <span class="sr-only">Cerca</span>
+                                                <span class="material-icons" aria-hidden="true">search</span>
+                                            </button>
+                                        </div>
+                                        <ul class="custom-rb-container">
+                                            <li>
+                                                <input type="radio" id="tots" value="Tots" name="emissor">
+                                                <label for="tots" class="custom-rb-label">
+                                                    <span class="material-icons custom-rb" aria-hidden="true">radio_button_checked</span>
+                                                    <span class="text-p-16 p-dark p-spacing-lg">Altres no relacionats</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="badalona" value="Badalona" name="emissor">
+                                                <label for="badalona" class="custom-rb-label">
+                                                    <span class="material-icons custom-rb" aria-hidden="true">radio_button_unchecked</span>
+                                                    <span class="text-p-16 p-dark p-spacing-lg">Ajuntament Badalona</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="filter-footer">
+                                        <button class="terciary-s">Cancel·lar</button>
+                                        <button class="primary-s-rm" onclick="applyFilter('filter-1')">Mostrar resultats</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-container filter-desktop" id="filter-2">
+                                <div class="btn-container">
+                                    <button class="btn-filter" aria-expanded="false">
+                                        <span id="filter-2-name">Emissor</span>
+                                        <span class="material-icons filter-icon" aria-hidden="true">expand_more</span>
+                                    </button>
+                                </div>
+                                <div class="filter-content" role="group" aria-labelledby="filter-2-name">
+                                    <div class="filter-header">
+                                        <h2 class="title-xs">Emissor</h2>
+                                        <button class="text-p-16 link-grey btn-filter-rmv p-spacing-lg">Restaurar</button>
+                                    </div>
+                                    <div class="filter-main">
+                                        <div class="search-bar">
+                                            <input type="text" placeholder="Cercar emissor">
+                                            <button>
+                                                <span class="sr-only">Cerca</span>
+                                                <span class="material-icons" aria-hidden="true">search</span>
+                                            </button>
+                                        </div>
+                                        <ul class="custom-rb-container">
+                                            <li>
+                                                <input type="radio" id="tots-2" value="Tots" name="emissor">
+                                                <label for="tots-2" class="custom-rb-label" aria-descibedby="label-description-1">
+                                                    <span class="material-icons custom-rb" aria-hidden="true">radio_button_checked</span>
+                                                    <span class="text-p-16 p-dark p-spacing-lg">Altres no relacionats</span>
+                                                </label>
+                                                <p id="label-description-1" class="text-p-14 label-description p-spacing-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="badalona-2" value="Badalona" name="emissor">
+                                                <label for="badalona-2" class="custom-rb-label">
+                                                    <span class="material-icons custom-rb" aria-hidden="true">radio_button_unchecked</span>
+                                                    <span class="text-p-16 p-dark p-spacing-lg">Ajuntament Badalona</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="filter-footer">
+                                        <button class="terciary-s">Cancel·lar</button>
+                                        <button class="primary-s-rm" onclick="applyFilter('filter-2')">Mostrar resultats</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-container filter-mobile">
+                                <div class="btn-container">
+                                    <button id="open-modal-0" class="open-modal btn-filter" data-modal="filters-modal">
+                                        <span>Emissor</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="read-filter" aria-pressed="false" aria-label="Filtra les notificacions no llegides">No llegides</button>
+                        <div class="all-filters-button">
+                            <button id="open-modal" class="open-modal filter-open-modal" data-modal="filters-modal">
+                                <span class="material-icons-outlined" aria-hidden="true">tune</span>
+                                <span>Filtres</span>
+                                <span></span>
+                            </button>
+                            <div id="filters-modal" class="filters-modal animate__animated animate__slideInRight animate__faster" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" aria-hidden="true" data-button="open-modal">
+                                <div class="close-modal-container">
+                                    <h1 class="title-s">Tots els filtres</h1>
+                                    <button class="close-modal" id="close-modal" tabindex="-1" data-modal="filters-modal">
+                                        <span class="material-icons sr-only">Tancar</span>
+                                        <span class="material-icons" aria-hidden="true">close</span>
+                                    </button>
+                                </div>
+                                <div class="accordion">
+                                    <h2>
+                                        <button id="accordion-modal-1-btn" class="accordion-button aoc-border" aria-expanded="false" aria-controls="accordion-modal-1">
+                                            <div class="filter-btn-name">
+                                                <span class="title-xs">Emissor</span>
+                                                <span class="text-p-14 p-grey"><span class="sr-only">Opció seleccionada: </span>Aj. de Badalona</span>
+                                            </div>
+                                            <span class="material-icons" aria-hidden="true">expand_more</span>
+                                        </button>
+                                    </h2>
+                                    <div id="accordion-modal-1" class="accordion-content" role="region" aria-labelledby="accordion-modal-1-btn">
+                                        <div class="filter-main">
+                                            <div class="search-bar">
+                                                <input type="text" placeholder="Cercar emissor">
+                                                <button>
+                                                    <span class="sr-only">Cerca</span>
+                                                    <span class="material-icons" aria-hidden="true">search</span>
+                                                </button>
+                                            </div>
+                                            <ul class="custom-rb-container">
+                                                <li>
+                                                    <input type="radio" id="modal-tots-1" value="Tots" name="modal-emissor">
+                                                    <label for="modal-tots-1" class="custom-rb-label">
+                                                        <span class="material-icons cu stom-rb" aria-hidden="true">radio_button_checked</span>
+                                                        <span class="text-p-16 p-dark p-spacing-lg">Altres no relacionats</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" id="modal-badalona-1" value="Badalona" name="modal-emissor">
+                                                    <label for="modal-badalona-1" class="custom-rb-label">
+                                                        <span class="material-icons custom-rb" aria-hidden="true">radio_button_unchecked</span>
+                                                        <span class="text-p-16 p-dark p-spacing-lg">Ajuntament Badalona</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>         
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <h2>
+                                        <button id="accordion-modal-1-btn" class="accordion-button aoc-border" aria-expanded="false" aria-controls="accordion-modal-1">
+                                            <div class="filter-btn-name">
+                                                <span class="title-xs">Emissor</span>
+                                                <span class="text-p-14 p-grey"></span>
+                                            </div>
+                                            <span class="material-icons" aria-hidden="true">expand_more</span>
+                                        </button>
+                                    </h2>
+                                    <div id="accordion-modal-1" class="accordion-content" role="region" aria-labelledby="accordion-modal-1-btn">
+                                        <div class="filter-main">
+                                            <div class="search-bar">
+                                                <input type="text" placeholder="Cercar emissor">
+                                                <button>
+                                                    <span class="sr-only">Cerca</span>
+                                                    <span class="material-icons" aria-hidden="true">search</span>
+                                                </button>
+                                            </div>
+                                            <ul class="custom-rb-container">
+                                                <li>
+                                                    <input type="radio" id="modal-tots-1" value="Tots" name="modal-emissor">
+                                                    <label for="modal-tots-1" class="custom-rb-label">
+                                                        <span class="material-icons cu stom-rb" aria-hidden="true">radio_button_checked</span>
+                                                        <span class="text-p-16 p-dark p-spacing-lg">Altres no relacionats</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" id="modal-badalona-1" value="Badalona" name="modal-emissor">
+                                                    <label for="modal-badalona-1" class="custom-rb-label">
+                                                        <span class="material-icons custom-rb" aria-hidden="true">radio_button_unchecked</span>
+                                                        <span class="text-p-16 p-dark p-spacing-lg">Ajuntament Badalona</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>         
+                                    </div>
+                                </div>
+                                <div class="switch-container">
+                                    <button class="switch" aria-pressed="false" aria-labelledby="switch-label">
+                                        <span class="circle"></span>
+                                    </button>
+                                    <span class="text-p-16" id="switch-label" aria-hidden="true">Mostrar no llegits</span>
+                                </div>
+                                <div class="filter-footer">
+                                    <button class="terciary-s">Cancel·lar</button>
+                                    <button class="primary-s-rm">Mostrar resultats</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0 row-padding-bottom row-padding-top">
+                <div class="col-12">
+                    <div class="no-results d-flex flex-column align-items-center">
+                        <img src="../assets/no-results.png" alt=""/>
+                        <p class="text-p-18 p-dark">No s’han trobat resultats per al criteri seleccionat en els darres 6 mesos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid g-0">
+        <div class="container g-0">
+            <div class="row g-0 features-row">
+                <div class="col-md">
+                    <div class="feature-container">
+                        <span class="material-icons-outlined" aria-hidden="true">question_answer</span>
+                        <div>
+                            <h2 class="title-xs">Els meus drets</h2>
+                            <p class="text-p-16">Coneix els teus drets quan et relaciones amb l’administració pública (no inclou persones jurídiques)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="feature-container">
+                        <span class="material-icons-outlined" aria-hidden="true">people</span>
+                        <div>
+                            <h2 class="title-xs">Recomanador social</h2>
+                            <p class="text-p-16">Ajuts socials que t’ofereixen les administracions públiques en funció de la teva situació personal i familiar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="feature-container">
+                        <span class="material-icons-outlined" aria-hidden="true">record_voice_over</span>
+                        <div>
+                            <h2 class="title-xs">Atenció ciutadana</h2>
+                            <p class="text-p-16">Vegeu les diverses formes de contactar amb l’ajuntament.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0 links-row">
+                <div class="col-md">
+                    <h2 class="links-heading">Seu electrònica</h2>
+                    <ul>
+                        <li><a href="#">Què és la Seu-e</a></li>
+                        <li><a href="#">Mapa web</a></li>
+                        <li><a href="#">Accessibilitat</a></li>
+                        <li><a href="#">Avís legal</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h2 class="links-heading">Tràmits i gestions</h2>
+                    <ul>
+                        <li><a href="#">Catàleg de tràmits</a></li>
+                        <li><a href="#">Instància genèrica</a></li>
+                        <li><a href="#">Impostos i tributs</a></li>
+                        <li><a href="#">Presentar una factura</a></li>
+                        <li><a href="#">Presentar una licitació</a></li>
+                        <li><a href="#">Tràmits a altres Administracions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h2 class="links-heading">Govern Obert i transparència</h2>
+                    <ul>
+                        <li><a href="#">Informació publica</a></li>
+                        <li><a href="#">Dades Obertes</a></li>
+                        <li><a href="#">Indicadors</a></li>
+                        <li><a href="#">Darreres actualitzacions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h2 class="links-heading">Atenció ciutadana</h2>
+                    <ul>
+                        <li><a href="#">Els meus drets</a></li>
+                        <li><a href="#">Identitat digital</a></li>
+                        <li><a href="#">Contacte</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-0 time-row">
+                <div class="col-12 col-md-8 legal-links">
+                    <ul>
+                        <li><a href="#" class="text-p-14 link-grey p-spacing">Avís legal</a></li>
+                        <li><a href="#" class="text-p-14 link-grey p-spacing">Accessibilitat</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 time-column">
+                    <p class="text-p-14 p-spacing"><strong>Hora oficial:</strong> 09:55h - 19 novembre 2021</p>
+                </div>
+            </div>
+            <div class="row g-0 logos-row">
+                <div class="col-md-12">
+                    <div class="logos-container">
+                        <div class="entity-logo">
+                            <img src="../assets/logo-icon.png" alt="">
+                            <p class="text-p-14 p-semibold p-dark no-margin">Ajuntament de Badalona</p>
+                        </div>
+                        <div class="credits-container">
+                            <p class="text-p-14 p-spacing">Servei prestat per:</p>
+                            <div class="credits-logos">
+                                <div>
+                                    <img src="../assets/aoc-logo.png" alt="Administració Oberta de Catalunya">
+                                </div>
+                                <div>
+                                    <img src="../assets/ue-logo.png" alt="Cofinanciat per la Unió Europea">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../src/js/menus.js"></script>
+    <script src="../src/js/overlay.js"></script>
+    <script src="../src/js/modal-dialogs.js"></script>
+    <script src="../src/js/select.js"></script>
+    <script src="../src/js/dropdowns.js"></script>
+    <script src="../src/js/accordions.js"></script>
+    <script src="../src/js/filters.js"></script>
+    <script src="../src/js/radio-buttons.js"></script>
+    <script src="../src/js/fixed-filters.js"></script>
+    <script src="../src/js/switch.js"></script>
+</body>
