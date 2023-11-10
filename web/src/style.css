@@ -9153,9 +9153,11 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
     display: block;
   }
 }
-.notification .notification-info.overflow {
-  max-height: 90vh;
-  overflow: auto;
+@media (min-width: 992px) {
+  .notification .notification-info.overflow {
+    max-height: 90vh;
+    overflow: auto;
+  }
 }
 .notification .notification-info.hide {
   display: none;

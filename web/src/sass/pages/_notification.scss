@@ -249,8 +249,10 @@
     }
 
     .notification-info.overflow {
-        max-height: 90vh;
-        overflow: auto;
+        @media (min-width: $screen-lg) {
+            max-height: 90vh;
+            overflow: auto;
+        }
     }
 
     .notification-info.hide {
