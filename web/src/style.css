@@ -5690,7 +5690,7 @@ input.primary:active, button.primary:active, a.primary:active {
   }
 }
 
-button.primary-rm, a.primary-rm {
+input.primary-rm, button.primary-rm, a.primary-rm {
   padding: 0.5555555556rem 1.3333333333rem;
   border: none;
   background: none;
@@ -5715,14 +5715,14 @@ button.primary-rm, a.primary-rm {
   text-align: center;
   display: inline-block;
 }
-button.primary-rm:hover, a.primary-rm:hover {
+input.primary-rm:hover, button.primary-rm:hover, a.primary-rm:hover {
   background-color: var(--btn-primary-hover);
 }
-button.primary-rm:active, a.primary-rm:active {
+input.primary-rm:active, button.primary-rm:active, a.primary-rm:active {
   background-color: var(--btn-primary-pressed);
 }
 @media (min-width: 768px) {
-  button.primary-rm, a.primary-rm {
+  input.primary-rm, button.primary-rm, a.primary-rm {
     padding: 0.5555555556rem 1.3333333333rem;
     border: none;
     background: none;
@@ -5739,15 +5739,15 @@ button.primary-rm:active, a.primary-rm:active {
     color: #FFFFFF;
     width: initial;
   }
-  button.primary-rm:hover, a.primary-rm:hover {
+  input.primary-rm:hover, button.primary-rm:hover, a.primary-rm:hover {
     background-color: var(--btn-primary-hover);
   }
-  button.primary-rm:active, a.primary-rm:active {
+  input.primary-rm:active, button.primary-rm:active, a.primary-rm:active {
     background-color: var(--btn-primary-pressed);
   }
 }
 
-button.primary-rs, a.primary-rs {
+input.primary-rs, button.primary-rs, a.primary-rs {
   padding: 0.5555555556rem 1.3333333333rem;
   border: none;
   background: none;
@@ -5772,14 +5772,14 @@ button.primary-rs, a.primary-rs {
   text-align: center;
   display: inline-block;
 }
-button.primary-rs:hover, a.primary-rs:hover {
+input.primary-rs:hover, button.primary-rs:hover, a.primary-rs:hover {
   background-color: var(--btn-primary-hover);
 }
-button.primary-rs:active, a.primary-rs:active {
+input.primary-rs:active, button.primary-rs:active, a.primary-rs:active {
   background-color: var(--btn-primary-pressed);
 }
 @media (min-width: 768px) {
-  button.primary-rs, a.primary-rs {
+  input.primary-rs, button.primary-rs, a.primary-rs {
     padding: 0.5555555556rem 1.3333333333rem;
     border: none;
     background: none;
@@ -5796,15 +5796,15 @@ button.primary-rs:active, a.primary-rs:active {
     color: #FFFFFF;
     width: initial;
   }
-  button.primary-rs:hover, a.primary-rs:hover {
+  input.primary-rs:hover, button.primary-rs:hover, a.primary-rs:hover {
     background-color: var(--btn-primary-hover);
   }
-  button.primary-rs:active, a.primary-rs:active {
+  input.primary-rs:active, button.primary-rs:active, a.primary-rs:active {
     background-color: var(--btn-primary-pressed);
   }
 }
 
-button.primary-s, a.primary-s {
+input.primary-s, button.primary-s, a.primary-s {
   padding: 0.4444444444rem 0.8888888889rem;
   border: none;
   background: none;
@@ -5829,14 +5829,14 @@ button.primary-s, a.primary-s {
   text-align: center;
   display: inline-block;
 }
-button.primary-s:hover, a.primary-s:hover {
+input.primary-s:hover, button.primary-s:hover, a.primary-s:hover {
   background-color: var(--btn-primary-hover);
 }
-button.primary-s:active, a.primary-s:active {
+input.primary-s:active, button.primary-s:active, a.primary-s:active {
   background-color: var(--btn-primary-pressed);
 }
 @media (min-width: 768px) {
-  button.primary-s, a.primary-s {
+  input.primary-s, button.primary-s, a.primary-s {
     padding: 0.4444444444rem 0.8888888889rem;
     border: none;
     background: none;
@@ -5853,15 +5853,15 @@ button.primary-s:active, a.primary-s:active {
     color: #FFFFFF;
     width: initial;
   }
-  button.primary-s:hover, a.primary-s:hover {
+  input.primary-s:hover, button.primary-s:hover, a.primary-s:hover {
     background-color: var(--btn-primary-hover);
   }
-  button.primary-s:active, a.primary-s:active {
+  input.primary-s:active, button.primary-s:active, a.primary-s:active {
     background-color: var(--btn-primary-pressed);
   }
 }
 
-button.primary-s-rm, a.primary-s-rm {
+input.primary-s-rm, button.primary-s-rm, a.primary-s-rm {
   padding: 0.4444444444rem 0.8888888889rem;
   border: none;
   background: none;
@@ -5886,14 +5886,14 @@ button.primary-s-rm, a.primary-s-rm {
   text-align: center;
   display: inline-block;
 }
-button.primary-s-rm:hover, a.primary-s-rm:hover {
+input.primary-s-rm:hover, button.primary-s-rm:hover, a.primary-s-rm:hover {
   background-color: var(--btn-primary-hover);
 }
-button.primary-s-rm:active, a.primary-s-rm:active {
+input.primary-s-rm:active, button.primary-s-rm:active, a.primary-s-rm:active {
   background-color: var(--btn-primary-pressed);
 }
 @media (min-width: 768px) {
-  button.primary-s-rm, a.primary-s-rm {
+  input.primary-s-rm, button.primary-s-rm, a.primary-s-rm {
     padding: 0.4444444444rem 0.8888888889rem;
     border: none;
     background: none;
@@ -5910,15 +5910,15 @@ button.primary-s-rm:active, a.primary-s-rm:active {
     color: #FFFFFF;
     width: initial;
   }
-  button.primary-s-rm:hover, a.primary-s-rm:hover {
+  input.primary-s-rm:hover, button.primary-s-rm:hover, a.primary-s-rm:hover {
     background-color: var(--btn-primary-hover);
   }
-  button.primary-s-rm:active, a.primary-s-rm:active {
+  input.primary-s-rm:active, button.primary-s-rm:active, a.primary-s-rm:active {
     background-color: var(--btn-primary-pressed);
   }
 }
 
-button.primary-s-rs, a.primary-s-rs {
+input.primary-s-rs, button.primary-s-rs, a.primary-s-rs {
   padding: 0.4444444444rem 0.8888888889rem;
   border: none;
   background: none;
@@ -5943,14 +5943,14 @@ button.primary-s-rs, a.primary-s-rs {
   text-align: center;
   display: inline-block;
 }
-button.primary-s-rs:hover, a.primary-s-rs:hover {
+input.primary-s-rs:hover, button.primary-s-rs:hover, a.primary-s-rs:hover {
   background-color: var(--btn-primary-hover);
 }
-button.primary-s-rs:active, a.primary-s-rs:active {
+input.primary-s-rs:active, button.primary-s-rs:active, a.primary-s-rs:active {
   background-color: var(--btn-primary-pressed);
 }
 @media (min-width: 768px) {
-  button.primary-s-rs, a.primary-s-rs {
+  input.primary-s-rs, button.primary-s-rs, a.primary-s-rs {
     padding: 0.4444444444rem 0.8888888889rem;
     border: none;
     background: none;
@@ -5967,15 +5967,15 @@ button.primary-s-rs:active, a.primary-s-rs:active {
     color: #FFFFFF;
     width: initial;
   }
-  button.primary-s-rs:hover, a.primary-s-rs:hover {
+  input.primary-s-rs:hover, button.primary-s-rs:hover, a.primary-s-rs:hover {
     background-color: var(--btn-primary-hover);
   }
-  button.primary-s-rs:active, a.primary-s-rs:active {
+  input.primary-s-rs:active, button.primary-s-rs:active, a.primary-s-rs:active {
     background-color: var(--btn-primary-pressed);
   }
 }
 
-button.secondary, a.secondary {
+input.secondary, button.secondary, a.secondary {
   padding: 0.5555555556rem 1.3333333333rem;
   border: none;
   background: none;
@@ -6000,17 +6000,17 @@ button.secondary, a.secondary {
   text-align: center;
   display: inline-block;
 }
-button.secondary:hover, a.secondary:hover {
+input.secondary:hover, button.secondary:hover, a.secondary:hover {
   color: var(--primary-color-main);
   border: 1px solid var(--primary-color-main);
 }
-button.secondary:active, a.secondary:active {
+input.secondary:active, button.secondary:active, a.secondary:active {
   color: var(--primary-color-main);
   border: 1px solid var(--primary-color-main);
   background-color: var(--btn-secondary-pressed);
 }
 @media (min-width: 768px) {
-  button.secondary, a.secondary {
+  input.secondary, button.secondary, a.secondary {
     padding: 0.5555555556rem 1.3333333333rem;
     border: none;
     background: none;
@@ -6027,18 +6027,18 @@ button.secondary:active, a.secondary:active {
     border: 1px solid #1B2124;
     width: initial;
   }
-  button.secondary:hover, a.secondary:hover {
+  input.secondary:hover, button.secondary:hover, a.secondary:hover {
     color: var(--primary-color-main);
     border: 1px solid var(--primary-color-main);
   }
-  button.secondary:active, a.secondary:active {
+  input.secondary:active, button.secondary:active, a.secondary:active {
     color: var(--primary-color-main);
     border: 1px solid var(--primary-color-main);
     background-color: var(--btn-secondary-pressed);
   }
 }
 
-button.secondary-rm, a.secondary-rm {
+input.secondary-rm, button.secondary-rm, a.secondary-rm {
   padding: 0.5555555556rem 1.3333333333rem;
   border: none;
   background: none;
@@ -6063,17 +6063,17 @@ button.secondary-rm, a.secondary-rm {
   text-align: center;
   display: inline-block;
 }
-button.secondary-rm:hover, a.secondary-rm:hover {
+input.secondary-rm:hover, button.secondary-rm:hover, a.secondary-rm:hover {
   color: var(--primary-color-main);
   border: 1px solid var(--primary-color-main);
 }
-button.secondary-rm:active, a.secondary-rm:active {
+input.secondary-rm:active, button.secondary-rm:active, a.secondary-rm:active {
   color: var(--primary-color-main);
   border: 1px solid var(--primary-color-main);
   background-color: var(--btn-secondary-pressed);
 }
 @media (min-width: 768px) {
-  button.secondary-rm, a.secondary-rm {
+  input.secondary-rm, button.secondary-rm, a.secondary-rm {
     padding: 0.5555555556rem 1.3333333333rem;
     border: none;
     background: none;
@@ -6090,18 +6090,18 @@ button.secondary-rm:active, a.secondary-rm:active {
     border: 1px solid #1B2124;
     width: initial;
   }
-  button.secondary-rm:hover, a.secondary-rm:hover {
+  input.secondary-rm:hover, button.secondary-rm:hover, a.secondary-rm:hover {
     color: var(--primary-color-main);
     border: 1px solid var(--primary-color-main);
   }
-  button.secondary-rm:active, a.secondary-rm:active {
+  input.secondary-rm:active, button.secondary-rm:active, a.secondary-rm:active {
     color: var(--primary-color-main);
     border: 1px solid var(--primary-color-main);
     background-color: var(--btn-secondary-pressed);
   }
 }
 
-button.secondary-rs, a.secondary-rs {
+input.secondary-rs, button.secondary-rs, a.secondary-rs {
   padding: 0.5555555556rem 1.3333333333rem;
   border: none;
   background: none;
@@ -6126,17 +6126,17 @@ button.secondary-rs, a.secondary-rs {
   text-align: center;
   display: inline-block;
 }
-button.secondary-rs:hover, a.secondary-rs:hover {
+input.secondary-rs:hover, button.secondary-rs:hover, a.secondary-rs:hover {
   color: var(--primary-color-main);
   border: 1px solid var(--primary-color-main);
 }
-button.secondary-rs:active, a.secondary-rs:active {
+input.secondary-rs:active, button.secondary-rs:active, a.secondary-rs:active {
   color: var(--primary-color-main);
   border: 1px solid var(--primary-color-main);
   background-color: var(--btn-secondary-pressed);
 }
 @media (min-width: 768px) {
-  button.secondary-rs, a.secondary-rs {
+  input.secondary-rs, button.secondary-rs, a.secondary-rs {
     padding: 0.5555555556rem 1.3333333333rem;
     border: none;
     background: none;
@@ -6153,18 +6153,18 @@ button.secondary-rs:active, a.secondary-rs:active {
     border: 1px solid #1B2124;
     width: initial;
   }
-  button.secondary-rs:hover, a.secondary-rs:hover {
+  input.secondary-rs:hover, button.secondary-rs:hover, a.secondary-rs:hover {
     color: var(--primary-color-main);
     border: 1px solid var(--primary-color-main);
   }
-  button.secondary-rs:active, a.secondary-rs:active {
+  input.secondary-rs:active, button.secondary-rs:active, a.secondary-rs:active {
     color: var(--primary-color-main);
     border: 1px solid var(--primary-color-main);
     background-color: var(--btn-secondary-pressed);
   }
 }
 
-button.secondary-s, a.secondary-s {
+input.secondary-s, button.secondary-s, a.secondary-s {
   padding: 0.4444444444rem 0.8888888889rem;
   border: none;
   background: none;
@@ -6189,17 +6189,17 @@ button.secondary-s, a.secondary-s {
   text-align: center;
   display: inline-block;
 }
-button.secondary-s:hover, a.secondary-s:hover {
+input.secondary-s:hover, button.secondary-s:hover, a.secondary-s:hover {
   color: var(--primary-color-main);
   border: 1px solid var(--primary-color-main);
 }
-button.secondary-s:active, a.secondary-s:active {
+input.secondary-s:active, button.secondary-s:active, a.secondary-s:active {
   color: var(--primary-color-main);
   border: 1px solid var(--primary-color-main);
   background-color: var(--btn-secondary-pressed);
 }
 @media (min-width: 768px) {
-  button.secondary-s, a.secondary-s {
+  input.secondary-s, button.secondary-s, a.secondary-s {
     padding: 0.4444444444rem 0.8888888889rem;
     border: none;
     background: none;
@@ -6216,18 +6216,18 @@ button.secondary-s:active, a.secondary-s:active {
     border: 1px solid #1B2124;
     width: initial;
   }
-  button.secondary-s:hover, a.secondary-s:hover {
+  input.secondary-s:hover, button.secondary-s:hover, a.secondary-s:hover {
     color: var(--primary-color-main);
     border: 1px solid var(--primary-color-main);
   }
-  button.secondary-s:active, a.secondary-s:active {
+  input.secondary-s:active, button.secondary-s:active, a.secondary-s:active {
     color: var(--primary-color-main);
     border: 1px solid var(--primary-color-main);
     background-color: var(--btn-secondary-pressed);
   }
 }
 
-button.secondary-s-rm, a.secondary-s-rm {
+input.secondary-s-rm, button.secondary-s-rm, a.secondary-s-rm {
   padding: 0.5555555556rem 1.3333333333rem;
   border: none;
   background: none;
@@ -6252,17 +6252,17 @@ button.secondary-s-rm, a.secondary-s-rm {
   text-align: center;
   display: inline-block;
 }
-button.secondary-s-rm:hover, a.secondary-s-rm:hover {
+input.secondary-s-rm:hover, button.secondary-s-rm:hover, a.secondary-s-rm:hover {
   color: var(--primary-color-main);
   border: 1px solid var(--primary-color-main);
 }
-button.secondary-s-rm:active, a.secondary-s-rm:active {
+input.secondary-s-rm:active, button.secondary-s-rm:active, a.secondary-s-rm:active {
   color: var(--primary-color-main);
   border: 1px solid var(--primary-color-main);
   background-color: var(--btn-secondary-pressed);
 }
 @media (min-width: 768px) {
-  button.secondary-s-rm, a.secondary-s-rm {
+  input.secondary-s-rm, button.secondary-s-rm, a.secondary-s-rm {
     padding: 0.5555555556rem 1.3333333333rem;
     border: none;
     background: none;
@@ -6279,18 +6279,18 @@ button.secondary-s-rm:active, a.secondary-s-rm:active {
     border: 1px solid #1B2124;
     width: initial;
   }
-  button.secondary-s-rm:hover, a.secondary-s-rm:hover {
+  input.secondary-s-rm:hover, button.secondary-s-rm:hover, a.secondary-s-rm:hover {
     color: var(--primary-color-main);
     border: 1px solid var(--primary-color-main);
   }
-  button.secondary-s-rm:active, a.secondary-s-rm:active {
+  input.secondary-s-rm:active, button.secondary-s-rm:active, a.secondary-s-rm:active {
     color: var(--primary-color-main);
     border: 1px solid var(--primary-color-main);
     background-color: var(--btn-secondary-pressed);
   }
 }
 
-button.secondary-s-rs, a.secondary-s-rs {
+input.secondary-s-rs, button.secondary-s-rs, a.secondary-s-rs {
   padding: 0.5555555556rem 1.3333333333rem;
   border: none;
   background: none;
@@ -6315,17 +6315,17 @@ button.secondary-s-rs, a.secondary-s-rs {
   text-align: center;
   display: inline-block;
 }
-button.secondary-s-rs:hover, a.secondary-s-rs:hover {
+input.secondary-s-rs:hover, button.secondary-s-rs:hover, a.secondary-s-rs:hover {
   color: var(--primary-color-main);
   border: 1px solid var(--primary-color-main);
 }
-button.secondary-s-rs:active, a.secondary-s-rs:active {
+input.secondary-s-rs:active, button.secondary-s-rs:active, a.secondary-s-rs:active {
   color: var(--primary-color-main);
   border: 1px solid var(--primary-color-main);
   background-color: var(--btn-secondary-pressed);
 }
 @media (min-width: 768px) {
-  button.secondary-s-rs, a.secondary-s-rs {
+  input.secondary-s-rs, button.secondary-s-rs, a.secondary-s-rs {
     padding: 0.5555555556rem 1.3333333333rem;
     border: none;
     background: none;
@@ -6342,18 +6342,18 @@ button.secondary-s-rs:active, a.secondary-s-rs:active {
     border: 1px solid #1B2124;
     width: initial;
   }
-  button.secondary-s-rs:hover, a.secondary-s-rs:hover {
+  input.secondary-s-rs:hover, button.secondary-s-rs:hover, a.secondary-s-rs:hover {
     color: var(--primary-color-main);
     border: 1px solid var(--primary-color-main);
   }
-  button.secondary-s-rs:active, a.secondary-s-rs:active {
+  input.secondary-s-rs:active, button.secondary-s-rs:active, a.secondary-s-rs:active {
     color: var(--primary-color-main);
     border: 1px solid var(--primary-color-main);
     background-color: var(--btn-secondary-pressed);
   }
 }
 
-button.terciary, a.terciary {
+input.terciary, button.terciary, a.terciary {
   padding: 0.5555555556rem 1.3333333333rem;
   border: none;
   background: none;
@@ -6378,17 +6378,17 @@ button.terciary, a.terciary {
   text-align: center;
   display: inline-block;
 }
-button.terciary:hover, a.terciary:hover {
+input.terciary:hover, button.terciary:hover, a.terciary:hover {
   border-radius: 12px;
   color: var(--primary-color-main);
   background-color: var(--btn-terciary-hover);
 }
-button.terciary:active, a.terciary:active {
+input.terciary:active, button.terciary:active, a.terciary:active {
   color: var(--primary-color-main);
   background-color: var(--btn-terciary-pressed);
 }
 @media (min-width: 768px) {
-  button.terciary, a.terciary {
+  input.terciary, button.terciary, a.terciary {
     padding: 0.5555555556rem 1.3333333333rem;
     border: none;
     background: none;
@@ -6405,18 +6405,18 @@ button.terciary:active, a.terciary:active {
     color: var(--primary-color-main);
     width: initial;
   }
-  button.terciary:hover, a.terciary:hover {
+  input.terciary:hover, button.terciary:hover, a.terciary:hover {
     border-radius: 12px;
     color: var(--primary-color-main);
     background-color: var(--btn-terciary-hover);
   }
-  button.terciary:active, a.terciary:active {
+  input.terciary:active, button.terciary:active, a.terciary:active {
     color: var(--primary-color-main);
     background-color: var(--btn-terciary-pressed);
   }
 }
 
-button.terciary-rm, a.terciary-rm {
+input.terciary-rm, button.terciary-rm, a.terciary-rm {
   padding: 0.5555555556rem 1.3333333333rem;
   border: none;
   background: none;
@@ -6441,17 +6441,17 @@ button.terciary-rm, a.terciary-rm {
   text-align: center;
   display: inline-block;
 }
-button.terciary-rm:hover, a.terciary-rm:hover {
+input.terciary-rm:hover, button.terciary-rm:hover, a.terciary-rm:hover {
   border-radius: 8px;
   color: var(--primary-color-main);
   background-color: var(--btn-terciary-hover);
 }
-button.terciary-rm:active, a.terciary-rm:active {
+input.terciary-rm:active, button.terciary-rm:active, a.terciary-rm:active {
   color: var(--primary-color-main);
   background-color: var(--btn-terciary-pressed);
 }
 @media (min-width: 768px) {
-  button.terciary-rm, a.terciary-rm {
+  input.terciary-rm, button.terciary-rm, a.terciary-rm {
     padding: 0.5555555556rem 1.3333333333rem;
     border: none;
     background: none;
@@ -6468,18 +6468,18 @@ button.terciary-rm:active, a.terciary-rm:active {
     color: var(--primary-color-main);
     width: initial;
   }
-  button.terciary-rm:hover, a.terciary-rm:hover {
+  input.terciary-rm:hover, button.terciary-rm:hover, a.terciary-rm:hover {
     border-radius: 12px;
     color: var(--primary-color-main);
     background-color: var(--btn-terciary-hover);
   }
-  button.terciary-rm:active, a.terciary-rm:active {
+  input.terciary-rm:active, button.terciary-rm:active, a.terciary-rm:active {
     color: var(--primary-color-main);
     background-color: var(--btn-terciary-pressed);
   }
 }
 
-button.terciary-rs, a.terciary-rs {
+input.terciary-rs, button.terciary-rs, a.terciary-rs {
   padding: 0.5555555556rem 1.3333333333rem;
   border: none;
   background: none;
@@ -6504,17 +6504,17 @@ button.terciary-rs, a.terciary-rs {
   text-align: center;
   display: inline-block;
 }
-button.terciary-rs:hover, a.terciary-rs:hover {
+input.terciary-rs:hover, button.terciary-rs:hover, a.terciary-rs:hover {
   border-radius: 4px;
   color: var(--primary-color-main);
   background-color: var(--btn-terciary-hover);
 }
-button.terciary-rs:active, a.terciary-rs:active {
+input.terciary-rs:active, button.terciary-rs:active, a.terciary-rs:active {
   color: var(--primary-color-main);
   background-color: var(--btn-terciary-pressed);
 }
 @media (min-width: 768px) {
-  button.terciary-rs, a.terciary-rs {
+  input.terciary-rs, button.terciary-rs, a.terciary-rs {
     padding: 0.4444444444rem 0.8888888889rem;
     border: none;
     background: none;
@@ -6531,18 +6531,18 @@ button.terciary-rs:active, a.terciary-rs:active {
     color: var(--primary-color-main);
     width: initial;
   }
-  button.terciary-rs:hover, a.terciary-rs:hover {
+  input.terciary-rs:hover, button.terciary-rs:hover, a.terciary-rs:hover {
     border-radius: 12px;
     color: var(--primary-color-main);
     background-color: var(--btn-terciary-hover);
   }
-  button.terciary-rs:active, a.terciary-rs:active {
+  input.terciary-rs:active, button.terciary-rs:active, a.terciary-rs:active {
     color: var(--primary-color-main);
     background-color: var(--btn-terciary-pressed);
   }
 }
 
-button.terciary-s, a.terciary-s {
+input.terciary-s, button.terciary-s, a.terciary-s {
   padding: 0.4444444444rem 0.8888888889rem;
   border: none;
   background: none;
@@ -6567,17 +6567,17 @@ button.terciary-s, a.terciary-s {
   text-align: center;
   display: inline-block;
 }
-button.terciary-s:hover, a.terciary-s:hover {
+input.terciary-s:hover, button.terciary-s:hover, a.terciary-s:hover {
   border-radius: 12px;
   color: var(--primary-color-main);
   background-color: var(--btn-terciary-hover);
 }
-button.terciary-s:active, a.terciary-s:active {
+input.terciary-s:active, button.terciary-s:active, a.terciary-s:active {
   color: var(--primary-color-main);
   background-color: var(--btn-terciary-pressed);
 }
 @media (min-width: 768px) {
-  button.terciary-s, a.terciary-s {
+  input.terciary-s, button.terciary-s, a.terciary-s {
     padding: 0.4444444444rem 0.8888888889rem;
     border: none;
     background: none;
@@ -6594,18 +6594,18 @@ button.terciary-s:active, a.terciary-s:active {
     color: var(--primary-color-main);
     width: initial;
   }
-  button.terciary-s:hover, a.terciary-s:hover {
+  input.terciary-s:hover, button.terciary-s:hover, a.terciary-s:hover {
     border-radius: 12px;
     color: var(--primary-color-main);
     background-color: var(--btn-terciary-hover);
   }
-  button.terciary-s:active, a.terciary-s:active {
+  input.terciary-s:active, button.terciary-s:active, a.terciary-s:active {
     color: var(--primary-color-main);
     background-color: var(--btn-terciary-pressed);
   }
 }
 
-button.terciary-s-rm, a.terciary-s-rm {
+input.terciary-s-rm, button.terciary-s-rm, a.terciary-s-rm {
   padding: 0.4444444444rem 0.8888888889rem;
   border: none;
   background: none;
@@ -6630,17 +6630,17 @@ button.terciary-s-rm, a.terciary-s-rm {
   text-align: center;
   display: inline-block;
 }
-button.terciary-s-rm:hover, a.terciary-s-rm:hover {
+input.terciary-s-rm:hover, button.terciary-s-rm:hover, a.terciary-s-rm:hover {
   border-radius: 8px;
   color: var(--primary-color-main);
   background-color: var(--btn-terciary-hover);
 }
-button.terciary-s-rm:active, a.terciary-s-rm:active {
+input.terciary-s-rm:active, button.terciary-s-rm:active, a.terciary-s-rm:active {
   color: var(--primary-color-main);
   background-color: var(--btn-terciary-pressed);
 }
 @media (min-width: 768px) {
-  button.terciary-s-rm, a.terciary-s-rm {
+  input.terciary-s-rm, button.terciary-s-rm, a.terciary-s-rm {
     padding: 0.4444444444rem 0.8888888889rem;
     border: none;
     background: none;
@@ -6657,18 +6657,18 @@ button.terciary-s-rm:active, a.terciary-s-rm:active {
     color: var(--primary-color-main);
     width: initial;
   }
-  button.terciary-s-rm:hover, a.terciary-s-rm:hover {
+  input.terciary-s-rm:hover, button.terciary-s-rm:hover, a.terciary-s-rm:hover {
     border-radius: 8px;
     color: var(--primary-color-main);
     background-color: var(--btn-terciary-hover);
   }
-  button.terciary-s-rm:active, a.terciary-s-rm:active {
+  input.terciary-s-rm:active, button.terciary-s-rm:active, a.terciary-s-rm:active {
     color: var(--primary-color-main);
     background-color: var(--btn-terciary-pressed);
   }
 }
 
-button.terciary-s-rs, a.terciary-s-rs {
+input.terciary-s-rs, button.terciary-s-rs, a.terciary-s-rs {
   padding: 0.4444444444rem 0.8888888889rem;
   border: none;
   background: none;
@@ -6693,17 +6693,17 @@ button.terciary-s-rs, a.terciary-s-rs {
   text-align: center;
   display: inline-block;
 }
-button.terciary-s-rs:hover, a.terciary-s-rs:hover {
+input.terciary-s-rs:hover, button.terciary-s-rs:hover, a.terciary-s-rs:hover {
   border-radius: 4px;
   color: var(--primary-color-main);
   background-color: var(--btn-terciary-hover);
 }
-button.terciary-s-rs:active, a.terciary-s-rs:active {
+input.terciary-s-rs:active, button.terciary-s-rs:active, a.terciary-s-rs:active {
   color: var(--primary-color-main);
   background-color: var(--btn-terciary-pressed);
 }
 @media (min-width: 768px) {
-  button.terciary-s-rs, a.terciary-s-rs {
+  input.terciary-s-rs, button.terciary-s-rs, a.terciary-s-rs {
     padding: 0.4444444444rem 0.8888888889rem;
     border: none;
     background: none;
@@ -6720,12 +6720,12 @@ button.terciary-s-rs:active, a.terciary-s-rs:active {
     color: var(--primary-color-main);
     width: initial;
   }
-  button.terciary-s-rs:hover, a.terciary-s-rs:hover {
+  input.terciary-s-rs:hover, button.terciary-s-rs:hover, a.terciary-s-rs:hover {
     border-radius: 4px;
     color: var(--primary-color-main);
     background-color: var(--btn-terciary-hover);
   }
-  button.terciary-s-rs:active, a.terciary-s-rs:active {
+  input.terciary-s-rs:active, button.terciary-s-rs:active, a.terciary-s-rs:active {
     color: var(--primary-color-main);
     background-color: var(--btn-terciary-pressed);
   }

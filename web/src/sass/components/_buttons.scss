@@ -16,7 +16,7 @@ input.primary, button.primary, a.primary {
 }
 
 // Radius variations
-button.primary-rm, a.primary-rm {
+input.primary-rm, button.primary-rm, a.primary-rm {
     @include btn('primary', 'active', 'normal', 'light', 'medium');
     @include font(16px);
     width: 100%;
@@ -30,7 +30,7 @@ button.primary-rm, a.primary-rm {
     }
 }
 
-button.primary-rs, a.primary-rs {
+input.primary-rs, button.primary-rs, a.primary-rs {
     @include btn('primary', 'active', 'normal', 'light', 'small');
     @include font(16px);
     width: 100%;
@@ -45,7 +45,7 @@ button.primary-rs, a.primary-rs {
 }
 
 // Small size
-button.primary-s, a.primary-s {
+input.primary-s, button.primary-s, a.primary-s {
     @include btn('primary', 'active', 'small');
     @include font(16px);
     width: 100%;
@@ -61,7 +61,7 @@ button.primary-s, a.primary-s {
 
 // Radius variations
 
-button.primary-s-rm, a.primary-s-rm {
+input.primary-s-rm, button.primary-s-rm, a.primary-s-rm {
     @include btn('primary', 'active', 'small', 'light', 'medium');
     @include font(16px);
     width: 100%;
@@ -75,7 +75,7 @@ button.primary-s-rm, a.primary-s-rm {
     }
 }
 
-button.primary-s-rs, a.primary-s-rs {
+input.primary-s-rs, button.primary-s-rs, a.primary-s-rs {
     @include btn('primary', 'active', 'small', 'light', 'small');
     @include font(16px);
     width: 100%;
@@ -94,7 +94,7 @@ button.primary-s-rs, a.primary-s-rs {
 // #region Secondary button
 
 // Normal size
-button.secondary, a.secondary {
+input.secondary, button.secondary, a.secondary {
     @include btn('secondary', 'active', 'normal');
     @include font(16px);
     width: 100%;
@@ -109,7 +109,7 @@ button.secondary, a.secondary {
 }
 
 // Radius variations
-button.secondary-rm, a.secondary-rm {
+input.secondary-rm, button.secondary-rm, a.secondary-rm {
     @include btn('secondary', 'active', 'normal', 'light', 'medium');
     @include font(16px);
     width: 100%;
@@ -123,7 +123,7 @@ button.secondary-rm, a.secondary-rm {
     }
 }
 
-button.secondary-rs, a.secondary-rs {
+input.secondary-rs, button.secondary-rs, a.secondary-rs {
     @include btn('secondary', 'active', 'normal', 'light', 'small');
     @include font(16px);
     width: 100%;
@@ -138,7 +138,7 @@ button.secondary-rs, a.secondary-rs {
 }
 
 // Small size
-button.secondary-s, a.secondary-s {
+input.secondary-s, button.secondary-s, a.secondary-s {
     @include btn('secondary', 'active', 'small');
     @include font(16px);
     width: 100%;
@@ -153,7 +153,7 @@ button.secondary-s, a.secondary-s {
 }
 
 // Radius variations
-button.secondary-s-rm, a.secondary-s-rm {
+input.secondary-s-rm, button.secondary-s-rm, a.secondary-s-rm {
     @include btn('secondary', 'active', 'normal', 'light', 'medium');
     @include font(16px);
     width: 100%;
@@ -167,7 +167,7 @@ button.secondary-s-rm, a.secondary-s-rm {
     }
 }
 
-button.secondary-s-rs, a.secondary-s-rs {
+input.secondary-s-rs, button.secondary-s-rs, a.secondary-s-rs {
     @include btn('secondary', 'active', 'normal', 'light', 'small');
     @include font(16px);
     width: 100%;
@@ -186,7 +186,7 @@ button.secondary-s-rs, a.secondary-s-rs {
 // #region Terciary button
 
 //Normal size
-button.terciary, a.terciary {
+input.terciary, button.terciary, a.terciary {
     @include btn('terciary', 'active', 'normal');
     @include font(16px);
     width: 100%;
@@ -201,7 +201,7 @@ button.terciary, a.terciary {
 }
 
 // Radius variations
-button.terciary-rm, a.terciary-rm {
+input.terciary-rm, button.terciary-rm, a.terciary-rm {
     @include btn('terciary', 'active', 'normal', 'light', 'medium');
     @include font(16px);
     width: 100%;
@@ -215,7 +215,7 @@ button.terciary-rm, a.terciary-rm {
     }
 }
 
-button.terciary-rs, a.terciary-rs {
+input.terciary-rs, button.terciary-rs, a.terciary-rs {
     @include btn('terciary', 'active', 'normal', 'light', 'small');
     @include font(16px);
     width: 100%;
@@ -230,7 +230,7 @@ button.terciary-rs, a.terciary-rs {
 }
 
 // Small size
-button.terciary-s, a.terciary-s {
+input.terciary-s, button.terciary-s, a.terciary-s {
     @include btn('terciary', 'active', 'small');
     @include font(16px);
     width: 100%;
@@ -246,7 +246,7 @@ button.terciary-s, a.terciary-s {
 }
 
 //Radius variations
-button.terciary-s-rm, a.terciary-s-rm {
+input.terciary-s-rm, button.terciary-s-rm, a.terciary-s-rm {
     @include btn('terciary', 'active', 'small', 'light', 'medium');
     @include font(16px);
     width: 100%;
@@ -261,7 +261,7 @@ button.terciary-s-rm, a.terciary-s-rm {
     }
 }
 
-button.terciary-s-rs, a.terciary-s-rs {
+input.terciary-s-rs, button.terciary-s-rs, a.terciary-s-rs {
     @include btn('terciary', 'active', 'small', 'light', 'small');
     @include font(16px);
     width: 100%;
