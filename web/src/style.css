@@ -5633,7 +5633,7 @@ a {
   display: block;
 }
 
-button.primary, a.primary {
+input.primary, button.primary, a.primary {
   padding: 0.5555555556rem 1.3333333333rem;
   border: none;
   background: none;
@@ -5658,14 +5658,14 @@ button.primary, a.primary {
   text-align: center;
   display: inline-block;
 }
-button.primary:hover, a.primary:hover {
+input.primary:hover, button.primary:hover, a.primary:hover {
   background-color: var(--btn-primary-hover);
 }
-button.primary:active, a.primary:active {
+input.primary:active, button.primary:active, a.primary:active {
   background-color: var(--btn-primary-pressed);
 }
 @media (min-width: 768px) {
-  button.primary, a.primary {
+  input.primary, button.primary, a.primary {
     padding: 0.5555555556rem 1.3333333333rem;
     border: none;
     background: none;
@@ -5682,10 +5682,10 @@ button.primary:active, a.primary:active {
     color: #FFFFFF;
     width: initial;
   }
-  button.primary:hover, a.primary:hover {
+  input.primary:hover, button.primary:hover, a.primary:hover {
     background-color: var(--btn-primary-hover);
   }
-  button.primary:active, a.primary:active {
+  input.primary:active, button.primary:active, a.primary:active {
     background-color: var(--btn-primary-pressed);
   }
 }
@@ -8571,6 +8571,44 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   right: 1px;
 }
 
+.represented-component {
+  background-color: rgba(101, 109, 114, 0.2);
+}
+.represented-component .represented-container {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 3rem 3rem 0rem 3rem;
+}
+.represented-component .represented-container .represented-header {
+  border-bottom: 1px solid #E5E6E8;
+}
+.represented-component .represented-container .represented-content {
+  display: block;
+  padding-top: 1.5rem;
+}
+.represented-component .represented-container .represented-content fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.represented-component .represented-container .represented-content fieldset .custom-rb-label {
+  gap: 0.75rem;
+}
+.represented-component .represented-container .represented-content .first-set {
+  padding-bottom: 2.5rem;
+}
+.represented-component .represented-container .represented-content .submit-button {
+  margin: 3rem -3rem 0rem -3rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #E5E6E8;
+}
+.represented-component .represented-container .represented-content .submit-button input {
+  margin-right: 1.5rem;
+}
+
 .home .first-banner {
   background-color: #F5F5F6;
 }
@@ -8908,6 +8946,11 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   width: 100%;
   height: 100%;
   z-index: 8;
+}
+.postbox .no-results p {
+  margin-top: 2.38rem;
+  width: 30%;
+  text-align: center;
 }
 .postbox .pagination {
   display: flex;

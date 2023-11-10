@@ -1,0 +1,45 @@
+.represented-component {
+    background-color: rgba($grey-01, 0.2);
+
+    .represented-container {
+        background-color: $white;
+        border-radius: $radius-medium;
+        padding: 3rem 3rem 0rem 3rem;
+
+        .represented-header {
+            border-bottom: 1px solid $grey-03;
+        }
+
+        .represented-content {
+            display: block;
+            padding-top: 1.5rem;
+
+            fieldset {
+                border: none;
+                padding: 0;
+                margin: 0;
+
+                .custom-rb-label {
+                    gap: 0.75rem;
+                }
+            }
+
+            .first-set {
+                padding-bottom: 2.5rem;
+            }
+
+            .submit-button {
+                margin: 3rem -3rem 0rem -3rem;
+                padding-top: 1.25rem;
+                padding-bottom: 1.25rem;
+                display: flex;
+                justify-content: flex-end;
+                border-top: 1px solid $grey-03;
+
+                input {
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+}

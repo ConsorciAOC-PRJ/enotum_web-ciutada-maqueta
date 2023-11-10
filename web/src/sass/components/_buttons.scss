@@ -1,7 +1,7 @@
 // #region Primary button
 
 // Normal size
-button.primary, a.primary {
+input.primary, button.primary, a.primary {
     @include btn('primary', 'active', 'normal');
     @include font(16px);
     width: 100%;
