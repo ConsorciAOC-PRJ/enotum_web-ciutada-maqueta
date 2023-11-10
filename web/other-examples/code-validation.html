@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta e-Notum</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body class="home">
+    <div class="modal-overlay" data-modal="login-modal"></div>
+    <a href="#main-content" id="skip-to-link" class="sr-only">Saltar al contingut principal</a>
+    <header>
+        <div class="container-fluid g-0">
+            <div class="row justify-content-between align-items-center g-0">
+                <div class="col-10 col-sm-7 col-md-6 logo-container">
+                    <div class="menu">
+                        <button class="open-menu burger-menu" aria-expanded="false">
+                            <span class="sr-only">Menú principal</span>
+                            <span class="material-icons-outlined" aria-hidden="true">menu</span>
+                        </button>
+                        <div class="main-menu menu-content animate__animated animate__slideInLeft animate__faster" role="region" aria-label="Menú principal">
+                            <div class="menu-body">
+                                <button class="close-menu" aria-expanded="true">
+                                    <span class="sr-only">Menú principal</span>
+                                    <span class="material-icons-outlined" aria-hidden="true">close</span>
+                                </button>
+                                <div>
+                                    <div class="menu-brand">
+                                        <img src="../assets/logo-icon.png" class="img-fluid logo-menu" alt="Ajuntament de Badalona">
+                                        <div class="menu-info">
+                                            <p class="text-p-18 p-semibold p-dark">Ajuntament de Badalona</p>
+                                            <p class="text-p-18">Seu electrònica</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-block">
+                                        <h2 class="text-p-12 menu-heading p-spacing-xl"><a href="#">Serveis</a></h2>
+                                        <ul>
+                                            <li><a href="#" class="text-p-16 p-dark p-spacing-lg">Transport públic</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark p-spacing-lg">Plànol</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark p-spacing-lg">Borsa de treball</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark p-spacing-lg">Policia</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark p-spacing-lg">Associacions i entitats</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-block">
+                                        <h2 class="text-p-12 menu-heading p-spacing-xl"><a href="#">Govern Obert i transparència</a></h2>
+                                        <ul>
+                                            <li><a href="#" class="text-p-16 p-dark p-spacing-lg">Informació institucional i organitzativa</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark p-spacing-lg">Gestió econòmica</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark p-spacing-lg">Acció de govern i normativa</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark p-spacing-lg">Contractes, convenis i subvencions</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark p-spacing-lg">Serveis i tràmits</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark p-spacing-lg">Participació</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-block">
+                                        <a class="text-p-12 menu-heading p-spacing-xl" href="#">Dades obertes</a>
+                                    </div>
+                                    <div class="menu-block">
+                                        <a class="text-p-12 menu-heading p-spacing-xl" href="#">Els teus drets</a>
+                                    </div>
+                                    <div class="menu-block">
+                                        <h2 class="title-xs p-dark">Seu electrònica</h2>
+                                        <ul>
+                                            <li><a href="#" class="text-p-16 p-dark p-spacing-lg">Sobre la Seu electrònica</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark p-spacing-lg">Titularitat i regulació</a></li>
+                                            <li><a href="#" class="text-p-16 p-dark p-spacing-lg">Sistemes de identificació</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="" href="#">
+                        <img src="../assets/logo.png" alt="Ajuntament de Badalona">
+                    </a>
+                    <p class="text-p-18 seu-text no-margin">Seu electrónica</p>
+                </div>
+                <div class="col-2 col-sm-5 col-md-6 dropdown-column">
+                    <div class="my-space menu">
+                        <button class="terciary-s my-space-btn open-menu" aria-expanded="false">
+                            <span class="material-icons-outlined" aria-hidden="true">account_circle</span>
+                            <span class="my-space-text p-spacing-lg">El meu espai</span>
+                        </button>
+                        <div class="my-space-menu menu-content animate__animated animate__slideInRight animate__faster" role="region" aria-label="El meu espai">
+                            <div class="menu-header">
+                                <button class="close-menu" aria-expanded="true">
+                                    <span class="sr-only">El meu espai</span>
+                                    <span class="material-icons-outlined" aria-hidden="true">close</span>
+                                </button>
+                                <h2 class="title-m p-white">El meu espai</h2>
+                                <p class="text-p-18 p-white">Els teus tràmits a la teva butxaca.</p>
+                                <p class="text-p-16 p-white p-spacing-lg">Consulta l'activitat de les teves sol·licituds, notificacions, dades teves que s'intercanvien les administracions, inicis de sessió del teu idCAT i més.</p>
+                                <button class="dark" aria-describedby="btn-login-description">Iniciar sessió</button>
+                                <p class="text-p-14 p-light-white" id="btn-login-description">Cal una <a class="p-white" href="#">identitat digital reconeguda</a> (p.e idCAT).</p>
+                            </div>
+                            <div class="menu-body">
+                                <ul>
+                                    <li><a href="#" class="text-p-18 p-dark">Tràmits</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Bústia de notificacions</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Participació</a></li>
+                                    <li><a href="#" class="text-p-18 p-dark">Identitat digital</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown language-dropdown">
+                        <div class="dropdown-button">
+                            <span class="material-icons" aria-hidden="true">language</span>
+                            <button class="dropbtn p-spacing-lg" aria-expanded="false" aria-label="CA (Català), Selecció d'idioma">CA</button>
+                            <span class="material-icons" aria-hidden="true">arrow_drop_down</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="?/ca" class="active" aria-current="true">Català</a></li>
+                                <li><a href="?/es" class="" aria-current="false">Castellà</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <div>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        <div class="container-fluid g-0 first-banner">
+            <div class="container g-0">
+                <div class="row g-0 row-padding align-items-center">
+                    <div class="col-md column-1">
+                        <h1 class="title-xl">Notificacions electròniques</h1>
+                        <p class="text-p-24 p-dark">Notificacions i altres comunicacions amb les Administracions Públiques Catalanes</p>
+                        <p class="text-p-18">El servei de notificacions electròniques facilita als ciutadans i empreses l'accés a les seves notificacions i comunicacions emeses pels diferents organismes públics adherits.</p>
+                    </div>
+                    <div class="col-md column-2">
+                        <h2 class="title-s">Identifica't per veure les notificacions</h2>
+                        <p class="text-p-18">Accedeix amb una <a href="#">identitat digital reconeguda</a> si en disposes d'una, o accedeix sense identitat digital per a un accés temporal.</p>
+                        <a href="#" class="primary">Accedir amb identitat digital</a>
+                        <button id="open-modal" class="open-modal secondary" data-modal="login-modal">Accedir sense identitat digital</button>
+                        <div id="login-modal" class="login-modal animate__animated animate__slideInRight animate__faster" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" aria-hidden="true" data-button="open-modal">
+                            <div class="close-modal-container">
+                                <button class="close-modal" id="close-modal" tabindex="-1" data-modal="login-modal">
+                                    <span class="material-icons sr-only">Tancar</span>
+                                    <span class="material-icons" aria-hidden="true">close</span>
+                                </button>
+                            </div>
+                            <h1 class="title-m mb-2" id="modal-title">S’ha enviat un codi</h1>
+                            <p class="text-p-18 p-dark" id="modal-description">Número: <span class="p-semibold">666 555 444</span></p>
+                            <form>
+                                <label class="text-p-16" for="secret-code">Indroduïu el codi</label>
+                                <input id="secret-code" class="field" type="text" aria-describedby="code-description">
+                                <p class="text-p-14" id="code-description" aria-hidden="true">Caduca en 30 min</p>
+                                <input class="primary w-100" type="submit" value="Verificar" aria-describedby="submit-description">
+                                <p class="text-p-14 mb-0" id="submit-description" aria-hidden="true">El SMS pot arribar a allargar-se uns minuts.</p>
+                                <a class="text-p-14" href="#">No rebeu el codi?</a>       
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container g-0">
+            <div class="row g-0 align-items-center">
+                <div class="col-md col-lg-7">
+                    <img class="img-fluid" src="../assets/notificacio-segura.png" alt="">
+                </div>
+                <div class="col-md column-text">
+                    <h2 class="title-l">Notificació electrònica segura i amb garantia legal</h2>
+                    <p class="text-p-18">La notificació electrònica és una comunicació de l'administració amb totes les garanties legals. Estan disponibles a través d'una plataforma digital i substitueix les notificacions en paper que fins ara s'enviaven per correu postal.</p>
+                </div>
+            </div>
+            <div class="row g-0 align-items-center">
+                <div class="col-md column-text">
+                    <h2 class="title-l">Accés àgil des de correu electrònic o SMS</h2>
+                    <p class="text-p-18">Cada vegada que tinguis una notificació nova, rebràs un avís per correu electrònic o SMS al teu telèfon mòbil. Podràs accedir-hi a través de l'enllàç que se't proporcionarà o a través del teu espai personal de la seu electrònica corresponent.</p>
+                </div>
+                <div class="col-md col-lg-7">
+                    <img class="img-fluid" src="../assets/acces-agil.png" alt="">
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-12">
+                    <h3 class="title-m">Com identificar-te per obrir una notificació</h3>
+                </div>
+                <div class="col-sm steps">
+                    <img src="../assets/icon-idcat-mobil.png" alt="">
+                    <h4 class="title-s">IdCAT Mòbil</h4>
+                    <p class="text-p-18">La forma segura, fàcil i àgil d'identificar-vos per Internet, que es basa en el lliurament d'un codi d'un sol ús al telèfon mòbil.</p>
+                </div>
+                <div class="col-sm steps">
+                    <img src="../assets/icon-certificat-digital.png" alt="">
+                    <h4 class="title-s">Certificat digital</h4>
+                    <p class="text-p-18">Document electrònic d'identificació que pot estar instal·lat en l'ordinador (Ex: <a href="#" class="link-grey">iDCAT Certificat</a>) o en una targeta física (Ex: DNIe).</p>
+                </div>
+                <div class="col-sm steps">
+                    <img src="../assets/icon-codi.png" alt="">
+                    <h4 class="title-s">Codi d'un sòl ús</h4>
+                    <p class="text-p-18">Només has de disposar d'una adreça de correu electrònic o telèfon mòbil on rebre aquest codi. Es pot fer servir des de qualsevol navegador.</p>
+                </div>
+                <div class="col-12">
+                    <p class="text-p-18">També pots utilitzar altres certificats de <a href="#" class="link-grey">prestadors qualificats a l'estat espanyol</a>, així com <a href="#" class="link-grey">certificats estrangers validats.</a></p>
+                </div>
+            </div>
+            <div class="row g-0 align-items-center">
+                <div class="col-md col-lg-7">
+                    <img class="img-fluid" src="../assets/acces-notificacio.png" alt="">
+                </div>
+                <div class="col-md column-text">
+                    <h2 class="title-l">Com funciona l'accés a la notificació</h2>
+                    <p class="text-p-18">La notificació s'entendrà com llegida, i per tant oberta, si s'hi accedeix abans de 10 dies naturals des de que va ser entregada a la persona interessada o al seu representant. En aquest cas es tindrà dret a interposar un recurs o al·legació si no s'está conforme.</p>
+                    <p class="text-p-18">Si no s'hi accedeix dins aquest termini la notificació s'entendrà com a vençuda i l'administració continuarà amb el procediment corresponent.</p>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-12 center-banner row-padding-bottom">
+                    <h2 class="title-l">Les teves notificacions en un mateix lloc</h2>
+                    <p class="text-p-18">Ara pots veure les notificacions electròniques de totes les administracions públiques catalanes, així com també  de la Generalitat de Catalunya en un mateix lloc</p>
+                    <button class="secondary">Veure administracions adherides</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid g-0 faqs row-padding">
+            <div class="container g-0">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md column-text">
+                        <h2 class="title-l">Troba les respostes que necessites</h2>
+                        <div class="more-help">
+                            <h3 class="title-s help-title">Necessites més ajuda?</h3>
+                            <p class="text-p-18 p-white">Tenim a la teva disposició un canal de suport amb les preguntes més freqüents i un servei d'atenció al ciutadà i a empreses on podràs fer preguntes i suggeriments sobre el servei de notificacions.</p>
+                            <button class="secondary-dark-s">Canal de suport</button>
+                        </div>
+                    </div>
+                    <div class="col-md col-lg-7">
+                        <div class="accordion">
+                            <h3>
+                                <button id="accordion-1-btn" class="accordion-button" aria-expanded="true" aria-controls="accordion-1">
+                                    <span class="title-xs">Com es pot saber que s'ha rebut una notificació electrònica?</span>
+                                    <span class="material-icons" aria-hidden="true">expand_less</span>
+                                </button>
+                            </h3>
+                            <div id="accordion-1" class="accordion-content show aoc-border" role="region" aria-labelledby="accordion-1-btn">
+                                <p class="text-p-18">S’enviarà un avís a l’adreça de correu electrònic o al número de mòbil que es va facilitar a l’organisme que emet la notificació. Per defecte, se t’enviarà un recordatori  a la meitat del termini, excepte en el casos en que l’ens emissor de la notificació hagi definit un termini personalitzat en l’enviament.</p>
+                                <a href="#" class="secondary-s">Més informació<span class="sr-only">: Com es pot saber que s'ha rebut una notificació electrònica?</span></a>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <h3>
+                                <button id="accordion-2-btn" class="accordion-button aoc-border" aria-expanded="false" aria-controls="accordion-2">
+                                    <span class="title-xs">Hi ha una errada en la notificació, què faig?</span>
+                                    <span class="material-icons" aria-hidden="true">expand_more</span>
+                                </button>
+                            </h3>
+                            <div id="accordion-2" class="accordion-content" role="region" aria-labelledby="accordion-2-btn">
+                                <p class="text-p-18">S’enviarà un avís a l’adreça de correu electrònic o al número de mòbil que es va facilitar a l’organisme que emet la notificació. Per defecte, se t’enviarà un recordatori  a la meitat del termini, excepte en el casos en que l’ens emissor de la notificació hagi definit un termini personalitzat en l’enviament.</p>
+                                <a href="#" class="secondary-s">Més informació<span class="sr-only">: Hi ha una errada en la notificació, què faig?</span></a>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <h3>
+                                <button id="accordion-3-btn" class="accordion-button aoc-border" aria-expanded="false" aria-controls="accordion-3">
+                                    <span class="title-xs">Quins nivells d'accés es poden definir en una notificació?</span>
+                                    <span class="material-icons" aria-hidden="true">expand_more</span>
+                                </button>
+                            </h3>
+                            <div id="accordion-3" class="accordion-content" role="region" aria-labelledby="accordion-3-btn">
+                                <p class="text-p-18">S’enviarà un avís a l’adreça de correu electrònic o al número de mòbil que es va facilitar a l’organisme que emet la notificació. Per defecte, se t’enviarà un recordatori  a la meitat del termini, excepte en el casos en que l’ens emissor de la notificació hagi definit un termini personalitzat en l’enviament.</p>
+                                <a href="#" class="secondary-s">Més informació<span class="sr-only">: Quins nivells d'accés es poden definir en una notificació?</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container g-0">
+            <div class="row g-0 justify-content-center">
+                <div class="col-12 center-banner row-padding">
+                    <h2 class="title-l">Accedeix a les teves notificacions</h2>
+                    <p class="text-p-18">Comença a gaudir de la major potència del servei.</p>
+                    <button class="primary">Accedir amb identitat digital</button>
+                    <button class="secondary">Accedir sense identitat digital </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid g-0">
+        <div class="container g-0">
+            <div class="row g-0 features-row">
+                <div class="col-md">
+                    <div class="feature-container">
+                        <span class="material-icons-outlined" aria-hidden="true">question_answer</span>
+                        <div>
+                            <h2 class="title-xs">Els meus drets</h2>
+                            <p class="text-p-16">Coneix els teus drets quan et relaciones amb l’administració pública (no inclou persones jurídiques)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="feature-container">
+                        <span class="material-icons-outlined" aria-hidden="true">people</span>
+                        <div>
+                            <h2 class="title-xs">Recomanador social</h2>
+                            <p class="text-p-16">Ajuts socials que t’ofereixen les administracions públiques en funció de la teva situació personal i familiar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="feature-container">
+                        <span class="material-icons-outlined" aria-hidden="true">record_voice_over</span>
+                        <div>
+                            <h2 class="title-xs">Atenció ciutadana</h2>
+                            <p class="text-p-16">Vegeu les diverses formes de contactar amb l’ajuntament.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0 links-row">
+                <div class="col-md">
+                    <h2 class="links-heading">Seu electrònica</h2>
+                    <ul>
+                        <li><a href="#">Què és la Seu-e</a></li>
+                        <li><a href="#">Mapa web</a></li>
+                        <li><a href="#">Accessibilitat</a></li>
+                        <li><a href="#">Avís legal</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h2 class="links-heading">Tràmits i gestions</h2>
+                    <ul>
+                        <li><a href="#">Catàleg de tràmits</a></li>
+                        <li><a href="#">Instància genèrica</a></li>
+                        <li><a href="#">Impostos i tributs</a></li>
+                        <li><a href="#">Presentar una factura</a></li>
+                        <li><a href="#">Presentar una licitació</a></li>
+                        <li><a href="#">Tràmits a altres Administracions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h2 class="links-heading">Govern Obert i transparència</h2>
+                    <ul>
+                        <li><a href="#">Informació publica</a></li>
+                        <li><a href="#">Dades Obertes</a></li>
+                        <li><a href="#">Indicadors</a></li>
+                        <li><a href="#">Darreres actualitzacions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h2 class="links-heading">Atenció ciutadana</h2>
+                    <ul>
+                        <li><a href="#">Els meus drets</a></li>
+                        <li><a href="#">Identitat digital</a></li>
+                        <li><a href="#">Contacte</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-0 time-row">
+                <div class="col-12 col-md-8 legal-links">
+                    <ul>
+                        <li><a href="#" class="text-p-14 link-grey p-spacing">Avís legal</a></li>
+                        <li><a href="#" class="text-p-14 link-grey p-spacing">Accessibilitat</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 time-column">
+                    <p class="text-p-14 p-spacing"><strong>Hora oficial:</strong> 09:55h - 19 novembre 2021</p>
+                </div>
+            </div>
+            <div class="row g-0 logos-row">
+                <div class="col-md-12">
+                    <div class="logos-container">
+                        <img src="../assets/logo.png" alt="">
+                        <div class="credits-container">
+                            <p class="text-p-14 p-spacing">Servei prestat per:</p>
+                            <div class="credits-logos">
+                                <div>
+                                    <img src="../assets/aoc-logo.png" alt="Administració Oberta de Catalunya">
+                                </div>
+                                <div>
+                                    <img src="../assets/ue-logo.png" alt="Cofinanciat per la Unió Europea">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../src/js/menus.js"></script>
+    <script src="../src/js/overlay.js"></script>
+    <script src="../src/js/modal-dialogs.js"></script>
+    <script src="../src/js/select.js"></script>
+    <script src="../src/js/dropdowns.js"></script>
+    <script src="../src/js/accordions.js"></script>
+</body>
+</html>
