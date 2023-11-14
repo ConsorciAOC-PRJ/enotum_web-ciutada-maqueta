@@ -8,6 +8,7 @@
     padding: 32px 0;
     margin: 0 -5%;
     overflow: hidden;
+    width: 100%;
 }
   
 .dot-typing {
@@ -70,4 +71,12 @@
   100% {
     box-shadow: 9964px 0 0 0 $white-subtle, 9999px 0 0 0 $white-subtle, 10034px 0 0 0 $white-subtle;
   }
-}  
+}
+
+.loading-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: rem(400px);
+}
