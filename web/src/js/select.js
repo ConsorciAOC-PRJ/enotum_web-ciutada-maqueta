@@ -408,7 +408,7 @@ window.addEventListener('load', function () {
 // init select
 window.addEventListener('load', function () {
     const options = [
-      'VAT',
+      'Passaport',
       'NIF',
     ];
     const selectEls = document.querySelectorAll('.js-select-2');
