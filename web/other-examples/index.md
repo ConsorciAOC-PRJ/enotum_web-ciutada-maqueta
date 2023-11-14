@@ -6,3 +6,5 @@
 * [El meu espai amb opció Representant](./representative.html)
 * [Bústia sense resultats](./postbox-no-results.html)
 * [Selecció de representat](./select-represented.html)
+* [Exemple d'obrir en nova pestanya](./open-in-new.html)
+* [Pantalla només amb el loader de càrrega](./just-loading.html)
