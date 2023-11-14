@@ -1,4 +1,8 @@
 header {
+    position: sticky;
+    top: 0;
+    background-color: $white;
+    z-index: 20;
     border-bottom: 4px solid $black;
     
     @media (min-width: $screen-md) {

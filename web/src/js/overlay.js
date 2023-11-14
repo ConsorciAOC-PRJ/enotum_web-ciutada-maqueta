@@ -12,6 +12,7 @@ const overlayManage = () => {
             const content = menu.getElementsByClassName("menu-content")[0];
             
             if (content.classList.contains("show")) {
+                manageHeader("close");
                 content.classList.remove("show");
                 button.setAttribute("aria-expanded", "false");
                 overlay.classList.remove("show");
@@ -21,7 +22,17 @@ const overlayManage = () => {
 
         });
     }
+    
+    const manageHeader = (action) => {
+        const header = document.querySelector("header");
 
+        if (action == "open") {
+            header.style.position = "initial";
+        }
+        else if (action == "close") {
+            header.style.position = "sticky";
+        }
+    }
 }
 
 document.ready = overlayManage();
