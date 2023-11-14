@@ -14,10 +14,10 @@
 }
 
 .filters-modal {
-    position: absolute;
+    position: fixed;
     right: 0;
     left: 0;
-    top: 0;
+    top: rem(100px);
     height: 100%;
     padding: 1.5rem;
     background-color: $white;
@@ -28,6 +28,7 @@
         left: auto;
         width: 28rem;
         padding: 3rem;
+        top: rem(75px);
     }
 
     .accordion .aoc-border.show {

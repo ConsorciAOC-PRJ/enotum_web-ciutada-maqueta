@@ -154,9 +154,10 @@
         }
         .all-filters-container.fixed-filters {
             position: fixed;
-            top: 0;
+            top: rem(80px);
             background-color: $white;
             z-index: 10;
+            padding-top: 1rem;
 
             @media (min-width: $screen-xl) {
                 position: relative;
