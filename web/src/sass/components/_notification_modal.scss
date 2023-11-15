@@ -10,12 +10,12 @@
     padding: 1.5rem;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 7%;
     height: 100vh;
 
     @media (min-width: $screen-xl) {
         height: auto;
-        top: 5%;
+        top: 15%;
         left: 20%;
         right: 20%;
         border-radius: $radius-medium;
