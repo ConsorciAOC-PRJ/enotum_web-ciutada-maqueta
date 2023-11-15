@@ -8,3 +8,5 @@
 * [Selecció de representat](./select-represented.html)
 * [Exemple d'obrir en nova pestanya](./open-in-new.html)
 * [Pantalla només amb el loader de càrrega](./just-loading.html)
+* [Pantalla de notificació 1 amb les noves modals](./notification-1-new-modals.html)
+* [Pàgina bàsica per textos legals, etc.](./basic-page.html)
