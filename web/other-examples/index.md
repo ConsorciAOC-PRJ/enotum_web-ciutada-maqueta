@@ -10,3 +10,4 @@
 * [Pantalla només amb el loader de càrrega](./just-loading.html)
 * [Pantalla de notificació 1 amb les noves modals](./notification-1-new-modals.html)
 * [Pàgina bàsica per textos legals, etc.](./basic-page.html)
+* [Pàgina per als errors generals](./general-errors.html)
