@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 1.5rem;
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-md) {
         flex-direction: row;
         row-gap: 1.5rem;
         column-gap: 4%;

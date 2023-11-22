@@ -93,7 +93,7 @@
         display: none;
         height: 100%;
 
-        @media (min-width: $screen-md) {
+        @media (min-width: $screen-lg) {
             display: flex;
         }
 
@@ -127,7 +127,7 @@
         display: none;
         height: 100%;
 
-        @media (min-width: $screen-md) {
+        @media (min-width: $screen-lg) {
             display: flex;
         }
     }
@@ -136,7 +136,7 @@
         position: relative;
         padding-bottom: 0;
 
-        @media (min-width: $screen-md) {
+        @media (min-width: $screen-lg) {
             padding: 2rem;
             padding-bottom: 0;
         }
