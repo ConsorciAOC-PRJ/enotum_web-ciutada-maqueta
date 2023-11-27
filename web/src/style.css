@@ -7481,7 +7481,7 @@ fieldset {
   padding: 1.5rem;
   position: absolute;
   right: 0;
-  top: 7%;
+  top: 0;
   height: 100vh;
 }
 @media (min-width: 1200px) {
@@ -7564,7 +7564,12 @@ fieldset {
 }
 
 .notification-modal-s {
-  width: 35%;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .notification-modal-s {
+    width: 35%;
+  }
 }
 .notification-modal-s .select-input {
   padding: 0.4444444444rem 0;

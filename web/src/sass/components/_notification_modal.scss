@@ -10,7 +10,7 @@
     padding: 1.5rem;
     position: absolute;
     right: 0;
-    top: 7%;
+    top: 0;
     height: 100vh;
 
     @media (min-width: $screen-xl) {
@@ -91,7 +91,11 @@
 }
 
 .notification-modal-s {
-    width: 35%; 
+    width: 100%; 
+
+    @media (min-width: $screen-xl) {
+        width: 35%;
+    }
 
     .select-input {
         padding: rem(8px) 0;
