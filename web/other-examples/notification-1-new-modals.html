@@ -187,7 +187,7 @@
                         <div class="notification-btn-gradient"></div>
                         <div class="notification-btn-container">
                             <a href="#" class="primary notification-btn open-modal" id="open-subscribe"
-                                class="open-modal p-spacing-lg" data-modal="subscribe-modal">Obrir la notificació</a>
+                                class="open-modal p-spacing-lg" data-modal="subscribe-modal" tabindex="0">Obrir la notificació</a>
                         </div>
                     </div>
                 </div>
@@ -226,11 +226,11 @@
         </div>
         <div id="subscribe-modal" class="notification-modal notification-modal-s" role="dialog" aria-modal="true"
             aria-labelledby="modal-title" aria-describedby="modal-description" aria-hidden="true"
-            data-button="subscribe-modal">
+            data-button="open-subscribe">
             <div class="notification-header">
-                <h1 class="title-s">Activa les notificacions electròniques per aquest procediment.</h1>
+                <h1 id="modal-title" class="title-s">Activa les notificacions electròniques per aquest procediment.</h1>
             </div>
-            <p class="text-p-18">Quan tinguis una notificació disponible d'aquest procediment, rebràs un avís
+            <p class="text-p-18" id="modal-description">Quan tinguis una notificació disponible d'aquest procediment, rebràs un avís
                 immediatament. Les notificacions electròniques, substitueixen les notificacions en paper. Sempre estaran
                 accesibles al teu espai personal, són segures i amb les mateixes garanties legals.</p>
             <form>
