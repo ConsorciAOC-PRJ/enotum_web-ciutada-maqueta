@@ -1,7 +1,7 @@
 const menuToggle = () => {
 
     const menus = document.querySelectorAll(".menu");
-    const overlay = document.querySelector(".modal-overlay");
+    const overlays = document.querySelectorAll(".modal-overlay");
 
     menus.forEach((menu) => {
         const button = menu.getElementsByClassName("open-menu")[0];
@@ -9,20 +9,27 @@ const menuToggle = () => {
         const close = menu.getElementsByClassName("close-menu")[0];
 
         button.onclick = () => {
-            manageHeader("open");
+            manageBodyOverflow("open");
             content.classList.add("show");
             button.setAttribute("aria-expanded", "true");
-            overlay.classList.add("show");
+
+            overlays.forEach(function (overlay) {
+                overlay.classList.add("show");
+            });
+
             button.setAttribute("aria-hidden", "true");
             button.setAttribute("tabindex", "-1");
             close.focus();
         }
 
         close.onclick = () => {
-            manageHeader("close");
+            // manageHeader("close");
+            manageBodyOverflow("close");
             content.classList.remove("show");
             button.setAttribute("aria-expanded", "false");
-            overlay.classList.remove("show");
+            overlays.forEach(function (overlay) {
+                overlay.classList.remove("show");
+            });
             button.removeAttribute("aria-hidden");
             button.removeAttribute("tabindex");
             button.focus();
@@ -30,16 +37,17 @@ const menuToggle = () => {
 
     });
 
-    const manageHeader = (action) => {
-        const header = document.querySelector("header");
+    const manageBodyOverflow = (action) => {
+        const body = document.querySelector("body");
 
         if (action == "open") {
-            header.style.position = "initial";
+            body.style.overflow = "hidden";
         }
         else if (action == "close") {
-            header.style.position = "sticky";
+            body.style.overflow = "initial";
         }
+
     }
 }
 
-    document.ready = menuToggle();
+document.ready = menuToggle();

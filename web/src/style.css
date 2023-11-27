@@ -7251,6 +7251,12 @@ input[aria-invalid=true] {
   width: 100%;
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .search-bar {
   position: relative;
   display: flex;
@@ -7294,14 +7300,15 @@ input[aria-invalid=true] {
 }
 
 .login-modal {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   height: 100%;
   padding: 1.5rem;
   background-color: #FFFFFF;
-  z-index: 15;
+  z-index: 50;
   display: none;
+  overflow-y: auto;
 }
 @media (min-width: 768px) {
   .login-modal {
@@ -7333,7 +7340,7 @@ input[aria-invalid=true] {
 .modal-overlay {
   display: none;
   background-color: rgba(101, 109, 114, 0.2);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -7382,19 +7389,20 @@ input[aria-invalid=true] {
   position: fixed;
   right: 0;
   left: 0;
-  top: 5.5555555556rem;
+  top: 0;
   height: 100%;
   padding: 1.5rem;
   background-color: #FFFFFF;
-  z-index: 15;
+  z-index: 50;
   display: none;
+  overflow-y: auto;
 }
 @media (min-width: 768px) {
   .filters-modal {
     left: auto;
     width: 28rem;
     padding: 3rem;
-    top: 4.1666666667rem;
+    top: 0;
   }
 }
 .filters-modal .accordion .aoc-border.show {
@@ -7445,12 +7453,12 @@ input[aria-invalid=true] {
 .modal-overlay {
   display: none;
   background-color: rgba(101, 109, 114, 0.2);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 10;
+  z-index: 20;
 }
 
 .modal-overlay.show {
@@ -7468,7 +7476,7 @@ input[aria-invalid=true] {
 .notification-modal {
   background-color: #FFFFFF;
   overflow-x: hidden;
-  z-index: 15;
+  z-index: 50;
   display: none;
   padding: 1.5rem;
   position: absolute;
@@ -7479,9 +7487,10 @@ input[aria-invalid=true] {
 @media (min-width: 1200px) {
   .notification-modal {
     height: auto;
-    top: 15%;
-    left: 20%;
-    right: 20%;
+    max-height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 8px;
   }
 }
@@ -7552,6 +7561,25 @@ input[aria-invalid=true] {
 
 .notification-modal.show {
   display: block;
+}
+
+.notification-modal-s {
+  width: 35%;
+}
+.notification-modal-s .select-input {
+  padding: 0.4444444444rem 0;
+}
+.notification-modal-s .select-input .field {
+  border-left: 2px solid #1B2124;
+}
+.notification-modal-s .select-input .select-text-field .field {
+  border-left: none;
+}
+.notification-modal-s .field.field-email {
+  margin: 0.4444444444rem 0;
+}
+.notification-modal-s .modal-buttons.vertical {
+  flex-direction: column;
 }
 
 .notification-banner.info {
@@ -8008,15 +8036,16 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
 }
 
 .main-menu {
-  position: absolute;
+  position: fixed;
   background-color: #FFFFFF;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 50;
   height: 100%;
   width: 100%;
   padding: 1rem;
   display: none;
+  overflow-y: auto;
 }
 @media (min-width: 1200px) {
   .main-menu {
@@ -8071,11 +8100,11 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
 }
 
 .my-space-menu {
-  position: absolute;
+  position: fixed;
   background-color: #FFFFFF;
   top: 0;
   right: 0;
-  z-index: 10;
+  z-index: 50;
   height: 100%;
   width: 100%;
   display: none;
@@ -8615,11 +8644,6 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   display: block;
   padding-top: 1.5rem;
 }
-.represented-component .represented-container .represented-content fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
 .represented-component .represented-container .represented-content fieldset .custom-rb-label {
   gap: 0.75rem;
 }
@@ -8853,13 +8877,14 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
 .postbox .filters-col .all-filters-container.fixed-filters {
   position: fixed;
   top: 4.4444444444rem;
+  left: 0;
   background-color: #FFFFFF;
   z-index: 10;
   padding-top: 1rem;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .postbox .filters-col .all-filters-container.fixed-filters {
-    position: relative;
+    top: 2.7777777778rem;
   }
 }
 .postbox .results-container {

@@ -1,12 +1,13 @@
 .login-modal {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     height: 100%;
     padding: 1.5rem;
     background-color: $white;
-    z-index: 15;
+    z-index: 50;
     display: none;
+    overflow-y: auto;
 
     @media (min-width: $screen-md) {
         width: 28rem;
@@ -42,7 +43,7 @@
 .modal-overlay {
     display: none;
     background-color: rgba($grey-01, 0.2);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

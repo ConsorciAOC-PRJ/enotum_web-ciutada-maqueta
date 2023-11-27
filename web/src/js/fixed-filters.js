@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
 const scrollPosition = window.scrollY;
 
 // Check if the user's scroll position is greater than or equal to the vertical position of the element you want to make sticky
-if (scrollPosition >= offsetTop - 110) {
+if (scrollPosition >= offsetTop - 110 && window.innerWidth <= 1200) {
 // Add the class that makes the element sticky
 filter.classList.add('fixed-filters');
 } else {

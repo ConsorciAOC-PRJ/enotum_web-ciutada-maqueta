@@ -1,7 +1,11 @@
 const modalManage = (openClass, closeClass) => {
     // #region Manage clicks outside the modal to close it
-    const modalOverlay = document.getElementsByClassName('modal-overlay')[0];
-    modalOverlay.addEventListener('click', function(){modalClose(modalOverlay.dataset.modal)});
+    const modalOverlays = document.querySelectorAll('.modal-overlay');
+    //modalOverlay.addEventListener('click', function(){modalClose(modalOverlay.dataset.modal)});
+
+    modalOverlays.forEach(function(overlay){
+        overlay.addEventListener('click', function(){modalClose(overlay.dataset.modal)});
+    });
     // #endregion
 
     // #region Get all modal dialogs and all buttons to close those modals and add an event listener for clicks
@@ -41,7 +45,8 @@ const modalManage = (openClass, closeClass) => {
                 element.setAttribute('tabindex', '-1');
             })
 
-            modalOverlayToggle();
+            modalOverlayToggle(document.querySelectorAll('div[data-modal="'+modalId+'"'));
+            manageBodyOverflow("close");
 
             openButton.focus();
         }
@@ -60,7 +65,8 @@ const modalManage = (openClass, closeClass) => {
         })
 
 
-        modalOverlayToggle();
+        modalOverlayToggle(document.querySelectorAll('div[data-modal="'+modalId+'"'));
+        manageBodyOverflow("open");
         
         document.addEventListener('keydown', (event) => {
             if (event.key === 'Escape') {
@@ -101,10 +107,24 @@ const modalManage = (openClass, closeClass) => {
         // SetTimeout is used because moving the focus at the same time that the modal is opened makes a weird visual effect. 
     }
 
-    const modalOverlayToggle = () => {
-        modalOverlay.classList.toggle('show');
+    const modalOverlayToggle = (overlays) => {
+        overlays.forEach(function(overlay){
+            overlay.classList.toggle('show');
+        });
     }
     // #endregion
+
+    const manageBodyOverflow = (action) => {
+        const body = document.querySelector("body");
+
+        if (action == "open") {
+            body.style.overflow = "hidden";
+        }
+        else if (action == "close") {
+            body.style.overflow = "initial";
+        }
+
+    }
 }
 
 document.ready = modalManage('.open-modal', '.close-modal');

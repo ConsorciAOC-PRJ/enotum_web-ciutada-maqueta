@@ -155,12 +155,13 @@
         .all-filters-container.fixed-filters {
             position: fixed;
             top: rem(80px);
+            left: 0;
             background-color: $white;
             z-index: 10;
             padding-top: 1rem;
 
-            @media (min-width: $screen-xl) {
-                position: relative;
+            @media (min-width: $screen-md) {
+                top: rem(50px);
             }
         }
     }

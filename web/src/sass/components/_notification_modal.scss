@@ -5,7 +5,7 @@
 .notification-modal {
     background-color: $white;
     overflow-x: hidden;
-    z-index: 15;
+    z-index: 50;
     display: none;
     padding: 1.5rem;
     position: absolute;
@@ -15,9 +15,10 @@
 
     @media (min-width: $screen-xl) {
         height: auto;
-        top: 15%;
-        left: 20%;
-        right: 20%;
+        max-height: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         border-radius: $radius-medium;
     }
 
@@ -87,4 +88,30 @@
 
 .notification-modal.show { 
    display: block;
+}
+
+.notification-modal-s {
+    width: 35%; 
+
+    .select-input {
+        padding: rem(8px) 0;
+
+        .field {
+            border-left: 2px solid $black;
+        }
+
+        .select-text-field {
+            .field {
+                border-left: none;
+            }
+        }
+    }
+
+    .field.field-email {
+        margin: rem(8px) 0;
+    }
+
+    .modal-buttons.vertical {
+        flex-direction: column;
+    }
 }
