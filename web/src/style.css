@@ -8667,6 +8667,31 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   margin-right: 1.5rem;
 }
 
+.icon-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8888888889rem;
+  padding-top: 0.44rem;
+  padding-bottom: 1.3333333333rem;
+}
+.icon-buttons .icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6666666667rem;
+  padding: 0.4444444444rem 0.6666666667rem;
+  border: 1px solid #E5E6E8;
+  border-radius: 8px;
+  width: 100%;
+}
+.icon-buttons .icon-button .button-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .home .first-banner {
   background-color: #F5F5F6;
 }
