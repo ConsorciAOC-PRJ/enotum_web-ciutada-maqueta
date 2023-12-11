@@ -7495,9 +7495,7 @@ fieldset {
   }
 }
 .notification-modal .notification-header {
-  border-bottom: 1px solid #E5E6E8;
   padding-bottom: 1rem;
-  margin-bottom: 1rem;
 }
 .notification-modal .notification-header .entity-info {
   display: flex;
@@ -8682,7 +8680,7 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   align-items: center;
   gap: 0.6666666667rem;
   padding: 0.4444444444rem 0.6666666667rem;
-  border: 1px solid #E5E6E8;
+  border: 1px solid #1B2124;
   border-radius: 8px;
   width: 100%;
 }
