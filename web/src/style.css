@@ -7741,6 +7741,15 @@ header .logged-in-user .user-name {
     display: block;
   }
 }
+header .logged-in-user .arrow-icon {
+  color: #FFFFFF;
+}
+header .logged-in-user .representative-text {
+  opacity: 72%;
+}
+header .logged-in-user .representative-icon {
+  font-size: 1rem;
+}
 header .menu .burger-menu {
   background: none;
   border: none;
@@ -8661,7 +8670,7 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   justify-content: flex-end;
   border-top: 1px solid #E5E6E8;
 }
-.represented-component .represented-container .represented-content .submit-button input {
+.represented-component .represented-container .represented-content .submit-button button {
   margin-right: 1.5rem;
 }
 
