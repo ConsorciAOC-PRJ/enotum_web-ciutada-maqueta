@@ -18,6 +18,20 @@
         border-radius: $radius-medium;
         width: 100%;
 
+        .access-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary-color-main;
+            padding: rem(6px);
+            border-radius: $radius-small;
+
+            .icon {
+                font-size: rem(20px);
+                color: $white;
+            }
+        }
+
         .button-text {
             display: flex;
             flex-direction: column;

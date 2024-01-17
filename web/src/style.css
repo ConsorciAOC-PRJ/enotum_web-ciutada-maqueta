@@ -8693,6 +8693,18 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   border-radius: 8px;
   width: 100%;
 }
+.icon-buttons .icon-button .access-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color-main);
+  padding: 0.3333333333rem;
+  border-radius: 4px;
+}
+.icon-buttons .icon-button .access-icon .icon {
+  font-size: 1.1111111111rem;
+  color: #FFFFFF;
+}
 .icon-buttons .icon-button .button-text {
   display: flex;
   flex-direction: column;
