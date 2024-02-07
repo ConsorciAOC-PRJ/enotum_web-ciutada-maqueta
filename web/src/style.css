@@ -8647,7 +8647,7 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
 .represented-component .represented-container {
   background-color: #FFFFFF;
   border-radius: 8px;
-  padding: 3rem 3rem 0rem 3rem;
+  padding: 3rem;
 }
 .represented-component .represented-container .represented-header {
   border-bottom: 1px solid #E5E6E8;
@@ -8656,22 +8656,25 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   display: block;
   padding-top: 1.5rem;
 }
-.represented-component .represented-container .represented-content fieldset .custom-rb-label {
-  gap: 0.75rem;
+.represented-component .represented-container .represented-content h2 {
+  text-transform: uppercase;
+}
+.represented-component .represented-container .represented-content a {
+  text-decoration: none;
 }
 .represented-component .represented-container .represented-content .first-set {
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
 }
-.represented-component .represented-container .represented-content .submit-button {
-  margin: 3rem -3rem 0rem -3rem;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  display: flex;
-  justify-content: flex-end;
-  border-top: 1px solid #E5E6E8;
+.represented-component .represented-container .represented-content .second-set ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.represented-component .represented-container .represented-content .submit-button button {
-  margin-right: 1.5rem;
+.represented-component .represented-container .represented-content .second-set ul li {
+  margin: 1rem 0;
+}
+.represented-component .represented-container .represented-content .second-set ul li p {
+  margin: 0;
 }
 
 .icon-buttons {

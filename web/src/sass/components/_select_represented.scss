@@ -4,7 +4,7 @@
     .represented-container {
         background-color: $white;
         border-radius: $radius-medium;
-        padding: 3rem 3rem 0rem 3rem;
+        padding: 3rem;
 
         .represented-header {
             border-bottom: 1px solid $grey-03;
@@ -14,26 +14,31 @@
             display: block;
             padding-top: 1.5rem;
 
-            fieldset {
-                .custom-rb-label {
-                    gap: 0.75rem;
-                }
+            h2 {
+                text-transform: uppercase;
+            }
+
+            a {
+                text-decoration: none;
             }
 
             .first-set {
-                padding-bottom: 2.5rem;
+                padding-bottom: 1.5rem;
             }
 
-            .submit-button {
-                margin: 3rem -3rem 0rem -3rem;
-                padding-top: 1.25rem;
-                padding-bottom: 1.25rem;
-                display: flex;
-                justify-content: flex-end;
-                border-top: 1px solid $grey-03;
+            .second-set {
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
 
-                button {
-                    margin-right: 1.5rem;
+                    li {
+                        margin: 1rem 0;
+
+                        p {
+                            margin: 0;
+                        }
+                    }
                 }
             }
         }
