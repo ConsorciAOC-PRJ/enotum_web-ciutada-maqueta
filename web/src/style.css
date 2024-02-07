@@ -8046,6 +8046,10 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   justify-content: center;
   min-height: 22.2222222222rem;
 }
+.loading-message img {
+  width: 300px;
+  height: 300px;
+}
 
 .main-menu {
   position: fixed;
@@ -9055,9 +9059,12 @@ footer .logos-row .logos-container .credits-container .credits-logos div:first-o
   z-index: 8;
 }
 .postbox .no-results p {
-  margin-top: 2.38rem;
   width: 30%;
   text-align: center;
+}
+.postbox .no-results img {
+  width: 300px;
+  height: 300px;
 }
 .postbox .pagination {
   display: flex;

@@ -152,12 +152,22 @@
     </header>
     <main id="main-content">
         <div class="container g-0">
-            <div class="row g-0">
+            <div class="row g-0 row-padding-bottom">
                 <div class="col-12 loading-message">
-                    <div class="stage" role="status">
-                        <div class="dot-typing" role="img" aria-label="Carregant"></div>
-                    </div>
-                    <p class="text-p-16">Carregant dades usuari...</p>
+                    <img alt="" src="../assets/Carregant Bustia.png">
+                    <div id="container"></div>
+                    <script src="../node_modules/progressbar.js/dist/progressbar.min.js"></script>
+                    <script>
+                        var line = new ProgressBar.Line('#container', {
+                            color: '#005CD1',
+                            trailColor: '#E0EEFF',
+                            strokeWidth: 1,
+                            trailWidth: 1,
+                        });
+                        line.animate(1, {
+                            duration: 800
+                        });
+                    </script>
                 </div>
             </div>
         </div>

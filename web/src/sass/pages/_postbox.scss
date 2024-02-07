@@ -301,9 +301,13 @@
 
     .no-results {
         p {
-            margin-top: 2.38rem;
             width: 30%;
             text-align: center;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
         }
     }
 
