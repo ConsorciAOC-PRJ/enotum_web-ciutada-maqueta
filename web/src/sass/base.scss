@@ -18,7 +18,7 @@ body *::selection {
     color: $white;
     background: $primary-color-main; // WebKit/Blink Browsers
 }
-  
+
 body *::-moz-selection {
     color: $white;
     background: $primary-color-main; //Gecko Browsers
@@ -28,7 +28,7 @@ body *::-moz-selection {
     font-size: rem(14px);
 }
 
-.row { // Add a padding to the content on mobile to follow design 
+.row { // Add a padding to the content on mobile to follow design
     padding: 1.5rem 0.8rem;
 
     @media (min-width: $screen-md) {
@@ -73,7 +73,7 @@ body *::-moz-selection {
     clip: auto;
     padding: 25px;
     background-color: $grey-04;
-    z-index: 10;
+    z-index: 100;
 }
 
 // Don't use animations in responsive version

@@ -3,6 +3,7 @@
 @use './color-blue.scss';
 @use './color-green.scss';
 @use './color-red.scss';
+@use './color-orange.scss';
 @use './color-purple.scss';
 @use './color-indigo.scss';
 @use 'sass:meta';
@@ -26,6 +27,12 @@ body.red {
     }
 }
 
+body.orange {
+    @each $name, $value in meta.module-variables("color-orange") {
+        --#{$name}: #{$value};
+    }
+}
+
 body.purple {
     @each $name, $value in meta.module-variables("color-purple") {
         --#{$name}: #{$value};
@@ -33,7 +40,7 @@ body.purple {
 }
 
 body.indigo {
-    @each $name, $value in meta.module-variables("color-purple") {
+    @each $name, $value in meta.module-variables("color-indigo") {
         --#{$name}: #{$value};
     }
 }
@@ -71,7 +78,7 @@ $info: #005CD1;
 $accent-6: #3F51B5;
 
 // Backgrounds
-$bg-lightgray: $grey-04; 
+$bg-lightgray: $grey-04;
 $bg-dark: $black;
 $bg-white: $white;
 
