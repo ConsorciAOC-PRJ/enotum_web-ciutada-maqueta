@@ -327,3 +327,20 @@ button.secondary-dark-s, a.secondary-dark-s {
 button {
     cursor: pointer;
 }
+
+// Horizontal button container when two buttons need to be shown side by side
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: rem(12px);
+    margin-bottom: 0.5rem;
+
+    button {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+        flex-direction: row;
+    }
+}
