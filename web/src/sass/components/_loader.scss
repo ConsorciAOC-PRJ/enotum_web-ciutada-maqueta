@@ -10,7 +10,7 @@
     overflow: hidden;
     width: 100%;
 }
-  
+
 .dot-typing {
     position: relative;
     left: -9999px;
@@ -23,7 +23,7 @@
     animation: dot-typing 1s infinite linear;
     margin: 0 5px;
 }
-  
+
 @keyframes dot-typing {
     0% {
       box-shadow: 9964px 0 0 0 $primary-color-main, 9999px 0 0 0 $primary-color-subtle, 10034px 0 0 0 $primary-color-subtle;
@@ -83,5 +83,9 @@
   img {
     width: 300px;
     height: 300px;
+  }
+
+  .progress-bar {
+    margin-bottom: 1rem;
   }
 }

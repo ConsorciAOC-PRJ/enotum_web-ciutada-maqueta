@@ -2,14 +2,14 @@
 
     .accordion-button {
         background: none;
-        border: none; 
+        border: none;
         width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        gap: 4.5rem; 
-        padding: 1rem 0rem;
+        gap: 4.5rem;
+        padding: rem(31px) 0rem;
         text-align: left;
 
         .material-icons {
@@ -30,10 +30,10 @@
     }
 
     .aoc-border {
-        border-bottom: 1px solid $black;
+        border-bottom: 2px solid $black;
 
         &:hover {
-            border-bottom: 1px solid $primary-color-main;
+            border-bottom: 2px solid $primary-color-main;
         }
     }
 }

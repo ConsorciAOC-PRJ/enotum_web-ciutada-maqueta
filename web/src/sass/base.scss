@@ -31,9 +31,17 @@ body *::-moz-selection {
 .row { // Add a padding to the content on mobile to follow design
     padding: 1.5rem 0.8rem;
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-lg) {
         padding: 0;
     }
+}
+
+header .row { // Row padding in header is different
+  padding: rem(15px) rem(8px);
+
+  @media (min-width: $screen-md) {
+      padding: 0;
+  }
 }
 
 .row-padding {

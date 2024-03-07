@@ -5,10 +5,15 @@
     .btn-container {
         @include filter-button;
         padding: 0;
+        text-wrap: nowrap;
 
         .btn-filter {
             @include filter-button;
             letter-spacing: rem(0.5px);
+        }
+
+        .btn-filter > span {
+            pointer-events: none;
         }
     }
 

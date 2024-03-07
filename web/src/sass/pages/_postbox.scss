@@ -81,15 +81,14 @@
 
         .all-filters-container {
             display: flex;
-            flex-direction: row-reverse;
-            justify-content: flex-end;
-            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
             width: 100%;
             padding: 0rem 0.8rem 0.63rem 0.8rem;
             margin-top: 1rem;
 
             @media (min-width: $screen-xl) {
-                justify-content: flex-start;
                 flex-direction: row;
                 margin-top: 0;
             }
@@ -101,6 +100,8 @@
 
                 @media (min-width: $screen-xl) {
                     overflow-x: inherit;
+                    flex-wrap: wrap;
+                    padding-left: 0.8rem;
                     margin-left: 0;
                 }
 
@@ -154,7 +155,7 @@
         }
         .all-filters-container.fixed-filters {
             position: fixed;
-            top: rem(80px);
+            top: rem(62px);
             left: 0;
             background-color: $white;
             z-index: 10;

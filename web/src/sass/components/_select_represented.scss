@@ -20,6 +20,11 @@
 
             a {
                 text-decoration: none;
+
+                &:hover {
+                  color: $primary-color-main;
+                  border-bottom: 2px solid $primary-color-main;
+                }
             }
 
             .first-set {
@@ -33,7 +38,7 @@
                     margin: 0;
 
                     li {
-                        margin: 1rem 0;
+                        margin-bottom: 1rem;
 
                         p {
                             margin: 0;

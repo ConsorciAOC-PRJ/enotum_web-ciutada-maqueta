@@ -9,6 +9,10 @@
     }
 }
 
+.filter-open-modal > span {
+    pointer-events: none;
+}
+
 .filter-open-modal.filter-border {
     border: 1.5px solid $black;
 }

@@ -6,12 +6,12 @@
     @if $btn-size == 'small' {
         $btn-font-size: 16px;
         padding: rem(8px) rem(16px);
-    } 
+    }
     @else if $btn-size == 'normal' {
         $btn-font-size: $font-base-size;
         padding: rem(10px) rem(24px);
     }
-    
+
     // Button radius changes
     @if $btn-radius == 'medium' {
         $border-radius: $radius-medium;
@@ -31,6 +31,7 @@
 
     // Button types
     @if $type == 'primary' {
+        outline-offset: 0.2rem;
         @if $state == 'active' {
             @if $color-mode == 'light' {
                 background-color: $btn-main-color;
@@ -47,16 +48,16 @@
             @else if $color-mode == 'dark' {
                 background-color: $btn-white;
                 color: $black;
-           
+
                 &:hover {
                     background-color: $btn-primary-dark-hover;
                 }
-           
+
                 &:active {
                     background-color: $btn-primary-dark-hover;
                 }
             }
-        } 
+        }
         @else if  $state == 'disabled' {
             background-color: $btn-disabled-gray;
             color: $btn-disabled-gray-font;
@@ -84,18 +85,18 @@
             @else if $color-mode == 'dark' {
                 color: $btn-white;
                 border: 1px solid $btn-white;
-           
+
                 &:hover {
                     background-color: $btn-secondary-dark-hover;
                     color: $btn-white;
                 }
-           
+
                 &:active {
                     background-color: $btn-secondary-dark-hover;
                     color: $btn-white;
                 }
             }
-        } 
+        }
         @else if  $state == 'disabled' {
             background-color: $btn-disabled-gray;
             color: $btn-disabled-gray-font;
@@ -117,7 +118,7 @@
                 color: $btn-main-color;
                 background-color: $btn-terciary-pressed;
             }
-        } 
+        }
         @else if  $state == 'disabled' {
             background-color: $btn-disabled-gray;
             color: $btn-disabled-gray-font;
@@ -138,7 +139,7 @@
                 color: $btn-white;
                 background-color: $btn-error-pressed;
             }
-        } 
+        }
         @else if  $state == 'disabled' {
             background-color: $btn-disabled-gray;
             color: $btn-disabled-gray-font;

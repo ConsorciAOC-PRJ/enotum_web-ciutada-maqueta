@@ -9,6 +9,14 @@
         }
     }
 
+    .sr-document-info {
+      display: none;
+
+      @media (min-width: $screen-lg) {
+        display: block;
+      }
+    }
+
     #skip-to-notification:focus {
         position: absolute;
         width: auto;
@@ -85,6 +93,10 @@
             @media (min-width: $screen-xl) {
                 display: block;
             }
+        }
+
+        .panel-close-link > span {
+            pointer-events: none;
         }
     }
 
@@ -189,6 +201,10 @@
             .notification-warning.yellow {
                 background-color: adjust-color($warning, $alpha: -0.80);
                 border-left: 2px solid $warning;
+            }
+
+            .notification-text {
+               white-space: pre-wrap;
             }
 
             .table-title {

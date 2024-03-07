@@ -35,7 +35,7 @@
             padding: rem(16px) 0;
         }
 
-        @media (min-width: $screen-md) {
+        @media (min-width: $screen-lg) {
             padding: rem(64px) rem(96px) rem(64px) 0rem;
 
             &:nth-child(4) {

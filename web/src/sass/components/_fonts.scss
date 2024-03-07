@@ -15,8 +15,8 @@ h1, h2, h3, h4, h5, h6 {
     @media (min-width: $screen-lg) {
         @include font(56px, bold, 68px);
     }
-    
-    margin-bottom: rem(16px);    
+
+    margin-bottom: rem(16px);
 }
 
 .title-l {
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
         @include font(48px, bold, 52px);
     }
 
-    margin-bottom: rem(24px); 
+    margin-bottom: rem(24px);
 }
 
 .title-m {
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
         @include font(24px, bold, 32px);
     }
 
-    margin-bottom: rem(8px); 
+    margin-bottom: rem(8px);
 }
 
 .title-xs {
@@ -72,14 +72,14 @@ h1, h2, h3, h4, h5, h6 {
         @include font(18px, bold, 24px);
     }
 
-    margin-bottom: rem(8px); 
+    margin-bottom: rem(8px);
 }
 
 // #endregion Headings
 
 // #region Body
 p, li, td {
-    color: $font-light; 
+    color: $font-light;
 }
 
 p {
@@ -160,7 +160,7 @@ p.no-margin {
 }
 
 .p-grey {
-    color: $font-light; 
+    color: $font-light;
 }
 
 .p-white {
@@ -191,6 +191,10 @@ p.no-margin {
 
 a {
     color: $font-main-color;
+
+    &:hover {
+      color: $primary-color-darker;
+    }
 }
 
 .link-grey {

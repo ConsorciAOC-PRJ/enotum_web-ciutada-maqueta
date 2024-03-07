@@ -12,7 +12,7 @@ footer {
             align-items: flex-start;
             gap: rem(25px);
             padding: 0rem 1.5rem;
-            
+
             @media (min-width: $screen-md) {
                 border-right: 1px solid $grey-03;
             }
@@ -36,7 +36,7 @@ footer {
         }
 
         .links-heading {
-            @include font(16px, bold); 
+            @include font(16px, bold);
         }
 
         ul {
@@ -88,6 +88,24 @@ footer {
             p {
                 margin: 0;
             }
+        }
+
+        .language-selector {
+          padding: 0.5rem;
+          display: block;
+
+          @media (min-width: $screen-md) {
+            display: none;
+          }
+
+          .dropdown-button {
+            padding: 0;
+            border: 0;
+          }
+
+          .dropdown-content {
+            right: unset;
+          }
         }
     }
 
@@ -170,5 +188,5 @@ footer {
         }
     }
 
-    
+
 }
